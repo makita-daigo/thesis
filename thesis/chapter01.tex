@@ -1,0 +1,53 @@
+\documentclass[autodetect-engine,dvipdfmx-if-dvi,ja=standard,a4j,jbase=11pt,magstyle=nomag*]{bxjsreport}
+% \documentclass[uplatex, dvipdfmx, a4paper, 11ptj, report]{jsbook}
+% small japanese font size:     9pt, 10pt, 11pt, 12pt, 14pt, ... (please refer the document of jsclasses)
+% word-like japanese font size: 10ptj 10.5ptj, 11ptj, 12ptj (or jbase=xxpt (without 'j') if error is occured)
+
+\input{preamble.tex}
+
+\mainmatter
+\setchapterxr[thesis][bibliography]{1}
+
+
+\begin{document}
+
+
+\chapter{緒言}
+
+\section{研究背景}
+
+
+
+
+\section{提案}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.8\linewidth, clip]{./figure/concept.pdf}
+    \caption{3D footstep plan (on the slope way)}
+    \label{fig:concept}
+\end{figure}
+
+そこで本論文では，\cite{yao_2011rs}の手法を拡張し，
+\cref{fig:concept}に示すように三次元の形状を持った地形上において
+モデルの制約条件に沿って脚配置計画を行う手法を提案する．
+三次元の地形は事前に外界センサなどの計測により
+メッシュ状の地形データとして取得できている状態であると仮定する．
+そのデータに基づき，脚の接地条件を制約として表現して追加するのみで，
+実時間性を保ったまま三次元での計画を実現する．
+歩行モデル上の可動領域の限界や地形との接地条件を厳密に考慮するために
+制約条件付きの二次計画法を利用した反復法により最適な脚配置を得る手法を適用し，
+ヒューマノイドロボットHRP-2\cite{isozumi_2004jrsj}を想定した計画シミュレーション，
+およびNAO\cite{mao_official}に基づく計画シミュレーションと実機実験により，提案手法の有効性を示す．
+
+
+\section{本論文の構成}
+本論文の構成は，次のようになっている．
+まず本章において，本研究の背景・目的などを述べた．
+2章では，脚配置計画のための二足歩行ロボットのモデルと計画問題の定式化について述べる．
+3章では，定式化した問題を解くための最適化計算の手法と全体のアルゴリズムについて述べる．
+4章では，様々な地形上での脚配置計画を行った結果とそれについての考察を述べる．
+5章では，計画によって得られた脚配置を用いた実機による歩行実験とその結果について述べる．
+最後に5章では，本研究の結果などについてまとめ，今後の課題を述べる．
+
+
+\end{document}

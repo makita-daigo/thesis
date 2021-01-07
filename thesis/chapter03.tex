@@ -1,0 +1,228 @@
+\documentclass[autodetect-engine,dvipdfmx-if-dvi,ja=standard,a4j,jbase=11pt,magstyle=nomag*]{bxjsreport}
+% \documentclass[uplatex, dvipdfmx, a4paper, 11ptj, report]{jsbook}
+% small japanese font size:     9pt, 10pt, 11pt, 12pt, 14pt, ... (please refer the document of jsclasses)
+% word-like japanese font size: 10ptj 10.5ptj, 11ptj, 12ptj (or jbase=xxpt (without 'j') if error is occured)
+
+\input{preamble.tex}
+
+\mainmatter
+\setchapterxr[thesis][bibliography]{3}
+
+
+\begin{document}
+
+
+\chapter{脚配置計画アルゴリズム}
+
+\section{はじめに}
+本章では，前章で定式化した問題を解くためのアルゴリズムについて説明する．
+反復法を用いた計算アルゴリズムによって計算を行い，脚配置を計算する．
+即ち，定式化した二次計画問題\cref{eq:quadratic_programming_problem_base}を逐次解き，
+入力列$\bm{U}_k$を更新して解に近づけていくという計算を行う．
+
+全体の計画のアルゴリズムを\cref{fig:algorithm_planning}に示す．
+各要素について述べていく．
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth, clip]{./figure/algorithm_planning.pdf}
+    \caption{Footstep planning algorithm}
+    \label{fig:algorithm_planning}
+\end{figure}
+
+\section{初期ステップ数決定と入力列初期化}
+まずはじめに，計画開始時に用いる初期ステップ数$k_\mathrm{init}$を設定する．
+平面上と高さ方向それぞれについて，目標位置までの距離を
+$1$ステップあたりの最大の直進距離$d_{xy\,\mathrm{max}}$，$d_{z\,\mathrm{max}} = 2 \, z_\mathrm{max}$で割ることで所要ステップ数を求め
+（平面上の最大直進距離は，事前に直線上を進む計画問題を解いておき，得られた解の直進距離を用いる），二つのうち大きい方を採用する．
+さらに，これに実用上$1$を加えたものを$k_\mathrm{init}$として設定する．
+これは，先の計算で求めたものはあくまでも直進で目標に向かうことができる場合の最小値であり，
+地形や初期・目標状態の姿勢を考慮すると実際には求まったステップ数では到達できないと考えられるからである．
+\begin{equation}
+    \begin{aligned}
+        k_\mathrm{init} & = \left\lceil \max \left( k_{xy \mathrm{max}} ,\, k_{z \mathrm{max}} \right) \right\rceil + 1 \\
+        k_{xy \mathrm{max}} & = \frac{\left\| \left( x_\mathrm{goal}, y_\mathrm{goal} \right) - \left( x^0 , y^0 \right) \right\|}{d_{xy\,\mathrm{max}}} \\
+        k_{z \mathrm{max}} & =\max \left( \frac{\left\| z_{l \mathrm{goal}} - z_l^0 \right\|}{d_{z\,\mathrm{max}}} ,\, \frac{\left\| z_{r \mathrm{goal}} - z_r^0 \right\|}{d_{z\,\mathrm{max}}} \right)
+    \end{aligned}
+\end{equation}
+
+また，入力列は零ベクトルで初期化する．
+
+\section{二次計画問題の求解と入力列更新}
+\label{sec:solve_qpp}
+\subsection{Goldfarb-Idnani法による二次計画問題の求解}
+``Solve QPP''では，各反復における計画問題\cref{eq:quadratic_programing_planning}を解き$\bm{\Delta U}_k$を求める．
+解法としては，\cref{eq:quadratic_programing_planning}が凸二次計画問題であることから，有効制約法の一種であるGoldfarb-Idnani (GI) 法\cite{goldfarb_1983mp}を用いる．
+
+\label{緩和問題と求解方法}
+線形近似により実行不可能な問題となってしまった場合は，若干の制約違反を許す緩和問題を設定して解く．
+文献~\cite{maciejowski_2005jp}で示されている無限大ノルムを用いた緩和問題\cref{eq:relaxation_problem}を設定する．
+\begin{equation}
+    \label{eq:relaxation_problem}
+    \begin{aligned}
+        & \text{minimize} && \frac{1}{2} \, \bm{\Delta U}_k^T \, \varPhi \, \bm{\Delta U}_k + \bm{\phi}^T \bm{\Delta U}_k + \rho \, \xi  \\
+        & \text{subject~to} && \varOmega \, \bm{\Delta U}_k + \bm{\omega} + \xi \, \bm{1} \geq \bm{0} ,\quad \xi \geq 0
+    \end{aligned}
+\end{equation}
+$\rho > 0$はペナルティパラメータ，$\xi$はスラック変数，$\bm{1}$は全要素が$1$のベクトルである．
+この問題はすでに二次計画問題ではなくなっているため，\cref{eq:relaxation_problem_quadprog}および\cref{eq:relaxation_problem_quadprog}に示すように二次計画問題へ近似する．
+\begin{equation}
+    \label{eq:relaxation_problem_quadprog}
+    \begin{aligned}
+        & \text{minimize} && \frac{1}{2} \, \bm{\Delta U}_k^T \, \varPhi' \, \bm{\Delta U}_k + \bm{\phi'}^T \bm{\Delta U}_k \\
+        & \text{subject~to} && \varOmega' \, \bm{\Delta U}_k + \bm{\omega'} \geq \bm{0}
+    \end{aligned}
+\end{equation}
+\begin{equation}
+    \label{eq:relaxation_problem_quadprog_coeff}
+    \begin{aligned}
+        & \varPhi' = 
+            \begin{pmatrix}
+                \varPhi & \bm{0} \\
+                \bm{0} & \varepsilon_{\mathrm{relax}}
+            \end{pmatrix} 
+        \quad , \quad
+        && \bm{\phi}'  = 
+            \begin{pmatrix}
+                \phi \\
+                \rho
+            \end{pmatrix}
+        \\
+        & \varOmega' = 
+            \begin{pmatrix}
+                \Omega & \bm{1} \\
+                \bm{0} & 1
+            \end{pmatrix} 
+        \quad , \quad
+        && \bm{\omega}' = 
+            \begin{pmatrix}
+                \omega \\
+                0
+            \end{pmatrix} 
+    \end{aligned}
+\end{equation}
+$\varepsilon_{\mathrm{relax}}$は十分に小さい定数とする．
+
+\subsection{数値計算安定化のための各種パラメータ設定方法}
+問題で用いる係数行列およびベクトルを次のように設定することで，反復計算の安定性および収束性能を向上させる．
+\begin{itemize}
+    \item   $K_p$，$K_u$，$K_{u_z}$の各成分を，係るベクトルの各要素をそれぞれ最大値で正規化するように設定する
+\end{itemize}
+\begin{equation} \label{eq:Kp_setting}
+    \begin{aligned}
+        K_p & = \mathrm{diag} \, \{ k_x , k_y , k_{\theta} , k_l , k_{\theta_{fl}} , k_{\theta_{fr}} \} \\
+        & k_x = k_y = ( \max \{ | x_{\goal} - x^0 | , | y_{\goal} - y^0 | \} )^{-2} \\
+        & k_{\theta} = ( 2 \pi )^{-2} \\
+        & k_l = ( Y_{\mathrm{max}} - Y_{\mathrm{min}} )^{-2} \\
+        & k_{\theta_{fl}} = k_{\theta_{fr}} = ( 2 \pi )^{-2}
+    \end{aligned}
+\end{equation}
+\begin{equation} \label{eq:Ku_setting}
+    \begin{aligned}
+        K_u & = \mathrm{diag} \, \{ \dots , k_{u_A} , k_{u_B} , k_{u_{l1}} , k_{u_{l2}} , k_{u_{fl}} , k_{u_{fr}} , \dots \} \\
+        & k_{u_A} = k_{u_B} = ( 2 \tan^{-1} ( X_{\mathrm{max}} / Y_{\mathrm{min}} ) + {\theta_2}_{\mathrm{max}} )^{-2} \\
+        & k_{u_{l1}} = k_{u_{l2}} = ( Y_{\mathrm{max}} - Y_{\mathrm{min}} )^{-2} \\
+        & k_{u_{fl}} = k_{u_{fr}} = ( {\theta_2}_{\mathrm{max}} - {\theta_2}_{\mathrm{min}} )^{-2}
+    \end{aligned}
+\end{equation}
+\begin{equation} \label{eq:Kuz_setting}
+    \begin{aligned}
+        K_u & = \mathrm{diag} \, \{ \dots , k_{u_{zl}} , k_{u_{zr}} , \dots \} \\
+        & k_{u_{zl}} = k_{u_{zr}} = z_{\mathrm{max}}^{-2}
+    \end{aligned}
+\end{equation}
+\begin{itemize}
+    \item   $K_u$，$K_{u_z}$は，前項の設定に加えてSugiharaの手法~\cite{sugihara_2011tro}を適用し，
+            評価関数\cref{eq:evaluation_function}の値を用いて重み付けする
+            （$I$は単位行列，$\Delta k_u$はスカラー定数）
+\end{itemize}
+\begin{equation}
+    \label{eq:LM_Kuset_sugihara}
+    \begin{gathered}
+        K_u \gets V_{\now} \, K_u + \Delta k_u \, I = \frac{1}{2} {\left\| \bm{\varepsilon}_{\now} \right\|}^2_{K_p} \, K_u + \Delta k_u \, I \\
+        K_{u_z} \gets V_{\now} \, K_{u_z} + \Delta k_{u_z} \, I = \frac{1}{2} {\left\| \bm{\varepsilon}_{\now} \right\|}^2_{K_p} \, K_{u_z} + \Delta k_{u_z} \, I
+    \end{gathered}
+\end{equation}
+\begin{itemize}
+    \item   一つ一つの制約条件$\omega_i(\bm{q}^0 ,\, \bm{U}_k) \geq 0$を$\| \nabla \omega_i \|$で正規化することにより，
+            GI法内部での反復計算を安定化させ，また緩和問題での各制約条件の比重を揃える\cite{sugimoto_1985}
+    \item   緩和問題を解く際，評価関数全体を$\| \bm{\phi} \|$で正規化し，
+            元の評価関数部分の値とスラック変数の値の比重を揃える（$\rho = 1$とできる）
+\end{itemize}
+そして，得られた解を用いてArmijoの基準に基づく直線探索を行い，入力列を更新する．
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.65\linewidth, clip]{./figure/algorithm_linesearch.pdf}
+    \caption{Line search}
+    \label{fig:algorithm_linesearch}
+\end{figure}
+
+\subsection{直線探索}
+直線探索では，次式を満たすステップ幅$\alpha$を求める．
+\begin{align}
+    \label{eq:armijo}
+    \begin{aligned}
+        H \left( \bm{q}^0 , \bm{U}_k + \alpha \bm{\Delta U}_k \right) & \leq H \left( \bm{q}^0 , \bm{U}_k \right) + \beta \alpha {\nabla V \left( \bm{q}^0 , \bm{U}_k  \right)}^T \bm{\Delta U}_k \\
+                                                                      &   =  H \left( \bm{q}^0 , \bm{U}_k \right) + \beta \alpha \bm{\phi}^T \bm{\Delta U}_k
+    \end{aligned}
+\end{align}
+$\beta$は，$0 < \beta < 1$を満たす定数である．
+今回，$\alpha$は\cref{fig:algorithm_linesearch}に示す単純な探索により求める．
+なお，$\gamma$は$0 < \gamma < 1$を満たす減衰係数である．
+
+
+\section{終了判定}
+更新後，終了判定を行う．
+次の項目を\emph{すべて}満たすことを終了条件とする．
+\begin{itemize}
+    \item   $\bm{\varepsilon}$が収束（各要素が許容誤差$\bm{\varepsilon}_{\goal}$の各要素よりも小さい）
+    \item   $\bm{\Delta U}_k$が収束（各要素が許容誤差$\bm{\varepsilon}_{\mathrm{input}}$の各要素よりも小さい）
+    \item   $\omega_i(\bm{q}^0 ,\, \bm{U}_k) \geq 0 \ (i = 0 , \dots ,\, 20k - 1)$をすべて満たす
+\end{itemize}
+これらの条件を全て満たしていれば，その時点での$\bm{U}_k$を解とし，計画を終了する．
+満たしていない場合は次節の処理へ移る．
+
+\section{目標到達可否判定}
+初期ステップ数$k_\mathrm{init}$は直線距離から算出するため，現在の$k$では歩数不足の場合がある．
+そこで，反復毎に目標状態へ収束する見込みがあるかどうかを判定し，見込みがない場合に$k$を増やす処理を行う．
+ここでは，次の項目の\emph{いずれか}を満たせば到達不可と判定することとする．
+\begin{itemize}
+    \item   ``$\bm{\Delta U}_k$収束時に$\bm{\varepsilon}$が未収束'' という状況が$n_{\reachable1}$回繰り返される
+    \item   現在の$k$における反復回数$\mathrm{loop}$が$n_{\reachable2}$に達した段階で，
+   $\bm{\varepsilon}$が大きい値をとる（各要素が到達見込みの閾値$\bm{\varepsilon}_{\reachable}$の各要素よりも大きい）
+\end{itemize}
+到達不可と判定された場合には$k \gets k + 1$とし，
+また$\bm{U}_k$はその内容を引き継ぎ$\bm{U}_k \gets ( \bm{U}_k^T ,\, \bm{0}^T )^T$として再度反復を開始する．
+そうでなければ，``Solve QPP''へ戻り反復を継続する．
+
+
+\section{地形情報の構築}
+\label{sec:z_field_constructure}
+前述の計画アルゴリズムを開始する前に，
+地形適応制約で用いる地形情報$z_\mathrm{field}(x ,\, y)$を構築する必要がある．
+深度カメラや測域センサから得られる点群データを用いて地形情報を構築することを想定し，
+次の手順で点群データからの構築を行った．
+\begin{enumerate}
+    \item   $xy$平面を等間隔に幅$D_\mathrm{grid}$四方の正方形グリッドで分割する．
+    \item   各グリッドの領域に含まれるサンプルデータ群の$z$軸成分の平均値を，グリッド中央における高さとする．
+    \item   $x ,\, y$方向それぞれについて，グリッド中心の点列をサンプルとする3次スプライン補間関数を計算．
+    \item   $z_{\field} ( x ,\, y ) ,\, \partial z_{\field} / \partial x ,\, \partial z_{\field} / \partial y$は，
+    与えられた点$( x ,\, y )$に対して直近の$x$軸方向$2$本，$y$軸方向$2$本の補間関数上の値の距離重み付け平均で算出する．
+\end{enumerate}
+なお，シミュレーションにおいて関数からサンプリングを行って点群データを得る場合，$D_\mathrm{sample}$間隔でサンプリングを行う．
+
+
+\section{本章のまとめ}
+本章では，二次計画法を用いた反復法による脚配置計画問題の求解アルゴリズムの要素として，
+必要歩数の推定から毎回の二次計画問題の求解と緩和問題の設定，収束判定，
+収束見込み判定とステップ数追加について説明した．
+また，地形の違いなどにより問題ごとに大きく変化してしまうことを
+可能な限り回避するため，反復法における数値計算の性能を安定させる
+重み行列の設定方法などについても述べた．
+
+次章以降は，提案する脚配置計画手法の有用性および性能を検証するための
+計画シミュレーションおよび実機実験について述べていく．
+
+
+\end{document}
