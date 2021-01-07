@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  28 DEC 2020 20:37
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  8 JAN 2021 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1591,12 +1591,7 @@ No file thesis.aux
 LABELS NOT IMPORTED.
  on input line 9.
 
-
-Package xr Warning: 
-No file bibliography.aux
-LABELS NOT IMPORTED.
- on input line 9.
-
+Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 10.99478pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
@@ -1845,49 +1840,49 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 17.12152pt on input line 17.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 22.
+(Font)              using `JY1/hmc/bx/n' instead on input line 23.
 
 File: ./figure/concept.pdf Graphic file (type pdf)
 <./figure/concept.pdf>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 26.
+(Font)              using `JY1/hmc/bx/n' instead on input line 27.
 
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <11.88995> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 26.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 26.
+(Font)              scaled to size 10.99478pt on input line 27.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.88995pt on input line 26.
+(Font)              scaled to size 11.88995pt on input line 27.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 26.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 30.
-
-
-LaTeX Warning: Citation `yao_2011rs' on page 1 undefined on input line 30.
+(Font)              using `JY1/hmc/bx/n' instead on input line 27.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 39.
+(Font)              using `JY1/hmc/bx/n' instead on input line 31.
 
 
-LaTeX Warning: Citation `isozumi_2004jrsj' on page 1 undefined on input line 39
-.
+LaTeX Warning: Citation `yao_2011rs' on page 1 undefined on input line 31.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 40.
 
 
-LaTeX Warning: Citation `mao_official' on page 1 undefined on input line 40.
+LaTeX Warning: Citation `isozumi_2004jrsj' on page 1 undefined on input line 40
+.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 43.
+(Font)              using `JY1/hmc/bx/n' instead on input line 41.
+
+
+LaTeX Warning: Citation `mao_official' on page 1 undefined on input line 41.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 44.
 
 [1
 
@@ -1899,12 +1894,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 28479 strings out of 481140
- 534089 string characters out of 5920653
- 721263 words of memory out of 5000000
- 43974 multiletter control sequences out of 15000+600000
+ 28490 strings out of 481140
+ 534246 string characters out of 5920653
+ 721248 words of memory out of 5000000
+ 43985 multiletter control sequences out of 15000+600000
  585353 words of font info for 121 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,6n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter01.dvi (2 pages, 3816 bytes).
+Output written on chapter01.dvi (2 pages, 4080 bytes).
