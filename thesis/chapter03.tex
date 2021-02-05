@@ -12,96 +12,90 @@
 \begin{document}
 
 
-\chapter{脚配置計画アルゴリズム}
-
+\chapter{複数LiDARの位置校正方法とオクルージョン範囲の導出}
+	
 \section{はじめに}
-本章では，前章で定式化した問題を解くためのアルゴリズムについて説明する．
-反復法を用いた計算アルゴリズムによって計算を行い，脚配置を計算する．
-即ち，定式化した二次計画問題\cref{eq:quadratic_programming_problem_base}を逐次解き，
-入力列$\bm{U}_k$を更新して解に近づけていくという計算を行う．
+本章では，LiDARの位置を取得するために使用した手法を説明する．
+また，決定したLiDARの位置とそれが認識した人物の位置からオクルージョンが起こっている範囲を導出し，
+その範囲をUAVが撮影できるように目標位置を設定する手法を説明する．
 
-全体の計画のアルゴリズムを\cref{fig:algorithm_planning}に示す．
-各要素について述べていく．
+\section{複数LiDARの位置決定方法}
+まず始めに，複数LiDARの位置の取得方法について述べる．
+先行研究では1台のLiDARの位置をUAVに搭載しているGPSセンサと同じもの使用してを取得していた．
+しかし，UAVに搭載されているGPSセンサから得られる緯度経度情報は数mから十数mの誤差がある．
+複数のLiDARを使用する際，位置の誤差が大きいと，1つの物体を2つの物体と誤認してしまう恐れがある．
+そのため，２つのLiDARの正確な相対位置を取得するためにRTK-GPS測位という手法を利用して位置を取得する．
+
+\subsection{RTK-GPS測位}
+RTK-GPS(Real-Time Kinematic GPS)測位とは，位置が分かっていて移動しない基地局(Base)と
+位置情報を取得しようとしている観測点である移動局(Rover)で同時にGPS観測を行い，
+基準局で観測したデータを移動局へリアルタイムに送信し，基準局の位置に基づいて移動局の位置を求める手法である．
+さらにネットワークを利用して基地局と移動局のデータ送信を行うことで，
+基地局と移動局が長距離で離れていても精度の高い演算ができる．
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=\linewidth, clip]{./figure/algorithm_planning.pdf}
-    \caption{Footstep planning algorithm}
-    \label{fig:algorithm_planning}
+    \includegraphics[width=\linewidth, clip]{./figure/chapter3/RTK.png}
+    \caption{Image of RTK-GPS Positioning System}
+    \label{fig:RTK}
 \end{figure}
 
-\section{初期ステップ数決定と入力列初期化}
-まずはじめに，計画開始時に用いる初期ステップ数$k_\mathrm{init}$を設定する．
-平面上と高さ方向それぞれについて，目標位置までの距離を
-$1$ステップあたりの最大の直進距離$d_{xy\,\mathrm{max}}$，$d_{z\,\mathrm{max}} = 2 \, z_\mathrm{max}$で割ることで所要ステップ数を求め
-（平面上の最大直進距離は，事前に直線上を進む計画問題を解いておき，得られた解の直進距離を用いる），二つのうち大きい方を採用する．
-さらに，これに実用上$1$を加えたものを$k_\mathrm{init}$として設定する．
-これは，先の計算で求めたものはあくまでも直進で目標に向かうことができる場合の最小値であり，
-地形や初期・目標状態の姿勢を考慮すると実際には求まったステップ数では到達できないと考えられるからである．
+\subsection{RTK-GPS測位と単独測位の比較}
+単独測位では数mから十数mの誤差が発生するのに対して，
+RTK-GPS測位では数cmの誤差が発生するといわれている．
+ここで，実際に計測したデータを比較して測位の性能の差を述べる．
+計測位置は大阪市立大学F棟507号室のベランダであり，\cref{fig:data_of_RTK}は30秒の計測データをグラフ化したものである．
+\cref{fig:data_of_RTK}左のグラフは単独測位の結果であり，グラフは1マス50cmである．
+同図右のグラフはRTK-GPS測位の結果であり，グラフは1マス1cmである．
+グラフはから見て取れるように，単独測位は50cmから1mの誤差があり，
+RTK-GPS測位の誤差は1cmから2cm以内に収まっている．
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth, clip]{./figure/chapter3/Data_of_GPS_positioning.png}
+    \caption{Single GPS Positioning (right) and RTK-GPS Positioning (left)}
+    \label{fig:data_of_RTK}
+\end{figure}
+
+\section{GPS座標からmap座標への変換}
+本研究では，東を{\it x}座標正方向，北を{\it y}座標正方向とするmap座標系を用いる．
+また座標原点はLiDAR1の座標をもとに算出する．
+ここでは，GPSセンサから得たLiDAR1の緯度経度と座標から原点の緯度経度の値の算出方法，
+原点の緯度経度の値とLiDAR2の緯度経度の値からLiDAR2のmap座標の算出方法を述べる．
+
+LiDAR1のGPS座標を$lon_{lidar1}, lat_{lidar1}$,map座標を$x_{lidar1}, y_{lidar1}$とすると
+求めるmap座標原点の緯度経度の値$lon_{origin}, lat_{origin}$は以下の\cref{eq:calc_gps}で算出される．
+なお式中の$R$は地球の赤道半径である．
+
 \begin{equation}
     \begin{aligned}
-        k_\mathrm{init} & = \left\lceil \max \left( k_{xy \mathrm{max}} ,\, k_{z \mathrm{max}} \right) \right\rceil + 1 \\
-        k_{xy \mathrm{max}} & = \frac{\left\| \left( x_\mathrm{goal}, y_\mathrm{goal} \right) - \left( x^0 , y^0 \right) \right\|}{d_{xy\,\mathrm{max}}} \\
-        k_{z \mathrm{max}} & =\max \left( \frac{\left\| z_{l \mathrm{goal}} - z_l^0 \right\|}{d_{z\,\mathrm{max}}} ,\, \frac{\left\| z_{r \mathrm{goal}} - z_r^0 \right\|}{d_{z\,\mathrm{max}}} \right)
+        lat_{origin} &= \frac{y_{lidar1}}{R} \times \frac{180}{\pi} + lat_{lidar1}\\
+        lon_{origin} &= \frac{x_{lidar1}}{R} \times \frac{180}{\pi} \times \frac{1}{cos( lat_{origin} \frac{180}{\pi})} + lon_{origin}
     \end{aligned}
+    \label{eq:calc_gps}
 \end{equation}
 
-また，入力列は零ベクトルで初期化する．
+\cref{eq:calc_gps}より得られたmap座標原点の緯度経度の値を用いて，
+LiDAR2のmap座標$x_{lidar2}, y_{lidar2}$を\cref{eq:calc_from_gps}求めることができる．
+LiDAR2のGPS座標を$lon_{lidar2}, lat_{lidar2}$とする．
 
-\section{二次計画問題の求解と入力列更新}
-\label{sec:solve_qpp}
-\subsection{Goldfarb-Idnani法による二次計画問題の求解}
-``Solve QPP''では，各反復における計画問題\cref{eq:quadratic_programing_planning}を解き$\bm{\Delta U}_k$を求める．
-解法としては，\cref{eq:quadratic_programing_planning}が凸二次計画問題であることから，有効制約法の一種であるGoldfarb-Idnani (GI) 法\cite{goldfarb_1983mp}を用いる．
+\begin{equation}
+    \begin{aligned}
+        x_{lidar2} &=  R ( lon_{lidar2} - lon_{lidar2} ) \frac{\pi}{180} cos(( lat_{lidar2} - lat_{origin} )\frac{\pi}{180}) \\
+        y_{lidar2} &=  R ( lat_{llidar2} - lat_{origin} ) \frac{\pi}{180}
+    \end{aligned}
+    \label{eq:calc_from_gps}
+\end{equation}
 
-\label{緩和問題と求解方法}
-線形近似により実行不可能な問題となってしまった場合は，若干の制約違反を許す緩和問題を設定して解く．
-文献~\cite{maciejowski_2005jp}で示されている無限大ノルムを用いた緩和問題\cref{eq:relaxation_problem}を設定する．
-\begin{equation}
-    \label{eq:relaxation_problem}
-    \begin{aligned}
-        & \text{minimize} && \frac{1}{2} \, \bm{\Delta U}_k^T \, \varPhi \, \bm{\Delta U}_k + \bm{\phi}^T \bm{\Delta U}_k + \rho \, \xi  \\
-        & \text{subject~to} && \varOmega \, \bm{\Delta U}_k + \bm{\omega} + \xi \, \bm{1} \geq \bm{0} ,\quad \xi \geq 0
-    \end{aligned}
-\end{equation}
-$\rho > 0$はペナルティパラメータ，$\xi$はスラック変数，$\bm{1}$は全要素が$1$のベクトルである．
-この問題はすでに二次計画問題ではなくなっているため，\cref{eq:relaxation_problem_quadprog}および\cref{eq:relaxation_problem_quadprog}に示すように二次計画問題へ近似する．
-\begin{equation}
-    \label{eq:relaxation_problem_quadprog}
-    \begin{aligned}
-        & \text{minimize} && \frac{1}{2} \, \bm{\Delta U}_k^T \, \varPhi' \, \bm{\Delta U}_k + \bm{\phi'}^T \bm{\Delta U}_k \\
-        & \text{subject~to} && \varOmega' \, \bm{\Delta U}_k + \bm{\omega'} \geq \bm{0}
-    \end{aligned}
-\end{equation}
-\begin{equation}
-    \label{eq:relaxation_problem_quadprog_coeff}
-    \begin{aligned}
-        & \varPhi' = 
-            \begin{pmatrix}
-                \varPhi & \bm{0} \\
-                \bm{0} & \varepsilon_{\mathrm{relax}}
-            \end{pmatrix} 
-        \quad , \quad
-        && \bm{\phi}'  = 
-            \begin{pmatrix}
-                \phi \\
-                \rho
-            \end{pmatrix}
-        \\
-        & \varOmega' = 
-            \begin{pmatrix}
-                \Omega & \bm{1} \\
-                \bm{0} & 1
-            \end{pmatrix} 
-        \quad , \quad
-        && \bm{\omega}' = 
-            \begin{pmatrix}
-                \omega \\
-                0
-            \end{pmatrix} 
-    \end{aligned}
-\end{equation}
-$\varepsilon_{\mathrm{relax}}$は十分に小さい定数とする．
+\section{オクルージョンが発生した場合のUAVの撮影位置の決定}
+前節まででは，LiDARの位置を取得するための手法を述べた．
+人物行動範囲内に複数人の人物が存在する場合，オクルージョンが発生し．
+地上設置LiDARでは人物行動範囲内の全ての人物をとらえきれない場合が存在する．
+この節では，オクルージョンが発生した場合のLiDARの撮影できない領域と，
+その領域を考慮したUAVの目標位置の導出方法について述べる．
+
+ 
+       ．
 
 \subsection{数値計算安定化のための各種パラメータ設定方法}
 問題で用いる係数行列およびベクトルを次のように設定することで，反復計算の安定性および収束性能を向上させる．
@@ -151,12 +145,7 @@ $\varepsilon_{\mathrm{relax}}$は十分に小さい定数とする．
 \end{itemize}
 そして，得られた解を用いてArmijoの基準に基づく直線探索を行い，入力列を更新する．
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.65\linewidth, clip]{./figure/algorithm_linesearch.pdf}
-    \caption{Line search}
-    \label{fig:algorithm_linesearch}
-\end{figure}
+
 
 \subsection{直線探索}
 直線探索では，次式を満たすステップ幅$\alpha$を求める．

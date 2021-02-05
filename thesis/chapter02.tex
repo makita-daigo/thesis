@@ -12,58 +12,21 @@
 \begin{document}
 
 
-\chapter[脚配置計画問題の定式化と三次元適応]{脚配置計画問題の定式化と\\三次元適応}
+\chapter[地上固定LiDARと複数UAVを用いた撮影計画の概要]{地上固定LiDARと複数UAV\\を用いた撮影計画の概要}
 
 \section{はじめに}
-本章では，脚配置計画を実現するための提案するモデルベース計画手法における，
-歩行のモデル化から計画問題の定式化，および従来の平面上の計画手法の
-三次元適応のための拡張方法について記述する．
-また，本論文で用いる最適化問題を解くための計算手法と定式化についても
-述べる．
+本章では，昨年度まで佐々木らが行っていた地上固定LiDARと複数UAVを用いた撮影計画の概要に
+ついて述べる．\cite{sasaki_2019}
+またその研究における問題点，課題点などについて述べる．
 
-\section{導入モデル}
-二足歩行ロボットの歩行動作モデルとして，\cref{fig:kinematic_model}に示す簡易的な運動学モデルを導入する．
-このモデルでは，ピボット操作および両脚間隔の伸縮操作を反復することによって歩行を表現する．
-平面上の脚配置は，\cref{fig:foothold_model}に示すように脚先の幾何学的な配置関係のモデルで表される．
-脚先形状は矩形で考える．
-$( x^i ,\, y^i )$はワールド座標系$\Sigma_0$における左脚の脚先中心の位置座標である．
-$\theta^i$は$\Sigma_0$の$x$軸と両脚先間を結ぶ長さ$l^i$の線分とがなす角である．
-左右の脚先座標系$\Sigma_{fl}$，$\Sigma_{fr}$は脚先の前方向に$x$軸，内側の方向に$y$軸をとる． 
-$\Sigma_0$の$y$軸と$\Sigma_{fl}$および$\Sigma_{fr}$の$x$軸とがなす角を
-それぞれ$\theta_{fl}^i$，$\theta_{fr}^i$とする．
-なお，$i = 0 ,\, 1, \dots, k - 1$（$k$は後述のステップ数）．
+\section{先行研究における実装}
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.75\linewidth, clip]{./figure/model_kinematic.pdf}
-    \caption{Biped walking model}
-    \label{fig:kinematic_model}
-\end{figure}
 
-\begin{figure}[pt]
-    \centering
-    \includegraphics[width=0.9\linewidth, clip]{./figure/model_footstep.pdf}
-    \caption{Foothold model}
-    \label{fig:foothold_model}
-\end{figure}
 
-歩行動作は，はじめに右脚を軸として$u_A^i$回転し，また両脚間隔$l^i$を$u_{l1}^i$伸ばし，
-さらに脚先を$\theta_{fl}^i$から$u_{fl}^i$だけ回転させて$\theta_{fl}^{i + 1}$として着地する．
-次いで左脚を軸に$u_B^i$回転し,$u_{l2}^i$だけ伸ばして$l^{i + 1}$とし，
-脚先を$\theta_{fr}^i$から$u_{fr}^i$だけ回転させて$\theta_{fr}^{i + 1}$として着地する．
-この一連の動作を$1$ステップとする．
-この$1$ステップの動作は，\cref{eq:state_input_model}に示す$6$状態$6$入力の状態方程式として表される．
-\begin{equation}
-    \label{eq:state_input_model}
-    \begin{aligned}
-        x^{i + 1} & = x^i + l^i \cos \theta^i - \left( l^i + u_{l1}^i \right) \cos \left( u_A^i - \theta^i \right) \\
-        y^{i + 1} & = y^i + l^i \sin \theta^i + \left( l^i + u_{l1}^i \right) \sin \left( u_A^i - \theta^i \right) \\   
-        \theta^{i + 1} & = \theta^i - u_A^i + u_B^i \\  
-        l^{i + 1} & = l^i + u_{l1}^i + u_{l2}^i \\
-        \theta_{fl}^{i + 1} & = \theta_{fl}^i + u_{fl}^i \\
-        \theta_{fr}^{i + 1} & = \theta_{fr}^i + u_{fr}^i
-    \end{aligned}
-\end{equation}
+
+
+
+
 このモデルの状態変数は$\bm{q}^i = ( x^i ,\, y^i ,\, \theta^i ,\, l^i ,\, \theta_{fl}^i ,\, \theta_{fr}^i )$，
 入力変数は$\bm{u}^i = ( u_A^i ,\, u_B^i ,\, u_{l1}^i ,\, u_{l2}^i ,\, u_{fl}^i ,\, u_{fr}^i )$と定義される．
 また，状態方程式\cref{eq:state_input_model}は$\bm{q}^i$，$\bm{u}^i$を用いて\cref{eq:state_input_model_vector}で表される．
@@ -74,12 +37,6 @@ $\Sigma_0$の$y$軸と$\Sigma_{fl}$および$\Sigma_{fr}$の$x$軸とがなす�
 
 \section{脚先の高さの取り扱い}
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.8\linewidth, clip]{./figure/const_z_field_wide.pdf}
-    \caption{Field map model}
-    \label{fig:const_z_field}
-\end{figure}
 
 前節で述べた脚配置モデル\cref{eq:state_input_model}は平面上の遷移についてのものであり，
 $\bm{q}^i$，$\bm{u}^i$は要素に脚先高さに関するものを含まない．
@@ -224,12 +181,7 @@ $\bm{q}^i$，$\bm{u}^i$および$z_{\field}$を用いて表現される関数と
 なお，現在は地形の傾斜に対する脚先の姿勢を考慮していない．
 今後，脚裏形状や制御における許容範囲，地形形状情報から定式化できると考えている．
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.75\linewidth, clip]{./figure/const_angle.pdf}
-    \caption{Swinging foot workspace of the relative angle between the left and the right leg}
-    \label{fig:const_angle}
-\end{figure}
+
 
 \subsection{遊脚の配置制約}
 制約条件を定式化するために，\cref{fig:const_angle}，\cref{fig:const_place}および\cref{fig:const_overlap}中に示している，次の三つのパラメータを定義する．
@@ -243,12 +195,7 @@ $L^i$，$\theta_1^i$，$\theta_2^i$はそれぞれ，
 左脚支持の場合に$L^i = l^{i + 1}$，$\theta_1^i = \theta^{i + 1} - \theta_{fl}^{i + 1}$，$\theta_2^i = \theta_{fl}^{i + 1} - \theta_{fr}^{i + 1}$
 となる．
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.9\linewidth, clip]{./figure/const_place.pdf}
-    \caption{Swinging foot workspace of the placement between the left and the right leg}
-    \label{fig:const_place}
-\end{figure}
+
 
 まず，支持脚に対する遊脚の相対角度$\theta_2^i$に制約を課す．
 これは\cref{eq:const_angle}で定式化される（\cref{fig:const_angle}参照）．
@@ -298,19 +245,7 @@ $Y_{\mathrm{max}}$，$Y_{\mathrm{min}}$は$\Sigma_{sp}$の$y$軸上の両脚間�
     \end{aligned}
 \end{equation}
 %
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\linewidth, clip]{./figure/const_overlap.pdf}
-    \caption{Constraints to prevent the overlap of feet}
-    \label{fig:const_overlap}
-\end{figure}
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.9\linewidth, clip]{./figure/const_sole.pdf}
-    \caption{Foot shape function}
-    \label{fig:const_sole}
-\end{figure}
 %
 提案するモデルにおける脚先形状は実際のロボットの脚先を包含できる最小の長方形としている．
 $O_{yi}$$O_{yo}$はそれぞれ脚先中心から内側および外側の辺までの長さ，$O_{xf}$，$O_{xb}$はそれぞれ脚先中心から前端，後端までの長さである．

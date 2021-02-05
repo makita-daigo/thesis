@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  11 JAN 2021 02:33
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  29 JAN 2021 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1843,76 +1843,36 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
 
 ]
+File: ./figure/chapter1/proposed_method.png Graphic file (type bmp)
+<./figure/chapter1/proposed_method.png>
+
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 52.
+(Font)              using `JY1/hmc/bx/n' instead on input line 62.
 
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <11.88995> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 52.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 62.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 52.
+(Font)              scaled to size 10.99478pt on input line 62.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.88995pt on input line 52.
-
-LaTeX Warning: Reference `fig:proposed_system' on page 1 undefined on input lin
-e 52.
-
+(Font)              scaled to size 11.88995pt on input line 62.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 61.
-
-File: ./figure/concept.pdf Graphic file (type pdf)
-<./figure/concept.pdf>
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 65.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 65.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 69.
-
-
-LaTeX Warning: Citation `yao_2011rs' on page 2 undefined on input line 69.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 78.
-
-
-LaTeX Warning: Citation `isozumi_2004jrsj' on page 2 undefined on input line 78
-.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 79.
-
-
-LaTeX Warning: Citation `mao_official' on page 2 undefined on input line 79.
+(Font)              using `JY1/hmc/bx/n' instead on input line 62.
 
 [2]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 82.
+(Font)              using `JY1/hmc/bx/n' instead on input line 76.
 
-[3] (./chapter01.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[3] (./chapter01.aux) ) 
 Here is how much of TeX's memory you used:
- 28491 strings out of 481140
- 534272 string characters out of 5920653
- 723255 words of memory out of 5000000
- 43986 multiletter control sequences out of 15000+600000
+ 28487 strings out of 481140
+ 534295 string characters out of 5920653
+ 723257 words of memory out of 5000000
+ 43982 multiletter control sequences out of 15000+600000
  585353 words of font info for 121 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,6n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter01.dvi (3 pages, 9544 bytes).
+Output written on chapter01.dvi (3 pages, 9108 bytes).

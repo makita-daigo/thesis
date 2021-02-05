@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  29 JAN 2021 15:51
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  4 FEB 2021 20:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**bibliography.tex
-(./bibliography.tex
+**chapter03.tex
+(./chapter03.tex
 pLaTeX2e <2020-02-02>+3 (based on LaTeX2e <2020-02-02> patch level 5)
 L3 programming layer <2020-03-06>
 (c:/texlive/2020/texmf-dist/tex/latex/bxjscls/bxjsreport.cls
@@ -1596,42 +1596,8 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 10.99478pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 10.99478pt on input line 12.
-(./bibliography.aux
-
-LaTeX Warning: Label `nishikawa_2018' multiply defined.
-
-
-LaTeX Warning: Label `nishikawa_2018_2' multiply defined.
-
-
-LaTeX Warning: Label `Teuliere_2011' multiply defined.
-
-
-LaTeX Warning: Label `bethke_2007' multiply defined.
-
-
-LaTeX Warning: Label `nasser_2013' multiply defined.
-
-
-LaTeX Warning: Label `price_2018' multiply defined.
-
-
-LaTeX Warning: Label `wang_2009' multiply defined.
-
-
-LaTeX Warning: Label `bajracharya_2009' multiply defined.
-
-
-LaTeX Warning: Label `furukawa_2006' multiply defined.
-
-
-LaTeX Warning: Label `furukawa_2012' multiply defined.
-
-
-LaTeX Warning: Label `pack_2009' multiply defined.
-
-)
-\openout1 = `bibliography.aux'.
+(./chapter03.aux)
+\openout1 = `chapter03.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 12.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
@@ -1820,43 +1786,248 @@ LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 8.67961pt on input line 12.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 6.5395pt on input line 12.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 27.35504pt on input line 19.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 27.35504pt on input line 19.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 29.5822pt on input line 19.
 
+第3章
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 22.80319pt on input line 15.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 22.80319pt on input line 15.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 24.65976pt on input line 15.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 19.
+(Font)              using `JY1/hmc/bx/n' instead on input line 15.
 
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <29.5822> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <24.65976> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 27.35504pt on input line 19.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <29.5822> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 19.
+(Font)              scaled to size 22.80319pt on input line 15.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <24.65976> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 27.35504pt on input line 19.
+(Font)              scaled to size 22.80319pt on input line 15.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 29.5822pt on input line 19.
+(Font)              scaled to size 24.65976pt on input line 15.
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <29.5822> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 27.35504pt on input line 15.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <29.5822> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 27.35504pt on input line 15.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 29.5822pt on input line 15.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 15.83249pt on input line 17.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 15.83249pt on input line 17.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 17.12152pt on input line 17.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 17.
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <17.12152> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 15.83249pt on input line 17.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <17.12152> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 15.83249pt on input line 17.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.12152pt on input line 17.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 22.
+
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 29.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 29.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.26794pt on input line 29.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 29.
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <14.26794> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 29.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <14.26794> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 29.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.26794pt on input line 29.
 [1
 
 
 
-] [2] (./bibliography.aux)
+]
+File: ./figure/chapter3/RTK.png Graphic file (type bmp)
+<./figure/chapter3/RTK.png>
 
-LaTeX Warning: There were multiply-defined labels.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 39.
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <11.88995> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 39.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 10.99478pt on input line 39.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 11.88995pt on input line 39.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 39.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 43.
+
+File: ./figure/chapter3/Data_of_GPS_positioning.png Graphic file (type bmp)
+<./figure/chapter3/Data_of_GPS_positioning.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 56.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 56.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 60.
+
+Class bxjsreport Info: Old font command '\it' is used!!
+(bxjsreport)           The first occurrence is on input line 61.
+
+LaTeX Font Warning: Font shape `JT1/hmc/m/it' undefined
+(Font)              using `JT1/hmc/m/n' instead on input line 61.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/m/it' undefined
+(Font)              using `JY1/hmc/m/n' instead on input line 61.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 11.88995pt on input line 61.
+LaTeX Font Info:    Font shape `JT1/hmc/m/it' will be
+(Font)              scaled to size 10.99478pt on input line 61.
+LaTeX Font Info:    Font shape `JY1/hmc/m/it' will be
+(Font)              scaled to size 10.99478pt on input line 61.
+[2]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 90.
+
+[3]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 100.
+
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 103.
+(c:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 11.88995pt on input line 103.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 129.
+
+
+LaTeX Warning: Citation `sugihara_2011tro' on page 4 undefined on input line 12
+9.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 130.
+
+
+LaTeX Warning: Reference `eq:evaluation_function' on page 1 undefined on input 
+line 130.
+
+[4]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 142.
+
+
+LaTeX Warning: Citation `sugimoto_1985' on page 5 undefined on input line 142.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 150.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 160.
+
+
+LaTeX Warning: Reference `fig:algorithm_linesearch' on page 1 undefined on inpu
+t line 160.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 164.
+
+
+LaTeX Font Warning: Font shape `JT1/hgt/m/it' undefined
+(Font)              using `JT1/hgt/m/n' instead on input line 166.
+
+
+LaTeX Font Warning: Font shape `JY1/hgt/m/it' undefined
+(Font)              using `JY1/hgt/m/n' instead on input line 166.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 175.
+
+LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
+(Font)              scaled to size 10.99478pt on input line 178.
+LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
+(Font)              scaled to size 10.99478pt on input line 178.
+[5]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 189.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 205.
+
+[6]
+
+Class bxjsreport Warning: Some old font commands were used in text:
+(bxjsreport)                \it
+(bxjsreport)              You should note, that since 1994 LaTeX2e provides a
+(bxjsreport)              new font selection scheme called NFSS2 with several
+(bxjsreport)              new, combinable font commands. The class provides
+(bxjsreport)              the old font commands only for compatibility.
+
+(./chapter03.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 28450 strings out of 481140
- 533571 string characters out of 5920653
- 722260 words of memory out of 5000000
- 43951 multiletter control sequences out of 15000+600000
- 573428 words of font info for 110 fonts, out of 8000000 for 9000
+ 28574 strings out of 481140
+ 536040 string characters out of 5920653
+ 725250 words of memory out of 5000000
+ 44063 multiletter control sequences out of 15000+600000
+ 594539 words of font info for 129 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,6n,98p,989b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,15n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bibliography.dvi (2 pages, 4868 bytes).
+Output written on chapter03.dvi (6 pages, 21320 bytes).
