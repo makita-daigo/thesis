@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  6 FEB 2021 02:00
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  7 FEB 2021 02:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1894,47 +1894,40 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 77.
 
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 81.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 81.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.26794pt on input line 81.
+File: ./figure/chapter4/GPS.png Graphic file (type bmp)
+<./figure/chapter4/GPS.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 81.
+(Font)              using `JY1/hmc/bx/n' instead on input line 88.
 
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <14.26794> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 81.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 81.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <14.26794> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 81.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 81.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.26794pt on input line 81.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 88.
+
 [3]
+File: ./figure/chapter4/wireless_model.png Graphic file (type bmp)
+<./figure/chapter4/wireless_model.png>
+
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 94.
+(Font)              using `JY1/hmc/bx/n' instead on input line 108.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 97.
+(Font)              using `JY1/hmc/bx/n' instead on input line 108.
 
-[4] [5] (./chapter04.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 112.
 
- ) 
+[4] [5] [6] (./chapter04.aux) ) 
 Here is how much of TeX's memory you used:
- 28510 strings out of 481140
- 534735 string characters out of 5920653
- 723249 words of memory out of 5000000
- 44002 multiletter control sequences out of 15000+600000
- 591369 words of font info for 127 fonts, out of 8000000 for 9000
+ 28513 strings out of 481140
+ 534856 string characters out of 5920653
+ 724249 words of memory out of 5000000
+ 44003 multiletter control sequences out of 15000+600000
+ 585353 words of font info for 121 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,6n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter04.dvi (5 pages, 9836 bytes).
+Output written on chapter04.dvi (6 pages, 11948 bytes).

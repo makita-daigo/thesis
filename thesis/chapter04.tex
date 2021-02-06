@@ -58,7 +58,7 @@ DJI Mobile SDKはAndroid端末，IOS端末のアプリによりフライトコ�
 
 
 
-\section{地上設置LiDARと周辺機器}
+\section{地上設置LiDARとGPSセンサ}
 LiDARはレーザ機器やセンサなどの開発を行う北陽電機株式会社のUTM-30LX-EW，同社のUST-30LXの2台を使用する．
 性能はどちらも検出範囲は270[deg]，角度分解能は0.25[deg]であり，LANケーブルから点群情報を送信する．
 
@@ -78,21 +78,36 @@ LiDARはレーザ機器やセンサなどの開発を行う北陽電機株式会
     \label{fig:lidar2}
 \end{figure}
 
-\subsection{上り階段地形}
+本研究では3章で示した通り，LiDARの位置情報をGPSセンサから取得し，map座標を得る．
+今回の実験ではGPSセンサはublox社のマルチバンドGNSSアンテナのANN-MB-01を使用する．
 
+\begin{figure}[b]
+    \centering
+    \includegraphics[width=0.6\linewidth, clip]{./figure/chapter4/GPS.png}
+    \url{Source：https://www.hokuyo-aut.co.jp/search/single.php?serial=146}
+    \caption{Multi-band GNSS Antenna ANN-MB-01}
+    \label{fig:GPS}
+\end{figure}
 
-両脚間の高低差は$8.0$であることが理想であるが
-異なる値をとっていることがわかる．
-これは，グリッドマップ上で不連続な変化をしている段差付近のセルを踏み，
-地形形状を表現する補間関数が本来の形状にない値を返してしまうためである．
-この問題に対しては，脚先の三次元姿勢をモデルとして考慮し，
-これに対して制限制約をかけることで解決できると考えられる．
-三次元姿勢を考慮することで，不連続な変化のある地形付近の，
-補間関数の傾きが急峻となる領域を回避するような計画となると考えられるためである．
+昨年度の研究ではLiDARの情報を有線LANケーブルでホストPCに送信していたが，
+LiDARを複数台使用する場合，有線LANケーブルで接続するのは非常に不便であり効率が悪い．
+そこで，LiDARの点群情報とGPSセンサからの位置情報を無線でホストPCに送信するシステムを構築する，
+LiDARやGPSセンサから直接データを無線通信することができないので，
+一旦ホストPCとは別のPCに接続してそのPCからホストPCへ無線接続する．
+LiDARと接続するPC（サブPC)にはRaspberry Pi4 modelBを採用した．Raspberry Pi4はUbuntu server OS
+に対応しておりROSをインストールすることができる．
+LiDARをサブPCに有線LANケーブルで接続し，サブPC内で点群情報をROSトピックとして配信する
+ノードを立ち上げることでホストPCとの無線接続を可能とする．
+GPS情報はサブPCにデータを取り込んだ後，サブPCとホストPCでTCP通信を行う．
+ホストPCで，受け取ったGPS情報をトピックに変更するノードを立ち上げることにより，LiDARの位置情報を
+UAV撮影計画のROSプログラム内で使用することができる．
 
-
-\subsection{下り階段地形}
-
+\begin{figure}[b]
+    \centering
+    \includegraphics[width=0.6\linewidth, clip]{./figure/chapter4/wireless_model.png}
+    \caption{Wireless Communication Model for LiDAR and GPS antenna}
+    \label{fig:wireless_model}
+\end{figure}
 
 \section{本章のまとめ}
 本章では，HRP-2に基づいたパラメータを用いて，
