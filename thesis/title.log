@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  9 FEB 2021 22:39
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  9 FEB 2021 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**chapter04.tex
-(./chapter04.tex
+**title.tex
+(./title.tex
 pLaTeX2e <2020-02-02>+3 (based on LaTeX2e <2020-02-02> patch level 5)
 L3 programming layer <2020-03-06>
 (c:/texlive/2020/texmf-dist/tex/latex/bxjscls/bxjsreport.cls
@@ -1585,154 +1585,75 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language21) on input line 108.
 )))))
-Package xr Info: IMPORTING LABELS FROM thesis.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM abstract.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter01.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter02.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter03.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter04.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter05.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter06.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM acknowledgment.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM achievment.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
-
-
-LaTeX Warning: Label `nishikawa_2018' multiply defined.
-
-
-LaTeX Warning: Label `nishikawa_2018_2' multiply defined.
-
-
-LaTeX Warning: Label `Teuliere_2011' multiply defined.
-
-
-LaTeX Warning: Label `bethke_2007' multiply defined.
-
-
-LaTeX Warning: Label `nasser_2013' multiply defined.
-
-
-LaTeX Warning: Label `price_2018' multiply defined.
-
-
-LaTeX Warning: Label `wang_2009' multiply defined.
-
-
-LaTeX Warning: Label `bajracharya_2009' multiply defined.
-
-
-LaTeX Warning: Label `furukawa_2006' multiply defined.
-
-
-LaTeX Warning: Label `furukawa_2012' multiply defined.
-
-
-LaTeX Warning: Label `pack_2009' multiply defined.
-
-
-LaTeX Warning: Label `sasaki_2019' multiply defined.
-
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 12.
+(Font)              scaled to size 10.99478pt on input line 9.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 12.
-(./chapter04.aux
+(Font)              scaled to size 10.99478pt on input line 9.
 
-LaTeX Warning: Label `fig:mavic_mini' multiply defined.
+No file title.aux.
+\openout1 = `title.aux'.
 
-
-LaTeX Warning: Label `fig:mavic_mini@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:lidar1' multiply defined.
-
-
-LaTeX Warning: Label `fig:lidar1@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:lidar2' multiply defined.
-
-
-LaTeX Warning: Label `fig:lidar2@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:GPS' multiply defined.
-
-
-LaTeX Warning: Label `fig:GPS@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:wireless_model' multiply defined.
-
-
-LaTeX Warning: Label `fig:wireless_model@cref' multiply defined.
-
-)
-\openout1 = `chapter04.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 12.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 9.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 12.
- (c:/texlive/2020/texmf-dist/tex/latex/newtx/omlntxmi.fd
+ 9.
+(c:/texlive/2020/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 9.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-12.
+9.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 12.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
-2.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 9.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 9
+.
 
 (c:/texlive/2020/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 12.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
-2.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 9.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 9
+.
 
 (c:/texlive/2020/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 9.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 12.
+ 9.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 9.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 12.
+e 9.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    ... okay on input line 9.
 
 (I search kanjifont definition file: . . )
 *geometry* detected driver: dvipdfm
@@ -1787,226 +1708,143 @@ Dictionary: translator-basic-dictionary, Language: English
 (c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-LaTeX Font Info:    Calculating math sizes for size <11.88995> on input line 12
-.
+LaTeX Font Info:    Calculating math sizes for size <11.88995> on input line 9.
+
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 12.
+e 9.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.88995pt on input line 12.
+(Font)              scaled to size 11.88995pt on input line 9.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.67961pt on input line 12.
+(Font)              scaled to size 8.67961pt on input line 9.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.5395pt on input line 12.
+(Font)              scaled to size 6.5395pt on input line 9.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 8.02614pt on input line 12.
+(Font)              scaled to size 8.02614pt on input line 9.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 6.04716pt on input line 12.
+(Font)              scaled to size 6.04716pt on input line 9.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <11.88995> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 12.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 12.
+(Font)              scaled to size 10.99478pt on input line 9.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <8.67961> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 12.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 8.02614pt on input line 12.
+(Font)              scaled to size 8.02614pt on input line 9.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <6.5395> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 12.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 6.04716pt on input line 12.
+(Font)              scaled to size 6.04716pt on input line 9.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-12.
+9.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-12.
+9.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-12.
+9.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 12
-.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 9.
+
 
 (c:/texlive/2020/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 10.70088pt on input line 12.
+(Font)              scaled to size 10.70088pt on input line 9.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.81158pt on input line 12.
+(Font)              scaled to size 7.81158pt on input line 9.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.88551pt on input line 12.
+(Font)              scaled to size 5.88551pt on input line 9.
 LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
-12.
+9.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 11.88995pt on input line 12.
+(Font)              scaled to size 11.88995pt on input line 9.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 8.67961pt on input line 12.
+(Font)              scaled to size 8.67961pt on input line 9.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 6.5395pt on input line 12.
-
-第4章
+(Font)              scaled to size 6.5395pt on input line 9.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 22.80319pt on input line 15.
+(Font)              scaled to size 27.61192pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 22.80319pt on input line 15.
+(Font)              scaled to size 27.61192pt on input line 12.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 24.65976pt on input line 15.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 15.
-
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <24.65976> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 22.80319pt on input line 15.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <24.65976> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 22.80319pt on input line 15.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 24.65976pt on input line 15.
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <29.5822> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 27.35504pt on input line 15.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <29.5822> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 27.35504pt on input line 15.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 29.5822pt on input line 15.
+(Font)              scaled to size 29.86pt on input line 12.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 17.
+(Font)              scaled to size 23.00687pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 17.
+(Font)              scaled to size 23.00687pt on input line 12.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.12152pt on input line 17.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 17.
-
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <17.12152> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 17.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <17.12152> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 17.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.12152pt on input line 17.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 22.
-
-[1
-
-
+(Font)              scaled to size 24.88pt on input line 12.
+ [1
 
 ]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: dvipdfm
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(14.22636pt, 569.05515pt, 14.22636pt)
+* v-part:(T,H,B)=(11.38109pt, 822.28467pt, 11.38109pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=569.05515pt
+* \textheight=822.28467pt
+* \oddsidemargin=-58.04362pt
+* \evensidemargin=-58.04362pt
+* \topmargin=-101.23677pt
+* \headheight=23.7799pt
+* \headsep=16.56796pt
+* \topskip=11.88995pt
+* \footskip=28.45792pt
+* \marginparwidth=10.99478pt
+* \marginparsep=21.98956pt
+* \columnsep=21.98956pt
+* \skip\footins=19.02393pt plus 5.94498pt minus 2.37799pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 40.
+\cntspine=\count345
+\cntmax=\count346
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 13.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 13.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 13.
+ [1
 
-File: ./figure/chapter4/mavic_mini.jpg Graphic file (type bmp)
-<./figure/chapter4/mavic_mini.jpg>
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 47.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 48.
-
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <11.88995> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 48.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.88995pt on input line 48.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 48.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 61.
-
-[2]
-File: ./figure/chapter4/lidar1.jpg Graphic file (type bmp)
-<./figure/chapter4/lidar1.jpg>
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 69.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 69.
-
-File: ./figure/chapter4/lidar2.png Graphic file (type bmp)
-<./figure/chapter4/lidar2.png>
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 77.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 77.
-
-[3]
-File: ./figure/chapter4/GPS.png Graphic file (type bmp)
-<./figure/chapter4/GPS.png>
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 88.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 88.
-
-File: ./figure/chapter4/wireless_model.png Graphic file (type bmp)
-<./figure/chapter4/wireless_model.png>
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 108.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 108.
-
-[4]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 112.
-
-[5] [6] (./chapter04.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] (./title.aux) ) 
 Here is how much of TeX's memory you used:
- 28591 strings out of 481140
- 536510 string characters out of 5920653
- 723545 words of memory out of 5000000
- 44074 multiletter control sequences out of 15000+600000
- 585353 words of font info for 121 fonts, out of 8000000 for 9000
+ 28487 strings out of 481140
+ 534549 string characters out of 5920653
+ 727247 words of memory out of 5000000
+ 43993 multiletter control sequences out of 15000+600000
+ 576445 words of font info for 113 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,6n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,14n,98p,982b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter04.dvi (6 pages, 11972 bytes).
+Output written on title.dvi (2 pages, 9632 bytes).

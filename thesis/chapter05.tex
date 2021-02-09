@@ -118,29 +118,7 @@ NAOの歩行制御については，標準の制御用APIとしては二次元�
 パラメータは\cref{tab:sim_nao_param_model}，
 \cref{tab:sim_nao_param_algorithm}および\cref{tab:sim_nao_param_map}のとおりである．
 
-\begin{figure}[pt]%
-    \centering
-    \begin{subfigure}[c]{0.7\linewidth}
-        \centering%
-        \includegraphics[width=\linewidth, clip]{./figure/sim_nao_slope_45_xyz.pdf}%
-        \subcaption{x-y-z view}
-        \label{fig:sim_nao_slope_45_xyz}%
-    \end{subfigure}\\ %
-    \begin{subfigure}[c]{0.6\linewidth}
-        \centering%
-        \includegraphics[width=\linewidth, clip]{./figure/sim_nao_slope_45_xy.pdf}%
-        \subcaption{x-y view}
-        \label{fig:sim_nao_slope_45_xy}%
-    \end{subfigure}\\ %
-    \begin{subfigure}[c]{0.5\linewidth}
-        \centering%
-        \includegraphics[width=\linewidth, clip]{./figure/sim_nao_slope_45_zdiff.pdf}%
-        \subcaption{vertical interval}
-        \label{fig:sim_nao_slope_45_zdiff}%
-    \end{subfigure}%
-    \caption{Footstep (slope)}%
-    \label{fig:sim_nao_slope}%
-\end{figure}
+
 
 \section{スロープ型の地形でのシミュレーション}
 \label{sec:sim_nao_slope}
@@ -194,24 +172,7 @@ $4.5\degree$の場合，平面上での歩幅に対して斜面上では歩幅�
 初期状態$\bm{q}^0 = ( 0.0 ,\, 0.0 ,\, 0.0 ,\, 10.0 ,\, 0.0 ,\, 0.0 )^T\,(\cm ,\, \degrm)$から
 目標状態$\bm{q}_{\goal} = ( 50.0 ,\, 150.0 ,\, 0.0 ,\, 10.0 ,\, 0.0 ,\, 0.0 )^T$へと向かう計画を行う．
 
-\begin{figure}[t]%
-    \centering
-    \includegraphics[width=0.8\linewidth, clip]{./figure/sim_nao_slope_45_kinect.pdf}%
-    \caption{Footstep (slope mapped by using Kinect v2)}%
-    \label{fig:sim_nao_slope_kinect}%
-\end{figure}
-\begin{table}[t]%
-    \centering%
-    \caption{Result of planning (slope using map data from Kinect v2)}%
-    \label{tab:sim_nao_slope_kinect}%
-    \begin{tabular}{ccccc}%
-        \toprule%
-        $\theta_{\slope}\,(\degrm)$ &   $k_{\init}$ &   $k$     &   iteration   &   time$(\ms)$ \\%
-        \midrule%
-        $4.5$                       &   $11$        &   $13$    &   $93$        &   $82.30$ \\%
-        \bottomrule%
-    \end{tabular}
-\end{table}
+
 
 \Cref{fig:sim_nao_slope_kinect}および\cref{tab:sim_nao_slope_kinect}に結果を示す．
 ワンスキャンでの計測であること，およびノイズを考慮した地形情報構築が
@@ -241,12 +202,6 @@ NAOへの歩行指令では，まず脚配置計画を行い，得られた脚�
 \cref{sec:sim_nao_slope}におけるシミュレーションの傾斜角$4.5\degree$の場合の計画をNAOに適用した．
 \Cref{fig:sim_nao_slope_45_exp}にその結果を示す．
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=1.0\linewidth, clip]{./figure/fig10.pdf}
-    \caption{Experiment (slope)}
-    \label{fig:sim_nao_slope_45_exp}
-\end{figure}
 
 平面上の歩行を仮定した歩行制御を用いて斜面を歩かせているため，
 歩行が不安定になり姿勢が計画からずれたものとなった．
@@ -308,66 +263,13 @@ NAOへの歩行指令では，まず脚配置計画を行い，得られた脚�
 % 提案手法のほうが誤差を小さく抑えられていることがわかる．
 
 
-\begin{figure}[t]%
-    \centering%
-    \begin{minipage}{0.49\linewidth}%
-        \centering
-        \begin{subfigure}[c]{\linewidth}
-            \centering%
-            \includegraphics[width=\linewidth, clip]{./figure/fig11a.pdf}%
-            \subcaption{left,$x$-axis}
-            \label{fig:zmp_lx}%
-        \end{subfigure}\\ %
-        \begin{subfigure}[c]{\linewidth}
-            \centering%
-            \includegraphics[width=\linewidth, clip]{./figure/fig11b.pdf}%
-            \subcaption{left,$y$-axis}
-            \label{fig:zmp_ly}%
-        \end{subfigure}%
-    \end{minipage}%
-    \begin{minipage}{0.49\linewidth}%
-        \centering
-        \begin{subfigure}[c]{\linewidth}
-            \centering%
-            \includegraphics[width=\linewidth, clip]{./figure/fig11c.pdf}%
-            \subcaption{right,$x$-axis}
-            \label{fig:zmp_rx}%
-        \end{subfigure}\\ %
-        \begin{subfigure}[c]{\linewidth}
-            \centering%
-            \includegraphics[width=\linewidth, clip]{./figure/fig11d.pdf}%
-            \subcaption{right,$y$-axis}
-            \label{fig:zmp_ry}%
-        \end{subfigure}%
-    \end{minipage}%
-    \caption{ZMP values in the single support phase}%
-    \label{fig:zmp}%
-\end{figure}
+
 
 次に，片脚支持期のZMP値を用いた歩行の安定性の評価について述べる．
 NAOの左右の足裏それぞれ四ヶ所（$(7.025, 2.310)$，$(7.025, -2.990)$，$(-3.025, 1.910)$，$(-2.965, -2.990)$($\cm$)）に
 配置されている圧力センサの値を$25\,\ms$ごとに計測し，
 脚先座標系$\Sigma_{fl}$および$\Sigma_{fr}$基準の片脚支持期のZMP応答値を算出した．
-\Cref{fig:zmp}に提案手法および従来手法それぞれにおける左右の$x$，$y$軸方向のZMP応答値を示す．
-% \begin{figure*}[t]%
-%     \centering%
-%     \subfigure[left,$x$-axis]{%
-%         \includegraphics[width=0.25\linewidth, clip]{./figure/fig11a.pdf}%
-%         \label{fig:zmp_lx}}%
-%     \subfigure[left,$y$-axis]{%
-%         \includegraphics[width=0.25\linewidth, clip]{./figure/fig11b.pdf}%
-%         \label{fig:zmp_ly}}%
-%     \subfigure[right,$x$-axis]{%
-%         \includegraphics[width=0.25\linewidth, clip]{./figure/fig11c.pdf}%
-%         \label{fig:zmp_rx}}%
-%     \subfigure[right,$y$-axis]{%
-%         \includegraphics[width=0.25\linewidth, clip]{./figure/fig11d.pdf}%
-%         \label{fig:zmp_ry}}%
-%     \vspace*{-5pt}%
-%     \caption{ZMP values in the single support phase}%
-%     \label{fig:zmp}%
-%     \vspace*{-10pt}%
-% \end{figure*}
+
 提案手法と従来手法とで$12\,\mathrm{s}$以降の左脚のZMP応答を比較する．
 $x$軸方向\cref{fig:zmp_lx}及び$y$軸方向\cref{fig:zmp_ly}いずれについても，
 従来手法においては，本来$12\,\mathrm{s}$以前の応答と同様にすぐに$0$に戻るはずであるが，
@@ -384,23 +286,7 @@ $0$から変化したあとに戻るのが明らかに遅く，歩行が不安�
 ZMP評価と同様に三回目の実験データを用い，左右それぞれについて圧力センサの示す値の合計値を比較した．
 一つの圧力センサで最大$25 \,\mathrm{N}$まで計測でき，片脚全体の床反力は最大$100 \,\mathrm{N}$である．
 \Cref{fig:force}に提案手法および従来手法それぞれにおける左右の足裏の床反力の遷移を示す．
-\begin{figure}[t]
-    \centering
-    \begin{subfigure}[c]{0.50\linewidth}
-        \centering%
-        \includegraphics[width=\linewidth, clip]{./figure/fig12a.pdf}%
-        \subcaption{left}
-        \label{fig:fl_total}%
-    \end{subfigure}%
-    \begin{subfigure}[c]{0.5\linewidth}
-        \centering%
-        \includegraphics[width=\linewidth, clip]{./figure/fig12b.pdf}%
-        \subcaption{right}
-        \label{fig:fr_total}%
-    \end{subfigure}%
-    \caption{Ground reaction force}%
-    \label{fig:force}%
-\end{figure}
+
 提案手法を用いない場合の結果において，左脚の床反力値が$12\,\mathrm{s}$以降に高い値をとっている．
 これはバランスを崩したことによって左脚が強く着地してしまったことを表しており，
 歩行が不安定になっていたと考えられる．

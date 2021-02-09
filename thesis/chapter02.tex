@@ -19,45 +19,75 @@
 ついて述べる．\cite{sasaki_2019}
 またその研究における問題点，課題点などについて述べる．
 
-\section{先行研究における実装}
+\section{撮影ベクトルと移動カメラの撮影領域}
+\subsection{撮影ベクトル}
+カメラで撮影対象を撮影するとき，撮影対象の表面に対して垂直な方向から撮影することが望ましい．
+撮影対象の表面に垂直な方向を撮影ベクトルと定義する．
+また定義した撮影ベクトルに対して，一定の解像度以上で撮影できる領域を撮影領域と定義する．
+要求解像度とUAVに搭載されている移動カメラの性能から撮影領域は計算できる．
 
+撮影領域の導出において，三次元空間および二次元空間はグリッドによって分割され，
+それぞれボクセル，セルとして管理される．\cref{fig:voxel}は撮影対象人物とその人物に対するボクセルと撮影ベクトルである．
+この研究では\cref{fig:voxel}で中心のセルから撮影ベクトルが表されているように，
+簡単のため，対象人物をは1つのボクセル内で存在するものとし，
+その1つのボクセルから垂直な方向に撮影ベクトルを定義する．
 
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth, clip]{./figure/chapter2/voxel.png}
+    \caption{Model of Shooting Vector}
+    \label{fig:voxel}
+\end{figure}
 
+\subsection{要求解像度}
+この研究では，1[mm]を表すために必要な画素数[pixel/mm]で解像度を表現する．
+あるカメラが撮影対象を撮影しているとき，カメラの水平(垂直)解像度を$R_{camera}$，
+カメラの水平(垂直)画角を$\alpha$[rad]，撮影対象を写している水平(垂直)画角を$\beta$とし，
+セルの1辺の長さが$S$[mm]であるときの，撮影対象の解像度$R$[pixel/mm]は\cref{eq:pixel_mm}
+で求められる．
 
-
-
-
-このモデルの状態変数は$\bm{q}^i = ( x^i ,\, y^i ,\, \theta^i ,\, l^i ,\, \theta_{fl}^i ,\, \theta_{fr}^i )$，
-入力変数は$\bm{u}^i = ( u_A^i ,\, u_B^i ,\, u_{l1}^i ,\, u_{l2}^i ,\, u_{fl}^i ,\, u_{fr}^i )$と定義される．
-また，状態方程式\cref{eq:state_input_model}は$\bm{q}^i$，$\bm{u}^i$を用いて\cref{eq:state_input_model_vector}で表される．
-\begin{equation} \label{eq:state_input_model_vector}
-    \bm{q}^{i + 1} = \bm{G} \left( \bm{q}^i ,\, \bm{u}^i \right)
+\begin{equation}
+    \label{eq:pixel_mm}
+    \begin{aligned}
+        \frac{\beta R_{camera}}{\alpha S}\mathrm{[pixel/mm]}
+    \end{aligned}
 \end{equation}
 
+任意の要求解像度$n$[pixel/mm]が与えられたとき，要求解像度の満たすための条件は
+\cref{eq:pixel_mm}より$n \le R$で表される．
+この式より，要求解像度を満たすためには画角$\beta$に対して\cref{eq:angle_rule}を満足する必要がある．
+
+\begin{equation}
+\beta \le \frac{\alpha n S}{R_{camera}}\mathrm{[rad]}
+\label{eq:angle_rule}
+\end{equation}
+
+以上より，ある撮影ベクトルについて要求解像度を満たす撮影領域は，
+条件\cref{eq:angle_rule}を満たす水平画角$\beta_h$，垂直画角$\beta_v$の点の軌跡である．
+
+\subsection{撮影領域の導出}
+撮影領域の導出を平面について順番に導出していく．まず始めにx，y平面について考える．
+撮影ベクトルが設定されたセルの中心を原点とするx，y座標系を考える．カメラの座標を($x$,$y$)[mm]，撮影ベクトルとx軸のなす角を$\gamma$，セルの1辺の長さを2$\lambda$[mm]とすると水平画角$\beta_h$はのようになる．
+
+\begin{equation}
+\beta_{h}=\left|\arctan \left(\frac{y+\lambda \cos \gamma}{x-\lambda \sin \gamma}\right)-
+               \arctan \left(\frac{y-\lambda \cos \gamma}{x+\lambda \sin \gamma}\right)\right|
+\label{eq:beta_h_1}
+\end{equation}
+
+簡単のために$\gamma=0$のときを考えると，xy平面における水平画角$\beta_h$で捉えることのできる点の軌跡は
+\cref{eq:beta_h_2}のようになる．
+
+\begin{equation}
+    \begin{aligned}
+    \left(  x - \frac{\lambda}{\tan \beta_{h}}  \right) ^2 + y^2 & = \left( \frac{\lambda}{\tan \beta_{h}} \right) ^2 + \lambda^2
+    \end{aligned}
+\label{eq:beta_h_2}
+\end{equation}
 
 \section{脚先の高さの取り扱い}
 
 
-前節で述べた脚配置モデル\cref{eq:state_input_model}は平面上の遷移についてのものであり，
-$\bm{q}^i$，$\bm{u}^i$は要素に脚先高さに関するものを含まない．
-これは，提案する運動学モデルが，脚の垂直方向の移動を平面上の動作と独立して行えるという
-仮定のもとで構築されていることに由来する．
-地面への接地を考えると，脚先の$z$座標は$xy$平面上の位置における地形形状に合わせることになる．
-左右の脚先の$xy$平面上の座標それぞれを$( x_l^i ,\, y_l^i ) = ( x^i ,\, y^i )$，
-$( x_r^i ,\, y_r^i ) = ( x^i + l^i \cos \theta^i ,\, y^i + l^i \sin \theta^i )$とすれば，
-$z_l^i$，$z_r^i$は\cref{fig:const_z_field}に示すように\cref{eq:z_from_xy}で表すことができる．
-\begin{equation}
-    \label{eq:z_from_xy}
-    \begin{aligned}
-        z_l^i & = z_{\field} \left( x_l^i ,\, y_l^i \right) \\
-        z_r^i & = z_{\field} \left( x_r^i ,\, y_r^i \right)
-    \end{aligned}
-\end{equation}
-地形形状$z_{\field} ( x ,\, y )$が既知であれば，$z_l^i$，$z_r^i$は
-\cref{eq:z_from_xy}を用いて$\bm{q}^i$で表現できる．
-これを用いて地形との接触制約を課すことにより，平面上の脚配置モデルでありながら
-地形を考慮した三次元の脚配置計画を行うことが可能となる．
-具体的な制約式については\cref{seq:constraints}で示す．
 
 
 
