@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  9 FEB 2021 23:59
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  14 FEB 2021 04:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1670,95 +1670,52 @@ LaTeX Warning: Label `eq:beta_h_2' multiply defined.
 LaTeX Warning: Label `eq:beta_h_2@cref' multiply defined.
 
 
-LaTeX Warning: Label `eq:planning_problem_origin' multiply defined.
+LaTeX Warning: Label `eq:beta_h_3' multiply defined.
 
 
-LaTeX Warning: Label `eq:planning_problem_origin@cref' multiply defined.
+LaTeX Warning: Label `eq:beta_h_3@cref' multiply defined.
 
 
-LaTeX Warning: Label `eq:nonlinear_minimize_problem' multiply defined.
+LaTeX Warning: Label `eq:beta_v_1' multiply defined.
 
 
-LaTeX Warning: Label `eq:nonlinear_minimize_problem@cref' multiply defined.
+LaTeX Warning: Label `eq:beta_v_1@cref' multiply defined.
 
 
-LaTeX Warning: Label `eq:quadratic_programming_problem_base' multiply defined.
+LaTeX Warning: Label `eq:beta_v_2' multiply defined.
 
 
-LaTeX Warning: Label `eq:quadratic_programming_problem_base@cref' multiply defi
-ned.
+LaTeX Warning: Label `eq:beta_v_2@cref' multiply defined.
 
 
-LaTeX Warning: Label `eq:evaluation_function' multiply defined.
+LaTeX Warning: Label `eq:beta_v_3' multiply defined.
 
 
-LaTeX Warning: Label `eq:evaluation_function@cref' multiply defined.
+LaTeX Warning: Label `eq:beta_v_3@cref' multiply defined.
 
 
-LaTeX Warning: Label `eq:q_next' multiply defined.
+LaTeX Warning: Label `eq:shooting_area' multiply defined.
 
 
-LaTeX Warning: Label `eq:q_next@cref' multiply defined.
+LaTeX Warning: Label `eq:shooting_area@cref' multiply defined.
 
 
-LaTeX Warning: Label `eq:quadratic_programing_planning' multiply defined.
+LaTeX Warning: Label `eq:shooting_area_2d' multiply defined.
 
 
-LaTeX Warning: Label `eq:quadratic_programing_planning@cref' multiply defined.
+LaTeX Warning: Label `eq:shooting_area_2d@cref' multiply defined.
 
 
-LaTeX Warning: Label `eq:z_state_input_model' multiply defined.
+LaTeX Warning: Label `eq:shooting_area_gimbal' multiply defined.
 
 
-LaTeX Warning: Label `eq:z_state_input_model@cref' multiply defined.
+LaTeX Warning: Label `eq:shooting_area_gimbal@cref' multiply defined.
 
 
-LaTeX Warning: Label `seq:constraints' multiply defined.
+LaTeX Warning: Label `eq:camera_max_distance' multiply defined.
 
 
-LaTeX Warning: Label `seq:constraints@cref' multiply defined.
-
-
-LaTeX Warning: Label `subseq:field_contact_constraint' multiply defined.
-
-
-LaTeX Warning: Label `subseq:field_contact_constraint@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:z_field_const' multiply defined.
-
-
-LaTeX Warning: Label `eq:z_field_const@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:const_angle' multiply defined.
-
-
-LaTeX Warning: Label `eq:const_angle@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:const_place' multiply defined.
-
-
-LaTeX Warning: Label `eq:const_place@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:sole_corner' multiply defined.
-
-
-LaTeX Warning: Label `eq:sole_corner@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:foot_shape' multiply defined.
-
-
-LaTeX Warning: Label `eq:foot_shape@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:overlap_const' multiply defined.
-
-
-LaTeX Warning: Label `eq:overlap_const@cref' multiply defined.
+LaTeX Warning: Label `eq:camera_max_distance@cref' multiply defined.
 
 )
 \openout1 = `chapter02.aux'.
@@ -2062,167 +2019,56 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 88.
 
 
+LaTeX Warning: Reference `eq:beta_3' on page 1 undefined on input line 88.
+
+[3]
+
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 94.
+(Font)              using `JY1/hmc/bx/n' instead on input line 135.
 
+[4]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 95.
-
-
-LaTeX Warning: Reference `eq:state_input_model' on page 1 undefined on input li
-ne 95.
-
-[3] [4]
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 8.02614pt on input line 131.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.67961pt on input line 131.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 6.04716pt on input line 131.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.5395pt on input line 131.
-
-Overfull \hbox (1.66045pt too wide) in paragraph at lines 131--132
-[]\JY1/hmc/m/n/11.88995 なお ， 以降では入力列更新前と後の変数をそれぞれ $\LMS/
-ntxsy/m/n/11.88995 �[]�[]$\JY1/hmc/m/n/11.88995 ， $\LMS/ntxsy/m/n/11.88995 �[]
-�[]$
- []
+(Font)              using `JY1/hmc/bx/n' instead on input line 155.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 134.
+(Font)              using `JY1/hmc/bx/n' instead on input line 161.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 141.
-
-
-LaTeX Warning: Citation `yao_2010iros' on page 5 undefined on input line 141.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 141.
-
-
-LaTeX Warning: Citation `yao_2011rs' on page 5 undefined on input line 141.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 164.
-
-
-LaTeX Warning: Reference `sec:solve_qpp' on page 1 undefined on input line 164.
-
+(Font)              using `JY1/hmc/bx/n' instead on input line 162.
 
 [5]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 177.
-
-
-LaTeX Warning: Reference `eq:z_from_xy' on page 1 undefined on input line 177.
+(Font)              using `JY1/hmc/bx/n' instead on input line 180.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 184.
+(Font)              using `JY1/hmc/bx/n' instead on input line 190.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 189.
+(Font)              using `JY1/hmc/bx/n' instead on input line 193.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 194.
-
-
-LaTeX Warning: Reference `eq:z_from_xy' on page 1 undefined on input line 194.
-
-[6]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 216.
+(Font)              using `JY1/hmc/bx/n' instead on input line 198.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 217.
-
-
-LaTeX Warning: Reference `fig:const_angle' on page 1 undefined on input line 21
-7.
+(Font)              using `JY1/hmc/bx/n' instead on input line 201.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 217.
-
-
-LaTeX Warning: Reference `fig:const_place' on page 1 undefined on input line 21
-7.
+(Font)              using `JY1/hmc/bx/n' instead on input line 204.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 217.
+(Font)              using `JY1/hmc/bx/n' instead on input line 207.
 
-
-LaTeX Warning: Reference `fig:const_overlap' on page 1 undefined on input line 
-217.
-
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 219.
-(c:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
-File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
-)
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.88995pt on input line 219.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 231.
-
-
-LaTeX Warning: Reference `fig:const_angle' on page 1 undefined on input line 23
-1.
-
-[7]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 239.
-
-
-LaTeX Warning: Reference `fig:const_place' on page 1 undefined on input line 23
-9.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 260.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 262.
-
-
-LaTeX Warning: Reference `fig:const_overlap' on page 1 undefined on input line 
-262.
-
-[8]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 283.
-
-
-LaTeX Warning: Reference `fig:const_sole' on page 1 undefined on input line 283
-.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 299.
-
-[9]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 308.
-
-[10] (./chapter02.aux)
+[6] [7] (./chapter02.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2231,12 +2077,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28633 strings out of 481140
- 537142 string characters out of 5920653
- 727251 words of memory out of 5000000
- 44117 multiletter control sequences out of 15000+600000
- 597565 words of font info for 132 fonts, out of 8000000 for 9000
+ 28575 strings out of 481140
+ 535883 string characters out of 5920653
+ 724256 words of memory out of 5000000
+ 44063 multiletter control sequences out of 15000+600000
+ 591369 words of font info for 127 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,16n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,9n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter02.dvi (10 pages, 32092 bytes).
+Output written on chapter02.dvi (7 pages, 18968 bytes).
