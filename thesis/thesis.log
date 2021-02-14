@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  9 FEB 2021 22:03
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  15 FEB 2021 01:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1594,7 +1594,8 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 10.99478pt on input line 10.
 
 (./thesis.aux (./abstract.aux) (./chapter01.aux) (./chapter02.aux)
-(./chapter03.aux) (./chapter04.aux) (./chapter05.aux))
+(./chapter03.aux) (./chapter04.aux) (./chapter05.aux) (./chapter06.aux)
+(./acknowledgment.aux) (./bibliography.aux) (./achievment.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 10.
@@ -1855,14 +1856,44 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 25.
 
-(./thesis.toc)
-\tf@toc=\write4
-\openout4 = `thesis.toc'.
+(./thesis.toc
 
- [3
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 2.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 5.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 16.
+
+[3
 
 
 ]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 28.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 34.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 42.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 45.
+
+[4])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [5]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 28.
@@ -1871,7 +1902,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [4
+ [6
 
 ]
 
@@ -1882,7 +1913,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [5
+ [7
 
 ]
 \openout2 = `chapter01.aux'.
@@ -1929,92 +1960,14 @@ LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 15.83249pt on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 17.12152pt on input line 17.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 21.
-
-
-LaTeX Warning: Citation `nishikawa_2018' on page 1 undefined on input line 21.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 21.
-
-
-LaTeX Warning: Citation `nishikawa_2018_2' on page 1 undefined on input line 21
-.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 30.
-
-
-LaTeX Warning: Citation `Teuliere_2011' on page 1 undefined on input line 30.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 33.
-
-
-LaTeX Warning: Citation `bethke_2007' on page 1 undefined on input line 33.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 35.
-
-
-LaTeX Warning: Citation `nasser_2013' on page 1 undefined on input line 35.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 37.
-
-
-LaTeX Warning: Citation `price_2018' on page 1 undefined on input line 37.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 39.
-
-
-LaTeX Warning: Citation `wang_2009' on page 1 undefined on input line 39.
-
 [1
 
 
 
 ]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 43.
-
-
-LaTeX Warning: Citation `bajracharya_2009' on page 2 undefined on input line 43
-.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 46.
-
-
-LaTeX Warning: Citation `furukawa_2006' on page 2 undefined on input line 46.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 46.
-
-
-LaTeX Warning: Citation `furukawa_2012' on page 2 undefined on input line 46.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 49.
-
-
-LaTeX Warning: Citation `pack_2009' on page 2 undefined on input line 49.
-
 File: ./figure/chapter1/proposed_method.png Graphic file (type bmp)
 <./figure/chapter1/proposed_method.png>
+
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 62.
@@ -2042,32 +1995,35 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 19.
-
-
-LaTeX Warning: Citation `sasaki_2019' on page 4 undefined on input line 19.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 22.
 
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 23.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 23.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.26794pt on input line 23.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 32.
+(Font)              using `JY1/hmc/bx/n' instead on input line 23.
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <14.26794> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 23.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 23.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <14.26794> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 23.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 23.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.26794pt on input line 23.
+[4
 
 
-LaTeX Warning: Reference `eq:state_input_model' on page 1 undefined on input li
-ne 32.
 
-
-Overfull \hbox (46.47607pt too wide) in paragraph at lines 30--33
-[]\JY1/hmc/m/n/11.88995 このモデルの状態変数は $\OML/cmm/b/it/11.88995 q[] \U/n
-txmia/m/it/11.88995 = \LMS/ntxsy/m/n/11.88995 �\OML/ntxmi/m/it/11.88995 x[];  y
-[];  ^^R[];  l[];  ^^R[];  ^^R[]\LMS/ntxsy/m/n/11.88995 �$\JY1/hmc/m/n/11.88995
- ， 入力変数は $\OML/cmm/b/it/11.88995 u[] \U/ntxmia/m/it/11.88995 = \LMS/ntxsy
-/m/n/11.88995 �\OML/ntxmi/m/it/11.88995 u[];  u[];  u[];  u[];  u[];  u[]\LMS/n
-txsy/m/n/11.88995 �$
- []
+]
+File: ./figure/chapter2/voxel.png Graphic file (type bmp)
+<./figure/chapter2/voxel.png>
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -2075,179 +2031,78 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 41.
-
-
-LaTeX Warning: Reference `eq:state_input_model' on page 1 undefined on input li
-ne 41.
+(Font)              using `JY1/hmc/bx/n' instead on input line 38.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 48.
-
-
-LaTeX Warning: Reference `fig:const_z_field' on page 1 undefined on input line 
-48.
-
-[4
-
-
-
-]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 64.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 65.
-
-
-LaTeX Warning: Reference `eq:state_input_model' on page 1 undefined on input li
-ne 65.
+(Font)              using `JY1/hmc/bx/n' instead on input line 42.
 
 [5]
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 8.02614pt on input line 101.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.67961pt on input line 101.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 6.04716pt on input line 101.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.5395pt on input line 101.
 
-Overfull \hbox (1.66045pt too wide) in paragraph at lines 101--102
-[]\JY1/hmc/m/n/11.88995 なお ， 以降では入力列更新前と後の変数をそれぞれ $\LMS/
-ntxsy/m/n/11.88995 �[]�[]$\JY1/hmc/m/n/11.88995 ， $\LMS/ntxsy/m/n/11.88995 �[]
-�[]$
- []
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 68.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 104.
+(Font)              using `JY1/hmc/bx/n' instead on input line 88.
 
 
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 111.
-
-
-LaTeX Warning: Citation `yao_2010iros' on page 6 undefined on input line 111.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 111.
-
-
-LaTeX Warning: Citation `yao_2011rs' on page 6 undefined on input line 111.
+LaTeX Warning: Reference `eq:beta_3' on page 1 undefined on input line 88.
 
 [6]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 134.
-
-
-LaTeX Warning: Reference `sec:solve_qpp' on page 1 undefined on input line 134.
-
+(Font)              using `JY1/hmc/bx/n' instead on input line 135.
 
 [7]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 154.
+(Font)              using `JY1/hmc/bx/n' instead on input line 155.
 
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 159.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 159.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.26794pt on input line 159.
+File: ./figure/chapter2/shooting_area.png Graphic file (type bmp)
+<./figure/chapter2/shooting_area.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 159.
+(Font)              using `JY1/hmc/bx/n' instead on input line 164.
 
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <14.26794> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 159.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 159.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <14.26794> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 159.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 159.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.26794pt on input line 159.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 164.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 168.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 169.
+
+[8]
+File: ./figure/chapter2/NSV_1.png Graphic file (type bmp)
+<./figure/chapter2/NSV_1.png>
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 179.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 179.
+
+File: ./figure/chapter2/NSV_2.png Graphic file (type bmp)
+<./figure/chapter2/NSV_2.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 186.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 187.
+(Font)              using `JY1/hmc/bx/n' instead on input line 186.
 
-
-LaTeX Warning: Reference `fig:const_angle' on page 1 undefined on input line 18
-7.
-
+[9] [10]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 187.
-
-
-LaTeX Warning: Reference `fig:const_place' on page 1 undefined on input line 18
-7.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 187.
-
-
-LaTeX Warning: Reference `fig:const_overlap' on page 1 undefined on input line 
-187.
-
-[8]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 201.
-
-
-LaTeX Warning: Reference `fig:const_angle' on page 1 undefined on input line 20
-1.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 209.
-
-
-LaTeX Warning: Reference `fig:const_place' on page 1 undefined on input line 20
-9.
-
-[9]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 230.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 232.
-
-
-LaTeX Warning: Reference `fig:const_overlap' on page 1 undefined on input line 
-232.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 253.
-
-
-LaTeX Warning: Reference `fig:const_sole' on page 1 undefined on input line 253
-.
-
-[10]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 269.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 278.
+(Font)              using `JY1/hmc/bx/n' instead on input line 203.
 
 ) [11]
 \openout2 = `chapter03.aux'.
@@ -2328,68 +2183,48 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 100.
+(Font)              using `JY1/hmc/bx/n' instead on input line 97.
+
+File: ./figure/chapter3/occlusion_area.png Graphic file (type bmp)
+<./figure/chapter3/occlusion_area.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 105.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 105.
 
 [15]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 129.
-
-
-LaTeX Warning: Citation `sugihara_2011tro' on page 16 undefined on input line 1
-29.
+File: ./figure/chapter3/dummy.png Graphic file (type bmp)
+<./figure/chapter3/dummy.png>
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 142.
-
-
-LaTeX Warning: Citation `sugimoto_1985' on page 16 undefined on input line 142.
-
+(Font)              using `JY1/hmc/bx/n' instead on input line 133.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 150.
+(Font)              using `JY1/hmc/bx/n' instead on input line 133.
 
 [16]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 160.
-
-
-LaTeX Warning: Reference `fig:algorithm_linesearch' on page 1 undefined on inpu
-t line 160.
+(Font)              using `JY1/hmc/bx/n' instead on input line 141.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 164.
-
-
-LaTeX Font Warning: Font shape `JT1/hgt/m/it' undefined
-(Font)              using `JT1/hgt/m/n' instead on input line 166.
-
-
-LaTeX Font Warning: Font shape `JY1/hgt/m/it' undefined
-(Font)              using `JY1/hgt/m/n' instead on input line 166.
+(Font)              using `JY1/hmc/bx/n' instead on input line 144.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 175.
-
-LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
-(Font)              scaled to size 10.99478pt on input line 178.
-LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
-(Font)              scaled to size 10.99478pt on input line 178.
-[17]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 189.
+(Font)              using `JY1/hmc/bx/n' instead on input line 147.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 205.
+(Font)              using `JY1/hmc/bx/n' instead on input line 151.
 
-[18]) [19]
+) [17] [18]
 \openout2 = `chapter04.aux'.
 
  (./chapter04.tex
@@ -2406,7 +2241,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 22.
 
-[20
+[19
 
 
 
@@ -2429,7 +2264,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 61.
 
-[21]
+[20]
 File: ./figure/chapter4/lidar1.jpg Graphic file (type bmp)
 <./figure/chapter4/lidar1.jpg>
 
@@ -2451,7 +2286,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 77.
 
-[22]
+[21] [22]
 File: ./figure/chapter4/GPS.png Graphic file (type bmp)
 <./figure/chapter4/GPS.png>
 
@@ -2466,19 +2301,35 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 File: ./figure/chapter4/wireless_model.png Graphic file (type bmp)
 <./figure/chapter4/wireless_model.png>
 
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 108.
+Overfull \hbox (90.15582pt too wide) in paragraph at lines 107--108
+ [][] 
+ []
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 108.
 
-[23]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 112.
+(Font)              using `JY1/hmc/bx/n' instead on input line 108.
 
-) [24] [25]
+[23] [24]
+File: ./figure/chapter4/communication_model.png Graphic file (type bmp)
+<./figure/chapter4/communication_model.png>
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 121.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 121.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 127.
+
+) [25] [26]
 \openout2 = `chapter05.aux'.
 
  (./chapter05.tex
@@ -2489,173 +2340,120 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 22.
+(Font)              using `JY1/hmc/bx/n' instead on input line 19.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 22.
+(Font)              using `JY1/hmc/bx/n' instead on input line 25.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 34.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 36.
+
+[27
+
+
+
+]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 44.
+
+
+LaTeX Warning: Reference `sec:sim_nao_slope' on page 1 undefined on input line 
+44.
 
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 4.4144pt on input line 28.
+(Font)              scaled to size 8.02614pt on input line 45.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 4.7738pt on input line 28.
+(Font)              scaled to size 8.67961pt on input line 45.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 6.04716pt on input line 45.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.5395pt on input line 45.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 57.
+(Font)              using `JY1/hmc/bx/n' instead on input line 48.
 
 
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 57.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 85.
-
-
-LaTeX Warning: Citation `mao_official' on page 26 undefined on input line 85.
+LaTeX Warning: Reference `sec:z_field_constructure' on page 1 undefined on inpu
+t line 48.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 86.
+(Font)              using `JY1/hmc/bx/n' instead on input line 49.
 
 
-LaTeX Warning: Citation `microsoft_kinectv2' on page 26 undefined on input line
- 86.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 93.
+LaTeX Warning: Reference `sec:sim_nao_slope' on page 1 undefined on input line 
+49.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 93.
+(Font)              using `JY1/hmc/bx/n' instead on input line 55.
+
+
+LaTeX Warning: Reference `fig:sim_nao_slope_kinect' on page 1 undefined on inpu
+t line 55.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 106.
+(Font)              using `JY1/hmc/bx/n' instead on input line 55.
+
+
+LaTeX Warning: Reference `tab:sim_nao_slope_kinect' on page 1 undefined on inpu
+t line 55.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 64.
+
+[28]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 78.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 80.
+
+
+LaTeX Warning: Reference `sec:sim_nao_slope' on page 1 undefined on input line 
+80.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 81.
+
+
+LaTeX Warning: Reference `fig:sim_nao_slope_45_exp' on page 1 undefined on inpu
+t line 81.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 91.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 94.
+
+
+LaTeX Warning: Reference `sec:sim_nao_slope' on page 1 undefined on input line 
+94.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 109.
 
 
-LaTeX Warning: Citation `nao_footstep' on page 26 undefined on input line 109.
-
-
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 111.
-
-
-LaTeX Warning: Citation `nao_feature' on page 26 undefined on input line 111.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 114.
-
-
-LaTeX Warning: Citation `nao_feature' on page 26 undefined on input line 114.
-
-[26
-
-
-
-] [27]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 123.
-
-
-Underfull \hbox (badness 1824) in paragraph at lines 125--128
-[]\JY1/hmc/m/it/11.88995 初期状態 $\OML/cmm/b/it/11.88995 q[] \U/ntxmia/m/it/11
-.88995 = \LMS/ntxsy/m/n/11.88995 �\OT1/ntxtlf/m/n/11.88995 0\OML/ntxmi/m/it/11.
-88995 :\OT1/ntxtlf/m/n/11.88995 0\OML/ntxmi/m/it/11.88995 ;  \OT1/ntxtlf/m/n/11
-.88995 0\OML/ntxmi/m/it/11.88995 :\OT1/ntxtlf/m/n/11.88995 0\OML/ntxmi/m/it/11.
-88995 ;  \OT1/ntxtlf/m/n/11.88995 0\OML/ntxmi/m/it/11.88995 :\OT1/ntxtlf/m/n/11
-.88995 0\OML/ntxmi/m/it/11.88995 ;  \OT1/ntxtlf/m/n/11.88995 10\OML/ntxmi/m/it/
-11.88995 :\OT1/ntxtlf/m/n/11.88995 0\OML/ntxmi/m/it/11.88995 ;  \OT1/ntxtlf/m/n
-/11.88995 0\OML/ntxmi/m/it/11.88995 :\OT1/ntxtlf/m/n/11.88995 0\OML/ntxmi/m/it/
-11.88995 ;  \OT1/ntxtlf/m/n/11.88995 0\OML/ntxmi/m/it/11.88995 :\OT1/ntxtlf/m/n
-/11.88995 0\LMS/ntxsy/m/n/11.88995 �[] �[]\OML/ntxmi/m/it/11.88995 ;  []\LMS/nt
-xsy/m/n/11.88995 �$ \JY1/hmc/m/it/11.88995 から目標状態 $\OML/cmm/b/it/11.88995
- q[] \U/ntxmia/m/it/11.88995 =
- []
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 138.
-
-
-LaTeX Warning: Reference `fig:sim_nao_slope' on page 1 undefined on input line 
-138.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 140.
-
-
-LaTeX Warning: Reference `fig:sim_nao_slope_45_zdiff' on page 1 undefined on in
-put line 140.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 144.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 144.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 158.
-
-[28]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 177.
-
-
-LaTeX Warning: Reference `fig:sim_nao_slope_kinect' on page 1 undefined on inpu
-t line 177.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 177.
-
-
-LaTeX Warning: Reference `tab:sim_nao_slope_kinect' on page 1 undefined on inpu
-t line 177.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 186.
+(Font)              using `JY1/hmc/bx/n' instead on input line 109.
 
 [29]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 200.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 203.
-
-
-LaTeX Warning: Reference `fig:sim_nao_slope_45_exp' on page 1 undefined on inpu
-t line 203.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 213.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 231.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 231.
-
-[30]
-Underfull \hbox (badness 4621) in paragraph at lines 268--272
+Underfull \hbox (badness 4621) in paragraph at lines 146--150
 \JY1/hmc/m/it/11.88995 の左右の足裏それぞれ四 ヶ所 （$\LMS/ntxsy/m/n/11.88995 �
 \OT1/ntxtlf/m/n/11.88995 7\OML/ntxmi/m/it/11.88995 :\OT1/ntxtlf/m/n/11.88995 02
 5\OML/ntxmi/m/it/11.88995 ; \OT1/ntxtlf/m/n/11.88995 2\OML/ntxmi/m/it/11.88995 
@@ -2672,31 +2470,31 @@ Underfull \hbox (badness 4621) in paragraph at lines 268--272
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 274.
+(Font)              using `JY1/hmc/bx/n' instead on input line 152.
 
 
-LaTeX Warning: Reference `fig:zmp_lx' on page 1 undefined on input line 274.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 274.
-
-
-LaTeX Warning: Reference `fig:zmp_ly' on page 1 undefined on input line 274.
+LaTeX Warning: Reference `fig:zmp_lx' on page 1 undefined on input line 152.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 288.
+(Font)              using `JY1/hmc/bx/n' instead on input line 152.
 
 
-LaTeX Warning: Reference `fig:force' on page 1 undefined on input line 288.
+LaTeX Warning: Reference `fig:zmp_ly' on page 1 undefined on input line 152.
 
-[31]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 301.
+(Font)              using `JY1/hmc/bx/n' instead on input line 166.
 
-) [32]
+
+LaTeX Warning: Reference `fig:force' on page 1 undefined on input line 166.
+
+[30]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 179.
+
+) [31]
 \openout2 = `chapter06.aux'.
 
  (./chapter06.tex
@@ -2718,7 +2516,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 45.
 
 
-LaTeX Warning: Citation `maciejowski_2005jp' on page 33 undefined on input line
+LaTeX Warning: Citation `maciejowski_2005jp' on page 32 undefined on input line
  45.
 
 
@@ -2726,13 +2524,13 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 46.
 
 
-LaTeX Warning: Citation `yabe_1999' on page 33 undefined on input line 46.
+LaTeX Warning: Citation `yabe_1999' on page 32 undefined on input line 46.
 
-[33
+[32
 
 
 
-]) [34]
+]) [33]
 \openout2 = `acknowledgment.aux'.
 
  (./acknowledgment.tex
@@ -2740,7 +2538,7 @@ LaTeX Warning: Citation `yabe_1999' on page 33 undefined on input line 46.
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 15.
 
-) [35
+) [34
 
 
 
@@ -2753,11 +2551,11 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 19.
 
-[36
+[35
 
 
 
-]) [37]
+]) [36]
 \openout2 = `achievment.aux'.
 
  (./achievment.tex
@@ -2789,7 +2587,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 36.
 
-) [38
+) [37
 
 
 
@@ -2816,12 +2614,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 28910 strings out of 481140
- 542273 string characters out of 5920653
- 731502 words of memory out of 5000000
- 44316 multiletter control sequences out of 15000+600000
+ 28916 strings out of 481140
+ 542343 string characters out of 5920653
+ 729390 words of memory out of 5000000
+ 44305 multiletter control sequences out of 15000+600000
  658180 words of font info for 228 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,19n,98p,983b,1072s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,17n,98p,983b,1061s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (44 pages, 107344 bytes).
+Output written on thesis.dvi (45 pages, 104316 bytes).

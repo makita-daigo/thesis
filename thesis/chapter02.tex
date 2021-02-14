@@ -158,6 +158,13 @@ r \left (\theta, \phi \right ) \le \lambda^2 \left \{ \left (\frac{\sin\theta+\s
 その条件を満たすために1人の人物に複数本の撮影ベクトルを付与する．
 1つのセルから出る撮影ベクトルの本数が4本であることを考慮すると，撮影ベクトルの本数は4の倍数であることが望ましい．
 
+\begin{figure}[b]
+    \centering
+    \includegraphics[width=\linewidth, clip]{./figure/chapter2/shooting_area.png}
+    \caption{Shooting Area of One Target Person}
+    \label{fig:shoot_area}
+\end{figure}
+
 \section{UAVの目標位置の導出}
 \subsection{グリッドマップと目標位置}
 本研究では，人物移動領域とUAV移動可能領域をグリッドマップで管理する．
@@ -165,6 +172,22 @@ r \left (\theta, \phi \right ) \le \lambda^2 \left \{ \left (\frac{\sin\theta+\s
 撮影人物に付与された撮影ベクトルをグリッドマップに投影し，撮影ベクトルの領域に含まれるグリッドマップのセルがUAVの目標位置になる．
 実際には撮影人物は複数人存在し1人に対して撮影ベクトルは複数本付与されているため，
 UAVの目標位置は撮影ベクトルがある領域のうち，撮影ベクトルがより多く重なっているセルである．
+
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\linewidth, clip]{./figure/chapter2/NSV_1.png}
+    \caption{Grid Map and Shooting Vector (a)}
+    \label{fig:nsv1}
+\end{figure}
+
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\linewidth, clip]{./figure/chapter2/NSV_2.png}
+    \caption{Grid Map and Shooting Vector (b)}
+    \label{fig:nsv2}
+\end{figure}
+
+\newpage
 移動カメラが現在いる位置から次の目標位置を受け取るまでに動くことができる距離には制限がある．
 移動カメラの最大並進速度を$v_{max}$[m/s]，撮影計画の実行周期を$f_{plan}$[Hz]とすると，
 1周期内で移動カメラが移動できる最大並進距離$d_{max}$[m]は，\cref{eq:camera_max_distance}のようになる．
@@ -186,32 +209,6 @@ LiDARに対して撮影対象が複数人いる場合に遮蔽(オクルージ�
 位置情報が取得できない人物が存在するため撮影ベクトルの本数が減少し，UAVの目標位置が人物を捉えきれない位置に設定されることがある．
 
 次章ではLiDARの精度の高い位置の決定方法とオクルージョンが発生した場合のUAVの目標位置の補完方法について述べる．
-
-\section{制約条件}
-
-
-\subsection{地形との接触制約}
-
-
-
-
-\subsection{遊脚の配置制約}
-
-
-\subsection{脚先の干渉防止制約}
-
-
-\subsection{二次計画問題への適用}
-
-
-\section{本章のまとめ}
-本章では，三次元適応のための歩行モデルの拡張および追加の制約条件について説明した．
-従来の水平方向の脚配置計画のためのモデルに，独立した垂直方向の動作を追加し，
-脚配置遷移モデルの状態および入力についての次元の拡張を行うことなく，
-事前に与えられた地形情報に基いて垂直方向の移動量を制限する制約を定式化し追加することで，
-計算コスト増加を抑えつつ三次元地形への適応を可能にした．
-次章では，本章で定義した計画問題の解法について，
-全体のアルゴリズムおよび求解性能の安定化のためのいくつかの手法について述べる．
 
 
 \end{document}

@@ -41,7 +41,7 @@ ROSでサポートされている言語は主にC++とPythonでありJavaやLisp
 本研究では，撮影計画を実装するUAVとして，民生用ドローンおよび関連機器製造会社であるDJI社のMavic Miniを複数台使用する．
 以下，MavicMiniの性能の概要と制御を行うための通信モデルについて説明する．
 
-\begin{figure}[b]
+\begin{figure}[t]
     \centering
     \includegraphics[width=0.9\linewidth, clip]{./figure/chapter4/mavic_mini.jpg}
     \url{Source：https://www.dji.com/jp/mavic-mini}
@@ -62,17 +62,17 @@ DJI Mobile SDKはAndroid端末，IOS端末のアプリによりフライトコ�
 LiDARはレーザ機器やセンサなどの開発を行う北陽電機株式会社のUTM-30LX-EW，同社のUST-30LXの2台を使用する．
 性能はどちらも検出範囲は270[deg]，角度分解能は0.25[deg]であり，LANケーブルから点群情報を送信する．
 
-\begin{figure}[b]
+\begin{figure}[p]
     \centering
-    \includegraphics[width=0.6\linewidth, clip]{./figure/chapter4/lidar1.jpg}
+    \includegraphics[width=0.5\linewidth, clip]{./figure/chapter4/lidar1.jpg}
     \url{Source：https://www.hokuyo-aut.co.jp/search/single.php?serial=146}
     \caption{UTM-30LX-EW}
     \label{fig:lidar1}
 \end{figure}
 
-\begin{figure}[b]
+\begin{figure}[p]
     \centering
-    \includegraphics[width=0.6\linewidth, clip]{./figure/chapter4/lidar2.png}
+    \includegraphics[width=0.5\linewidth, clip]{./figure/chapter4/lidar2.png}
     \url{Source：https://www.hokuyo-aut.co.jp/search/single.php?serial=195}
     \caption{UST-30LX}
     \label{fig:lidar2}
@@ -81,7 +81,7 @@ LiDARはレーザ機器やセンサなどの開発を行う北陽電機株式会
 本研究では3章で示した通り，LiDARの位置情報をGPSセンサから取得し，map座標を得る．
 今回の実験ではGPSセンサはublox社のマルチバンドGNSSアンテナのANN-MB-01を使用する．
 
-\begin{figure}[b]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.6\linewidth, clip]{./figure/chapter4/GPS.png}
     \url{Source：https://www.hokuyo-aut.co.jp/search/single.php?serial=146}
@@ -102,20 +102,31 @@ GPS情報はサブPCにデータを取り込んだ後，サブPCとホストPC�
 ホストPCで，受け取ったGPS情報をトピックに変更するノードを立ち上げることにより，LiDARの位置情報を
 UAV撮影計画のROSプログラム内で使用することができる．
 
-\begin{figure}[b]
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\linewidth, clip]{./figure/chapter4/wireless_model.png}
+    \includegraphics[width=1.2\linewidth, clip]{./figure/chapter4/wireless_model.png}
     \caption{Wireless Communication Model for LiDAR and GPS antenna}
     \label{fig:wireless_model}
 \end{figure}
 
-\section{本章のまとめ}
-本章では，HRP-2に基づいたパラメータを用いて，
-連続的変化のある地形と不連続な地形とでいくつかの問題設定で計画を行った．
-そして，不連続な地形上では計算が不安定化してしまう問題が残るが，
-連続的な地形では安定して最適化された脚配置計画を得ることができ，
-またいずれにおいても計算時間は両脚支持期間よりも短く，
-実時間性を有していることが示された．
+\cref{fig:wireless_model}はLiDAR周りの通信モデルである．
 
+\cref{fig:system}にこのシステム全体の通信モデルを示す．
+赤で示されている通信が無線通信であり，水色で示されている通信が有線通信である．
+
+\newpage
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=1.0\linewidth, clip]{./figure/chapter4/communication_model.png}
+    \caption{Communication System}
+    \label{fig:system}
+\end{figure}
+
+
+\newpage
+\section{本章のまとめ}
+本章では，2章で説明した撮影計画および人物検出，また3章で説明した複数台LiDARの設置方法およびダミー人物の設定
+方法を実装したシステムについて説明した．
+次章では，本章で説明したシステムを利用して，実環境において複数人物の追従と撮影計画を行った実験について述べる．
 
 \end{document}

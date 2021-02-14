@@ -1,0 +1,27 @@
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  15 FEB 2021 01:50
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**preamble_user.tex
+(./preamble_user.tex
+pLaTeX2e <2020-02-02>+3 (based on LaTeX2e <2020-02-02> patch level 5)
+L3 programming layer <2020-03-06>
+! Undefined control sequence.
+l.4 \years
+          {令和2年度}
+? 
+! Emergency stop.
+l.4 \years
+          {令和2年度}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 16 strings out of 481140
+ 331 string characters out of 5920653
+ 239379 words of memory out of 5000000
+ 16157 multiletter control sequences out of 15000+600000
+ 536209 words of font info for 41 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 13i,0n,15p,86b,10s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

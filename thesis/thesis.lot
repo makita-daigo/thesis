@@ -4,9 +4,5 @@
 \addvspace {10\jsc@mpt }
 \addvspace {10\jsc@mpt }
 \addvspace {10\jsc@mpt }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Model parameters for NAO\relax }}{27}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Algorithm parameters for NAO\relax }}{27}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Map parameters for NAO\relax }}{27}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Result of planning (slope)\relax }}{28}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Results of evaluation experiment of goal reaching error\relax }}{31}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Results of evaluation experiment of goal reaching error\relax }}{30}%
 \addvspace {10\jsc@mpt }

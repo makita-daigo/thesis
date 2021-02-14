@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  9 FEB 2021 22:39
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  15 FEB 2021 01:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1669,6 +1669,12 @@ LaTeX Warning: Label `fig:wireless_model' multiply defined.
 
 LaTeX Warning: Label `fig:wireless_model@cref' multiply defined.
 
+
+LaTeX Warning: Label `fig:system' multiply defined.
+
+
+LaTeX Warning: Label `fig:system@cref' multiply defined.
+
 )
 \openout1 = `chapter04.aux'.
 
@@ -1968,7 +1974,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 77.
 
-[3]
+[3] [4]
 File: ./figure/chapter4/GPS.png Graphic file (type bmp)
 <./figure/chapter4/GPS.png>
 
@@ -1983,30 +1989,46 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 File: ./figure/chapter4/wireless_model.png Graphic file (type bmp)
 <./figure/chapter4/wireless_model.png>
 
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 108.
+Overfull \hbox (90.15582pt too wide) in paragraph at lines 107--108
+ [][] 
+ []
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 108.
 
-[4]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 112.
+(Font)              using `JY1/hmc/bx/n' instead on input line 108.
 
-[5] [6] (./chapter04.aux)
+[5] [6]
+File: ./figure/chapter4/communication_model.png Graphic file (type bmp)
+<./figure/chapter4/communication_model.png>
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 121.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 121.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 127.
+
+[7] [8] (./chapter04.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28591 strings out of 481140
- 536510 string characters out of 5920653
- 723545 words of memory out of 5000000
- 44074 multiletter control sequences out of 15000+600000
+ 28588 strings out of 481140
+ 536298 string characters out of 5920653
+ 723256 words of memory out of 5000000
+ 44070 multiletter control sequences out of 15000+600000
  585353 words of font info for 121 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,6n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter04.dvi (6 pages, 11972 bytes).
+Output written on chapter04.dvi (8 pages, 12916 bytes).

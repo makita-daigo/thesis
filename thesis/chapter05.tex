@@ -12,148 +12,26 @@
 \begin{document}
 
 
-\chapter[NAOにおける脚配置計画シミュレーション]{NAOにおける\\脚配置計画シミュレーション}
+\chapter[実環境における評価実験]{実環境における評価実験}
 \label{chap:sim_nao}
 
-\begin{table}[pt]
-    \renewcommand{\arraystretch}{1.0}
-    \centering
-    % \small
-    \caption{Model parameters for NAO}
-    \label{tab:sim_nao_param_model}
-    \begin{tabular}{cc}
-        \toprule%
-        parameters                  &   value \\
-        \midrule%
-        $z_{\mathrm{max}}$          &   $0.5\,\cm$ \\
-        $d_{xy\,\mathrm{max}}$      &   $16.73\,\cm$ \\
-        $d_{z\,\mathrm{max}}$       &   $1.0\,\cm$ \\
-        walking period (whole)      &   $420\text{--}600\,\ms$ \\
-        \midrule%
-        ${\theta_2}_{\mathrm{max}}$ &   $30 \degree$ \\
-        ${\theta_2}_{\mathrm{min}}$ &   $-30 \degree$ \\
-        $X_{\mathrm{max}}$          &   $6.0\,\cm$ \\
-        $X_{\mathrm{min}}$          &   $-4.0\,\cm$ \\
-        $Y_{\mathrm{max}}$          &   $16.0\,\cm$ \\
-        $Y_{\mathrm{min}}$          &   $8.8\,\cm$ \\
-        % \midrule%
-        $O_{xf}$                    &   $10.69\,\cm$ \\
-        $O_{xb}$                    &   $5.61\,\cm$ \\
-        $O_{yi}$                    &   $3.95\,\cm$ \\
-        $O_{yo}$                    &   $5.23\,\cm$ \\
-        $a$                         &   $-1.18245 \times 10^{-10}$ \\
-        $b$                         &   $2.54$ \\
-        $c$                         &   $4.95$ \\
-        \bottomrule
-    \end{tabular}
-    % \vspace{5truemm}
-    \renewcommand{\arraystretch}{1.0}
-\end{table}
 
-\begin{table}[pt]%
-    \renewcommand{\arraystretch}{1.0}
-    \centering
-    % \small
-    \caption{Algorithm parameters for NAO}
-    \label{tab:sim_nao_param_algorithm}
-    \begin{tabular}{cc}
-        \toprule
-        parameters                          &   value \\
-        \midrule
-        % \midrule
-        $\Delta k_u$                        &   $10^{-5}$ \\
-        $\Delta k_{u_z}$                    &   $10^{-5}$ \\
-        $\varepsilon_\mathrm{relax}$        &   $10^{-15}$ \\
-        $\alpha_\mathrm{min}$               &   $0.15$ \\
-        $\beta$                             &   $0.5$ \\
-        $\gamma$                            &   $0.95$ \\
-        % \midrule
-        $\bm{\varepsilon}_{\goal}$          &   $(0.05 ,\, 0.05 ,\, 0.05 ,\, 0.05 ,\, 0.05 ,\, 0.05)^T\,(\cm ,\, \degrm)$ \\
-        $\bm{\varepsilon}_{\mathrm{input}}$ &   $(\dots ,\, 10^{-6} ,\, 10^{-6} ,\, 10^{-6} ,\, 10^{-6} ,\, 10^{-6} ,\, 10^{-6} , \dots)^T\,(\cm ,\, \degrm)$ \\
-        $\bm{\varepsilon}_{\reachable}$     &   $(2.5 ,\, 2.5 ,\, 0.5 ,\, 1.0 ,\, 0.5 ,\, 0.5)^T\,(\cm ,\, \degrm)$ \\
-        $n_{\reachable1}$                   &   $10$ \\
-        $n_{\reachable2}$                   &   $3k$ \\
-        % \midrule
-        % $D_\mathrm{grid}$                   &   $5.0\,\cm$ \\
-        % $D_\mathrm{sample}$                 &   $1.0\,\cm$ \\
-        \bottomrule
-    \end{tabular}
-    \vspace{5truemm}
-    \renewcommand{\arraystretch}{1.0}
-\end{table}
-
-本章では，Aldebaran RoboticsのヒューマノイドロボットNAO\cite{mao_official}を用いた
-計画シミュレーションおよび実機実験，またkinect v2\cite{microsoft_kinectv2}で計測した地形情報を用いた
-計画シミュレーションについて記述する．
+\section{はじめに}
+本章では，4章で実装したシステムを用いて実機実験を行うための，実験設定とその結果について説明し
+，考察を行う．
 
 
-\begin{table}[pt]%
-    \centering
-    % \small
-    \caption{Map parameters for NAO}
-    \label{tab:sim_nao_param_map}
-    \begin{tabular}{cc}
-        \toprule
-        parameters          &   value \\
-        \midrule
-        $D_\mathrm{grid}$   &   $5.0\,\cm$ \\
-        $D_\mathrm{sample}$ &   $1.0\,\cm$ \\
-        \bottomrule
-    \end{tabular}
-    \renewcommand{\arraystretch}{1.0}
-\end{table}
 
-\section{踏破性能とパラメータ設定}
-パラメータとしては，NAOに標準搭載されているシステムNAOqiが提供する
-脚配置指定による歩行指示のAPIを用いることを前提に，
-それらを利用する際に定められている限界値を各制約条件のパラメータとして設定する\cite{nao_footstep}．
-NAOの歩行制御については，標準の制御用APIとしては二次元平面上の歩行を前提としたものしか提供されておらず，
-床面の上下方向の誤差に対するロバスト性を持った二次元平面上における歩行制御が行われている\cite{nao_feature}．
-そのため，本章におけるシミュレーションおよび実験では，
-提案手法における垂直方向移動の上下限値には，
-脚先の上下方向の誤差に対するロバスト性において耐えうると\cite{nao_feature}で示されている誤差の許容値を設定する．
-検証内容としては，三次元の地形形状を持つフィールドにおいて，ロバスト性の範囲内で踏破可能となる，
-目標状態までの最適化された脚配置を計画できることを検証するものとする．
-
-パラメータは\cref{tab:sim_nao_param_model}，
-\cref{tab:sim_nao_param_algorithm}および\cref{tab:sim_nao_param_map}のとおりである．
+\section{実験設定}
+実験は大阪市立大学の野球場で行った．東をx軸正方向，北をy軸正方向，
+1[m]を軸の1目盛りとするmap座標系を考える．原点を中心に10[m]を1辺の長さとして正方形の領域を人物の行動可能領域とする．
+その領域の東側，西側，北側，南側の辺から10[m]$times$15[m]の長方形の領域をUAVの飛行範囲と設定する．
+基準とするLiDARを北向きに設置しその位置をmap座標系の(0.0, -5.0)と定義することで原点の座標とGPS位置を逆算する．
+2台目のLiDARは南向きに任意の位置に置くことで原点のGPS座標を用いてmap座標を得ることができる．
 
 
 
 \section{スロープ型の地形でのシミュレーション}
-\label{sec:sim_nao_slope}
-初期状態$\bm{q}^0 = ( 0.0 ,\, 0.0 ,\, 0.0 ,\, 10.0 ,\, 0.0 ,\, 0.0 )^T\,(\cm ,\, \degrm)$から
-目標状態$\bm{q}_{\goal} = ( 50.0 ,\, 150.0 ,\, 0.0 ,\, 10.0 ,\, 0.0 ,\, 0.0 )^T$へと向かう計画を行う．
-地形としては，$y$軸方向において平面と傾斜角$\theta_{\slope}$の斜面が$y = 50\,\cm$の位置で接続しているスロープ型の地形を用いる．
-\begin{equation}
-    z_{\field}\left( x ,\, y \right) =
-        \begin{cases}
-            0.0 & \left( y < 50.0 \right) \\
-            \left( y - 50.0 \right) \tan \theta_{\slope} & \left( 50.0 \leq y \right)
-        \end{cases}
-\end{equation}
-$\theta = 0.0\degree$，$4.5\degree$の2パターンで計画を行う．
-
-
-\Cref{fig:sim_nao_slope}，\cref{tab:sim_nao_slope}に計画結果を示す．
-$4.5\degree$の場合，平面上での歩幅に対して斜面上では歩幅を小さく取り，高低差制約を守りながら進む計画になっているのが
-\cref{fig:sim_nao_slope_45_zdiff}からも分かる．
-歩幅が狭いためステップ数は初期値から$1$増やす必要があり，また反復回数，計算時間は$0.0\degree$の場合に比べていずれも増加している．
-
-\begin{table}[t]%
-    \caption{Result of planning (slope)}%
-    \label{tab:sim_nao_slope}%
-    \centering%
-    \begin{tabular}{ccccc}%
-        \toprule%
-        $\theta_{\slope}\,(\degrm)$ &   $k_{\init}$ &   $k$     &   iteration   &   time$(\ms)$ \\%
-        \midrule%
-        $0.0$                       &   $11$        &   $11$    &   $10$        &   $10.84$ \\%
-        $4.5$                       &   $11$        &   $12$    &   $52$        &   $65.20$ \\%
-        \bottomrule%
-    \end{tabular}
-\end{table}
-
 
 \section{実地形データを用いた地形情報構築と計画}
 実際のロボットが自律移動を行う場合，

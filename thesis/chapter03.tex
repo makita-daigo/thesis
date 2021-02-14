@@ -12,7 +12,7 @@
 \begin{document}
 
 
-\chapter{複数LiDARの位置校正方法とオクルージョン範囲の導出}
+\chapter[複数LiDARの位置校正方法とオクルージョン範囲を考慮した撮影計画]{複数LiDARの位置校正方法と\\オクルージョン範囲を\\考慮した撮影計画}
 	
 \section{はじめに}
 本章では，LiDARの位置を取得するために使用した手法を説明する．
@@ -94,124 +94,62 @@ LiDAR2のGPS座標を$lon_{lidar2}, lat_{lidar2}$とする．
 この節では，オクルージョンが発生した場合のLiDARの撮影できない領域と，
 その領域を考慮したUAVの目標位置の導出方法について述べる．
 
- 
-       ．
+\subsection{1台のLiDARに対するオクルージョンの範囲}
+LiDARの設置位置と人物の位置関係からLiDARが物体を認識することのできない領域を推定することができる．
+この領域をオクルージョンエリアと定義する．
+簡単のため人物の形を円形としその半径を$r$とすると\cref{fig:occlusion_area}で示される領域がオクルージョンエリアとなる．
 
-\subsection{数値計算安定化のための各種パラメータ設定方法}
-問題で用いる係数行列およびベクトルを次のように設定することで，反復計算の安定性および収束性能を向上させる．
-\begin{itemize}
-    \item   $K_p$，$K_u$，$K_{u_z}$の各成分を，係るベクトルの各要素をそれぞれ最大値で正規化するように設定する
-\end{itemize}
-\begin{equation} \label{eq:Kp_setting}
-    \begin{aligned}
-        K_p & = \mathrm{diag} \, \{ k_x , k_y , k_{\theta} , k_l , k_{\theta_{fl}} , k_{\theta_{fr}} \} \\
-        & k_x = k_y = ( \max \{ | x_{\goal} - x^0 | , | y_{\goal} - y^0 | \} )^{-2} \\
-        & k_{\theta} = ( 2 \pi )^{-2} \\
-        & k_l = ( Y_{\mathrm{max}} - Y_{\mathrm{min}} )^{-2} \\
-        & k_{\theta_{fl}} = k_{\theta_{fr}} = ( 2 \pi )^{-2}
-    \end{aligned}
-\end{equation}
-\begin{equation} \label{eq:Ku_setting}
-    \begin{aligned}
-        K_u & = \mathrm{diag} \, \{ \dots , k_{u_A} , k_{u_B} , k_{u_{l1}} , k_{u_{l2}} , k_{u_{fl}} , k_{u_{fr}} , \dots \} \\
-        & k_{u_A} = k_{u_B} = ( 2 \tan^{-1} ( X_{\mathrm{max}} / Y_{\mathrm{min}} ) + {\theta_2}_{\mathrm{max}} )^{-2} \\
-        & k_{u_{l1}} = k_{u_{l2}} = ( Y_{\mathrm{max}} - Y_{\mathrm{min}} )^{-2} \\
-        & k_{u_{fl}} = k_{u_{fr}} = ( {\theta_2}_{\mathrm{max}} - {\theta_2}_{\mathrm{min}} )^{-2}
-    \end{aligned}
-\end{equation}
-\begin{equation} \label{eq:Kuz_setting}
-    \begin{aligned}
-        K_u & = \mathrm{diag} \, \{ \dots , k_{u_{zl}} , k_{u_{zr}} , \dots \} \\
-        & k_{u_{zl}} = k_{u_{zr}} = z_{\mathrm{max}}^{-2}
-    \end{aligned}
-\end{equation}
-\begin{itemize}
-    \item   $K_u$，$K_{u_z}$は，前項の設定に加えてSugiharaの手法~\cite{sugihara_2011tro}を適用し，
-            評価関数\cref{eq:evaluation_function}の値を用いて重み付けする
-            （$I$は単位行列，$\Delta k_u$はスカラー定数）
-\end{itemize}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth, clip]{./figure/chapter3/occlusion_area.png}
+    \caption{Occlusion Area}
+    \label{fig:occlusion_area}
+\end{figure}
+
+オクルージョンエリアは人物の円に対してLiDARの座標を通る2本の接線を考え，
+2接点を結んだ線と2本の接線，人物の移動可能範囲の境界に囲まれる領域になる．
+このオクルージョンエリアに人物が存在した場合，地上カメラから捉えられないためUAVが撮影する必要がある．
+本研究では，オクルージョンエリアに架空の人物がいると想定して撮影計画を行う．
+架空の人物（ダミー）の座標を設定することで，ダミーに対しても撮影ベクトルが付与され
+オクルージョンエリアを撮影範囲に収めることができる．
+
+ダミーの座標の位置は，LiDARと人物を表す円の中心座標を結ぶ直線と人物移動可能範囲の領域との交点を
+導出し，その交点の座標と人物の円の中心座標の中点に設定する．
+LiDARの座標を$x_{lidar}$,$y_{lidar}$，人物の円の中心座標を$x_{person}$,$y_{person}$とすると
+2点を結ぶ直線の方程式は\cref{eq:occlusion}で求めることができる．
+ここでは人物移動可能領域の中心を原点とする座標系を使用する．
+
 \begin{equation}
-    \label{eq:LM_Kuset_sugihara}
-    \begin{gathered}
-        K_u \gets V_{\now} \, K_u + \Delta k_u \, I = \frac{1}{2} {\left\| \bm{\varepsilon}_{\now} \right\|}^2_{K_p} \, K_u + \Delta k_u \, I \\
-        K_{u_z} \gets V_{\now} \, K_{u_z} + \Delta k_{u_z} \, I = \frac{1}{2} {\left\| \bm{\varepsilon}_{\now} \right\|}^2_{K_p} \, K_{u_z} + \Delta k_{u_z} \, I
-    \end{gathered}
+    \begin{aligned}
+       y = \frac{y_{person} - y_{lidar}}{x_{person} - x_{lidar}} x + 
+\frac{x_{person}y_{lidar} - x_{lidar}y_{person}}{x_{person} - y_{lidar}}
+    \end{aligned}
+    \label{eq:occlusion}
 \end{equation}
-\begin{itemize}
-    \item   一つ一つの制約条件$\omega_i(\bm{q}^0 ,\, \bm{U}_k) \geq 0$を$\| \nabla \omega_i \|$で正規化することにより，
-            GI法内部での反復計算を安定化させ，また緩和問題での各制約条件の比重を揃える\cite{sugimoto_1985}
-    \item   緩和問題を解く際，評価関数全体を$\| \bm{\phi} \|$で正規化し，
-            元の評価関数部分の値とスラック変数の値の比重を揃える（$\rho = 1$とできる）
-\end{itemize}
-そして，得られた解を用いてArmijoの基準に基づく直線探索を行い，入力列を更新する．
 
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth, clip]{./figure/chapter3/dummy.png}
+    \caption{Dummy Position}
+    \label{fig:dummy}
+\end{figure}
 
+\cref{eq:occlusion}の方程式より境界の座標を代入することにより交点の座標が求められる．
+1人の人物に対して1つのダミーが生成されるためダミーを含めた人物の数は，
+LiDARが認識している人物の数を$n$人とすると，撮影ベクトルを付与される人物とダミー人物の合計の数は$2n$となる．
 
 \subsection{直線探索}
-直線探索では，次式を満たすステップ幅$\alpha$を求める．
-\begin{align}
-    \label{eq:armijo}
-    \begin{aligned}
-        H \left( \bm{q}^0 , \bm{U}_k + \alpha \bm{\Delta U}_k \right) & \leq H \left( \bm{q}^0 , \bm{U}_k \right) + \beta \alpha {\nabla V \left( \bm{q}^0 , \bm{U}_k  \right)}^T \bm{\Delta U}_k \\
-                                                                      &   =  H \left( \bm{q}^0 , \bm{U}_k \right) + \beta \alpha \bm{\phi}^T \bm{\Delta U}_k
-    \end{aligned}
-\end{align}
-$\beta$は，$0 < \beta < 1$を満たす定数である．
-今回，$\alpha$は\cref{fig:algorithm_linesearch}に示す単純な探索により求める．
-なお，$\gamma$は$0 < \gamma < 1$を満たす減衰係数である．
 
 
 \section{終了判定}
-更新後，終了判定を行う．
-次の項目を\emph{すべて}満たすことを終了条件とする．
-\begin{itemize}
-    \item   $\bm{\varepsilon}$が収束（各要素が許容誤差$\bm{\varepsilon}_{\goal}$の各要素よりも小さい）
-    \item   $\bm{\Delta U}_k$が収束（各要素が許容誤差$\bm{\varepsilon}_{\mathrm{input}}$の各要素よりも小さい）
-    \item   $\omega_i(\bm{q}^0 ,\, \bm{U}_k) \geq 0 \ (i = 0 , \dots ,\, 20k - 1)$をすべて満たす
-\end{itemize}
-これらの条件を全て満たしていれば，その時点での$\bm{U}_k$を解とし，計画を終了する．
-満たしていない場合は次節の処理へ移る．
-
-\section{目標到達可否判定}
-初期ステップ数$k_\mathrm{init}$は直線距離から算出するため，現在の$k$では歩数不足の場合がある．
-そこで，反復毎に目標状態へ収束する見込みがあるかどうかを判定し，見込みがない場合に$k$を増やす処理を行う．
-ここでは，次の項目の\emph{いずれか}を満たせば到達不可と判定することとする．
-\begin{itemize}
-    \item   ``$\bm{\Delta U}_k$収束時に$\bm{\varepsilon}$が未収束'' という状況が$n_{\reachable1}$回繰り返される
-    \item   現在の$k$における反復回数$\mathrm{loop}$が$n_{\reachable2}$に達した段階で，
-   $\bm{\varepsilon}$が大きい値をとる（各要素が到達見込みの閾値$\bm{\varepsilon}_{\reachable}$の各要素よりも大きい）
-\end{itemize}
-到達不可と判定された場合には$k \gets k + 1$とし，
-また$\bm{U}_k$はその内容を引き継ぎ$\bm{U}_k \gets ( \bm{U}_k^T ,\, \bm{0}^T )^T$として再度反復を開始する．
-そうでなければ，``Solve QPP''へ戻り反復を継続する．
 
 
 \section{地形情報の構築}
-\label{sec:z_field_constructure}
-前述の計画アルゴリズムを開始する前に，
-地形適応制約で用いる地形情報$z_\mathrm{field}(x ,\, y)$を構築する必要がある．
-深度カメラや測域センサから得られる点群データを用いて地形情報を構築することを想定し，
-次の手順で点群データからの構築を行った．
-\begin{enumerate}
-    \item   $xy$平面を等間隔に幅$D_\mathrm{grid}$四方の正方形グリッドで分割する．
-    \item   各グリッドの領域に含まれるサンプルデータ群の$z$軸成分の平均値を，グリッド中央における高さとする．
-    \item   $x ,\, y$方向それぞれについて，グリッド中心の点列をサンプルとする3次スプライン補間関数を計算．
-    \item   $z_{\field} ( x ,\, y ) ,\, \partial z_{\field} / \partial x ,\, \partial z_{\field} / \partial y$は，
-    与えられた点$( x ,\, y )$に対して直近の$x$軸方向$2$本，$y$軸方向$2$本の補間関数上の値の距離重み付け平均で算出する．
-\end{enumerate}
-なお，シミュレーションにおいて関数からサンプリングを行って点群データを得る場合，$D_\mathrm{sample}$間隔でサンプリングを行う．
+．
 
 
 \section{本章のまとめ}
-本章では，二次計画法を用いた反復法による脚配置計画問題の求解アルゴリズムの要素として，
-必要歩数の推定から毎回の二次計画問題の求解と緩和問題の設定，収束判定，
-収束見込み判定とステップ数追加について説明した．
-また，地形の違いなどにより問題ごとに大きく変化してしまうことを
-可能な限り回避するため，反復法における数値計算の性能を安定させる
-重み行列の設定方法などについても述べた．
 
-次章以降は，提案する脚配置計画手法の有用性および性能を検証するための
-計画シミュレーションおよび実機実験について述べていく．
 
 
 \end{document}
