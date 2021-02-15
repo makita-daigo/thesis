@@ -138,10 +138,39 @@ LiDARの座標を$x_{lidar}$,$y_{lidar}$，人物の円の中心座標を$x_{per
 1人の人物に対して1つのダミーが生成されるためダミーを含めた人物の数は，
 LiDARが認識している人物の数を$n$人とすると，撮影ベクトルを付与される人物とダミー人物の合計の数は$2n$となる．
 
-\subsection{直線探索}
+\newpage
+\section{複数LiDARでの人物認識}
+LiDARを複数使用して人物認識を行う場合，それぞれのLiDARでとらえた物体を同一の座標系に合わせる必要がある．
+この別々に認識された物体を1つの座標系にマージする際，同一人物を別の人物として捉えてしまうと
+不必要な撮影ベクトルが存在することになり効率の悪い撮影計画になる．
 
+\begin{figure}[b]
+    \centering
+    \includegraphics[width=0.7\linewidth, clip]{./figure/chapter3/example.png}
+    \caption{Example of Person Recognition}
+    \label{fig:example}
+\end{figure}
 
-\section{終了判定}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.5\linewidth, clip]{./figure/chapter3/recognized_person.png}
+    \caption{Person recognized by LiDAR1 or LiDAR2}
+    \label{fig:person_recognized}
+\end{figure}
+
+\newpage
+例として\cref{fig:example}のような人物とLiDARの配置を考える．
+4人の人物それぞれにA,B,C,Dのラベルを割り振る．
+前節で述べていたオクルージョンエリアをLiDAR1，LiDAR2についてそれぞれ考慮すると，
+人物DがLiDAR1のオクルージョンエリアに配置されていて，人物DがLiDAR2のオクルージョンエリアに配置されている．
+人物A,Cは両方のLiDARから認識することができる．
+LiDAR1が認識できる人物を\cref{fig:person_recognized}(a),LiDAR2が認識できる人物を\cref{fig:person_recognized}(b)に示す．
+2つのLiDARの認識している人物をそのままマージすると人物A,Cが重複して数えられることになる．
+
+\subsection{重複人物のマージ方法}
+2つのLiDARで同一人物を認識するとき，\cref{fig:example}の人物Aを例として考えると，
+LiDAR1は人物Aの前面，LiDAR2は人物Aの背面を認識することになる．
+この認識のずれにより，それぞれのLiDARが認識した点群から生成される円の中心座標が完全一致する可能性は限りなく低いと考えられる．
 
 
 \section{地形情報の構築}

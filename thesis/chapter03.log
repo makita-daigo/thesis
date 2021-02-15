@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  15 FEB 2021 00:35
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  16 FEB 2021 00:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1663,6 +1663,36 @@ LaTeX Warning: Label `eq:calc_from_gps' multiply defined.
 
 LaTeX Warning: Label `eq:calc_from_gps@cref' multiply defined.
 
+
+LaTeX Warning: Label `fig:occlusion_area' multiply defined.
+
+
+LaTeX Warning: Label `fig:occlusion_area@cref' multiply defined.
+
+
+LaTeX Warning: Label `eq:occlusion' multiply defined.
+
+
+LaTeX Warning: Label `eq:occlusion@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:dummy' multiply defined.
+
+
+LaTeX Warning: Label `fig:dummy@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:example' multiply defined.
+
+
+LaTeX Warning: Label `fig:example@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:person_recognized' multiply defined.
+
+
+LaTeX Warning: Label `fig:person_recognized@cref' multiply defined.
+
 )
 \openout1 = `chapter03.aux'.
 
@@ -1996,14 +2026,6 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 97.
 
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 100.
-
-
-LaTeX Warning: Reference `fig:occlusion_area' on page 1 undefined on input line
- 100.
-
 File: ./figure/chapter3/occlusion_area.png Graphic file (type bmp)
 <./figure/chapter3/occlusion_area.png>
 
@@ -2015,48 +2037,56 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 105.
 
 [4]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 119.
-
-
-LaTeX Warning: Reference `eq:occlusion' on page 1 undefined on input line 119.
-
 File: ./figure/chapter3/dummy.png Graphic file (type bmp)
 <./figure/chapter3/dummy.png>
 
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 133.
-
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 133.
 
-[5]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 137.
+(Font)              using `JY1/hmc/bx/n' instead on input line 133.
 
-
-LaTeX Warning: Reference `eq:occlusion' on page 1 undefined on input line 137.
-
+[5] [6]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 141.
+(Font)              using `JY1/hmc/bx/n' instead on input line 142.
 
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 144.
-
+File: ./figure/chapter3/example.png Graphic file (type bmp)
+<./figure/chapter3/example.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 147.
+(Font)              using `JY1/hmc/bx/n' instead on input line 150.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 151.
+(Font)              using `JY1/hmc/bx/n' instead on input line 150.
 
-[6] [7]
+File: ./figure/chapter3/recognized_person.png Graphic file (type bmp)
+<./figure/chapter3/recognized_person.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 157.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 157.
+
+[7] [8]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 170.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 176.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 180.
+
+[9]
 
 Class bxjsreport Warning: Some old font commands were used in text:
 (bxjsreport)                \it
@@ -2070,19 +2100,16 @@ Class bxjsreport Warning: Some old font commands were used in text:
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28592 strings out of 481140
- 536334 string characters out of 5920653
+ 28596 strings out of 481140
+ 536452 string characters out of 5920653
  723255 words of memory out of 5000000
- 44076 multiletter control sequences out of 15000+600000
+ 44078 multiletter control sequences out of 15000+600000
  594163 words of font info for 128 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,8n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter03.dvi (7 pages, 14812 bytes).
+Output written on chapter03.dvi (9 pages, 18084 bytes).

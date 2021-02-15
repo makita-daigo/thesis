@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  15 FEB 2021 01:51
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  15 FEB 2021 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1883,13 +1883,14 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 42.
+(Font)              using `JY1/hmc/bx/n' instead on input line 43.
 
+[4]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 45.
+(Font)              using `JY1/hmc/bx/n' instead on input line 46.
 
-[4])
+)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
@@ -2214,17 +2215,14 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 144.
+(Font)              using `JY1/hmc/bx/n' instead on input line 146.
 
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 147.
-
+[17]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 151.
+(Font)              using `JY1/hmc/bx/n' instead on input line 150.
 
-) [17] [18]
+) [18]
 \openout2 = `chapter04.aux'.
 
  (./chapter04.tex
@@ -2614,12 +2612,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 28916 strings out of 481140
- 542343 string characters out of 5920653
- 729390 words of memory out of 5000000
- 44305 multiletter control sequences out of 15000+600000
+ 28917 strings out of 481140
+ 542355 string characters out of 5920653
+ 729806 words of memory out of 5000000
+ 44306 multiletter control sequences out of 15000+600000
  658180 words of font info for 228 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,17n,98p,983b,1061s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (45 pages, 104316 bytes).
+Output written on thesis.dvi (45 pages, 104460 bytes).

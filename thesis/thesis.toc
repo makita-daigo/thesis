@@ -21,9 +21,8 @@
 \contentsline {section}{\numberline {3.3}GPS座標からmap座標への変換}{14}%
 \contentsline {section}{\numberline {3.4}オクルージョンが発生した場合のUAVの撮影位置の決定}{15}%
 \contentsline {subsection}{\numberline {3.4.1}1台のLiDARに対するオクルージョンの範囲}{15}%
-\contentsline {subsection}{\numberline {3.4.2}直線探索}{17}%
-\contentsline {section}{\numberline {3.5}終了判定}{17}%
-\contentsline {section}{\numberline {3.6}地形情報の構築}{17}%
+\contentsline {section}{\numberline {3.5}複数LiDARでの人物認識}{17}%
+\contentsline {section}{\numberline {3.6}地形情報の構築}{18}%
 \contentsline {section}{\numberline {3.7}本章のまとめ}{18}%
 \contentsline {chapter}{\numberline {第4章}実環境におけるシステム構築}{19}%
 \contentsline {section}{\numberline {4.1}はじめに}{19}%
