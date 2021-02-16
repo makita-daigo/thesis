@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  16 FEB 2021 00:11
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  16 FEB 2021 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1693,6 +1693,18 @@ LaTeX Warning: Label `fig:person_recognized' multiply defined.
 
 LaTeX Warning: Label `fig:person_recognized@cref' multiply defined.
 
+
+LaTeX Warning: Label `fig:merge' multiply defined.
+
+
+LaTeX Warning: Label `fig:merge@cref' multiply defined.
+
+
+LaTeX Warning: Label `eq:distance' multiply defined.
+
+
+LaTeX Warning: Label `eq:distance@cref' multiply defined.
+
 )
 \openout1 = `chapter03.aux'.
 
@@ -2078,15 +2090,22 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 170.
 
+File: ./figure/chapter3/merge_circle.png Graphic file (type bmp)
+<./figure/chapter3/merge_circle.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 176.
+(Font)              using `JY1/hmc/bx/n' instead on input line 178.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 180.
+(Font)              using `JY1/hmc/bx/n' instead on input line 178.
 
 [9]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 195.
+
+[10]
 
 Class bxjsreport Warning: Some old font commands were used in text:
 (bxjsreport)                \it
@@ -2104,12 +2123,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28596 strings out of 481140
- 536452 string characters out of 5920653
- 723255 words of memory out of 5000000
- 44078 multiletter control sequences out of 15000+600000
+ 28604 strings out of 481140
+ 536641 string characters out of 5920653
+ 723257 words of memory out of 5000000
+ 44085 multiletter control sequences out of 15000+600000
  594163 words of font info for 128 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,8n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter03.dvi (9 pages, 18084 bytes).
+Output written on chapter03.dvi (10 pages, 19924 bytes).

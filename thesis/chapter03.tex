@@ -172,13 +172,32 @@ LiDAR1が認識できる人物を\cref{fig:person_recognized}(a),LiDAR2が認識
 LiDAR1は人物Aの前面，LiDAR2は人物Aの背面を認識することになる．
 この認識のずれにより，それぞれのLiDARが認識した点群から生成される円の中心座標が完全一致する可能性は限りなく低いと考えられる．
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth, clip]{./figure/chapter3/merge_circle.png}
+    \caption{Distance of Two Circle}
+    \label{fig:merge}
+\end{figure}
 
-\section{地形情報の構築}
-．
+\cref{fig:merge}に各LiDARが同一の人物から認識した２つの円を示す．
+2つの円の中心間の距離を$d$とする．
+この中心間の距離の大きさで同一人物であるかどうかの判定を行う．
+2円が同一人物であるとする中心間の距離を$d_{max}$と設定すると，
+$d$が\cref{eq:distance}を満たすとき2つの円は同一人物から生成された円と判定する．
 
+\begin{equation}
+    \begin{aligned}
+        d \leqq d_{max}
+    \end{aligned}
+    \label{eq:distance}
+\end{equation}
 
 \section{本章のまとめ}
+本章では，始めに精度の高いLiDARの位置情報を取得するために用いた演算方法について説明した．
+次にオクルージョンエリアについて言及し，そのエリアを撮影するためにダミーの人物の配置方法について述べた．
+最後に2台のLiDARが認識した物体のマージ方法について述べた．
 
+次章では実機実験を行うための実際のシステムについて説明する．
 
 
 \end{document}
