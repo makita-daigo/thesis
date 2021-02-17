@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  18 FEB 2021 01:17
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  18 FEB 2021 03:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**chapter05.tex
-(./chapter05.tex
+**chapter06.tex
+(./chapter06.tex
 pLaTeX2e <2020-02-02>+3 (based on LaTeX2e <2020-02-02> patch level 5)
 L3 programming layer <2020-03-06>
 (c:/texlive/2020/texmf-dist/tex/latex/bxjscls/bxjsreport.cls
@@ -1638,21 +1638,8 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 10.99478pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 10.99478pt on input line 12.
-(./chapter05.aux
-
-LaTeX Warning: Label `chap:sim_nao' multiply defined.
-
-
-LaTeX Warning: Label `chap:sim_nao@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:ground' multiply defined.
-
-
-LaTeX Warning: Label `fig:ground@cref' multiply defined.
-
-)
-\openout1 = `chapter05.aux'.
+(./chapter06.aux)
+\openout1 = `chapter06.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 12.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
@@ -1842,7 +1829,7 @@ LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 6.5395pt on input line 12.
 
-第5章
+第6章
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 22.80319pt on input line 15.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
@@ -1874,104 +1861,41 @@ LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 29.5822pt on input line 15.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 19.
+(Font)              scaled to size 15.83249pt on input line 17.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 19.
+(Font)              scaled to size 15.83249pt on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.12152pt on input line 19.
+(Font)              scaled to size 17.12152pt on input line 17.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 19.
+(Font)              using `JY1/hmc/bx/n' instead on input line 17.
 
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <17.12152> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 19.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 19.
+(Font)              scaled to size 15.83249pt on input line 17.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <17.12152> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 19.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 19.
+(Font)              scaled to size 15.83249pt on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.12152pt on input line 19.
+(Font)              scaled to size 17.12152pt on input line 17.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 25.
+(Font)              using `JY1/hmc/bx/n' instead on input line 22.
 
-File: ./figure/chapter5/ground.png Graphic file (type bmp)
-<./figure/chapter5/ground.png>
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 37.
-
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <11.88995> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 37.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.88995pt on input line 37.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 37.
-
-File: ./figure/chapter5/setting.png Graphic file (type bmp)
-<./figure/chapter5/setting.png>
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 44.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 44.
-
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 48.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 48.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.26794pt on input line 48.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 48.
-
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <14.26794> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 48.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <14.26794> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 48.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.26794pt on input line 48.
 [1
 
 
 
-]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 53.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 57.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 61.
-
-[2] [3] [4] (./chapter05.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] [2] (./chapter06.aux) ) 
 Here is how much of TeX's memory you used:
- 28580 strings out of 481140
- 535853 string characters out of 5920653
- 720256 words of memory out of 5000000
- 44067 multiletter control sequences out of 15000+600000
- 591369 words of font info for 127 fonts, out of 8000000 for 9000
+ 28546 strings out of 481140
+ 535179 string characters out of 5920653
+ 721256 words of memory out of 5000000
+ 44039 multiletter control sequences out of 15000+600000
+ 582449 words of font info for 119 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,6n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter05.dvi (4 pages, 5564 bytes).
+Output written on chapter06.dvi (2 pages, 4664 bytes).

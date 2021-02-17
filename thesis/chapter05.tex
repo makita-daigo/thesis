@@ -23,7 +23,9 @@
 
 
 \section{実験設定}
-実験は大阪市立大学の野球場で行った．東をx軸正方向，北をy軸正方向とし
+実機を実装した実験は２つ行った．1つ目の実験は大阪市立大学の野球場，2つ目の実験は大阪市立大学のハンドボールコートで行った．以下に2つの実験で共通の設定を述べる．
+
+東をx軸正方向，北をy軸正方向とし
 1[m]を軸の1目盛りとするmap座標系を考える．原点を中心に10[m]を1辺の長さとして正方形の領域を人物の行動可能領域とする．
 その領域の東側，西側，北側，南側の辺から10[m]$times$15[m]の長方形の領域をUAVの飛行範囲と設定する．
 基準とするLiDARを北向きに設置しその位置をmap座標系の(0.0, -5.0)と定義することで原点の座標とGPS位置を逆算する．
@@ -32,22 +34,38 @@
 \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth, clip]{./figure/chapter5/ground.png}
-    \caption{Hand Ball Court in Osaka City Univercity}
+    \caption{Handball Court and Baseball Ground in Osaka City Univercity}
     \label{fig:ground}
 \end{figure}
 
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth, clip]{./figure/chapter5/setting.png}
+    \caption{Experiment Environment}
+    \label{fig:envi}
+\end{figure}
+
+\subsection{ダミーを配置した場合の撮影計画}
+1つ目の実験として，1台のLiDARに対して人物行動領域内に複数の人物を配置し，
+ダミーを配置する場合とダミーを配置しない場合の双方で撮影計画を行い，
+UAVの目標移動位置の比較を行う．
+
+\subsection{LiDARを2台用いたマージの実機実験}
+次にLiDARを2台設置しての人物認識を行う．
+LiDAR1の位置は実験設定で述べた位置に配置し，LiDAR2は南側を向け任意の位置に配置する．
 
 \section{スロープ型の地形でのシミュレーション}
 
 
 
 \section{本章のまとめ}
-本章では，二足歩行ロボットNAOにおいて，
-標準の平面歩行制御における垂直方向のロバスト性を利用した三次元地形での計画として，
-まず，計画シミュレーションによりスロープ形状の地形に適応した脚配置計画が得られることを確認した．
-また，Kinect v2センサを用いて実際に計測したスロープに対しても同様に計画ができることを示した．
-さらに，実機実験により実際に前述のロバスト性を利用してスロープを歩行できる
-計画が得られていることや，目標到達の精度や歩行の安定性について有効性があることを示した．
+本章では2つの実機実験の結果を示し，その結果について考察を行った．
+
+ダミーを配置することにより，配置しない撮影計画と比較してUAVの目標位置が変化することを示した．
+
+次に2台のLiDARでの人物認識について，各LiDARから得られたデータをマージし，そのマージが適切であるかの判断を行った．
+
+次章では，この実験全体に対してのまとめと課題，今後の展望について論述する．
 
 
 \end{document}
