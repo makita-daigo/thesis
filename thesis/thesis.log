@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  16 FEB 2021 23:20
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  19 FEB 2021 01:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1826,18 +1826,11 @@ LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 27.35504pt on input line 15.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 29.5822pt on input line 15.
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 19.
-(c:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
-File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
-)
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.88995pt on input line 19.
 ) [1
 
 
 
-] [2]
+]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 25.
@@ -1863,48 +1856,48 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 5.
+(Font)              using `JY1/hmc/bx/n' instead on input line 6.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 16.
+(Font)              using `JY1/hmc/bx/n' instead on input line 17.
 
-[3
+[2
 
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 27.
+(Font)              using `JY1/hmc/bx/n' instead on input line 28.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 33.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 38.
+(Font)              using `JY1/hmc/bx/n' instead on input line 34.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 41.
 
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 44.
+
 )
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4]
+ [3]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 28.
 
-(./thesis.lof)
+(./thesis.lof [4
+
+])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [5
-
-] [6]
+ [5]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 31.
@@ -1913,7 +1906,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [7
+ [6
 
 ]
 \openout2 = `chapter01.aux'.
@@ -1965,22 +1958,26 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
 
 ]
-File: ./figure/chapter1/proposed_method.png Graphic file (type bmp)
-<./figure/chapter1/proposed_method.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 57.
+
+File: ./figure/chapter1/propose.png Graphic file (type bmp)
+<./figure/chapter1/propose.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 66.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 62.
+(Font)              using `JY1/hmc/bx/n' instead on input line 66.
 
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 62.
-
+[2]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 76.
+(Font)              using `JY1/hmc/bx/n' instead on input line 71.
 
-[2]) [3]
+) [3]
 \openout2 = `chapter02.aux'.
 
  (./chapter02.tex
@@ -2378,25 +2375,44 @@ File: ./figure/chapter5/ground.png Graphic file (type bmp)
 <./figure/chapter5/ground.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 35.
+(Font)              using `JY1/hmc/bx/n' instead on input line 37.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 35.
+(Font)              using `JY1/hmc/bx/n' instead on input line 37.
 
+File: ./figure/chapter5/setting.png Graphic file (type bmp)
+<./figure/chapter5/setting.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 40.
+(Font)              using `JY1/hmc/bx/n' instead on input line 44.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 44.
 
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 48.
+
 [30
 
 
 
-]) [31]
+]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 53.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 57.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 61.
+
+[31] [32]) [33]
 \openout2 = `chapter06.aux'.
 
  (./chapter06.tex
@@ -2411,28 +2427,13 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 41.
+(Font)              using `JY1/hmc/bx/n' instead on input line 22.
 
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 45.
-
-
-LaTeX Warning: Citation `maciejowski_2005jp' on page 32 undefined on input line
- 45.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 46.
-
-
-LaTeX Warning: Citation `yabe_1999' on page 32 undefined on input line 46.
-
-[32
+[34
 
 
 
-]) [33]
+]) [35]
 \openout2 = `acknowledgment.aux'.
 
  (./acknowledgment.tex
@@ -2440,7 +2441,7 @@ LaTeX Warning: Citation `yabe_1999' on page 32 undefined on input line 46.
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 15.
 
-) [34
+) [36
 
 
 
@@ -2453,11 +2454,11 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 19.
 
-[35
+[37
 
 
 
-]) [36]
+]) [38]
 \openout2 = `achievment.aux'.
 
  (./achievment.tex
@@ -2468,6 +2469,14 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 20.
+
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 22.
+(c:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 11.88995pt on input line 22.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -2489,7 +2498,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 36.
 
-) [37
+) [39
 
 
 
@@ -2513,12 +2522,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 28837 strings out of 481140
- 540941 string characters out of 5920653
- 729422 words of memory out of 5000000
- 44220 multiletter control sequences out of 15000+600000
+ 28841 strings out of 481140
+ 541014 string characters out of 5920653
+ 729466 words of memory out of 5000000
+ 44223 multiletter control sequences out of 15000+600000
  603572 words of font info for 138 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,9n,98p,983b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (45 pages, 95512 bytes).
+Output written on thesis.dvi (46 pages, 96896 bytes).

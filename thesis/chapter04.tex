@@ -28,7 +28,7 @@ ROSでサポートされている言語は主にC++とPythonでありJavaやLisp
 そのノード間で情報をやりとりしてロボットなどの制御を行う．ノード間の通信は主に3種類あり，単方向非同期通信方式のトピック通信，
 双方向同期通信方式のサービス通信，双方向非同期通信方式のアクション通信を利用できる．
 本研究ではトピック通信のみを用いているので，サービス通信，アクション通信の説明は省略する．
-図にトピック通信のイメージ図を示す．
+\cref{fig:ros}にトピック通信のイメージ図を示す．
 トピックとはノード間でやりとりするメッセージの名前であり，トピックを一定周期で配信するノードを配信者ノードと
 配信されたトピックを受ける購読者ノードによって通信システムは構築される．
 ノード実行時にROSマスターにトピック名とメッセージの形式が登録され，購読者ノードはROSマスター内で
@@ -36,14 +36,20 @@ ROSでサポートされている言語は主にC++とPythonでありJavaやLisp
 本実験では，撮影計画を実行するPC（ホスト，LiDARに接続しているPC，UAVを直接制御しているタブレットにROSを導入し，
 地上からUAVの制御を行う．
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\linewidth, clip]{./figure/chapter4/ros.png}
+    \caption{ROS Communication Model}
+    \label{fig:ros}
+\end{figure}
 
 \section{ROSによるUAV制御}
 本研究では，撮影計画を実装するUAVとして，民生用ドローンおよび関連機器製造会社であるDJI社のMavic Miniを複数台使用する．
 以下，MavicMiniの性能の概要と制御を行うための通信モデルについて説明する．
 
-\begin{figure}[t]
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.9\linewidth, clip]{./figure/chapter4/mavic_mini.jpg}
+    \includegraphics[width=0.7\linewidth, clip]{./figure/chapter4/mavic_mini.jpg}
     \url{Source：https://www.dji.com/jp/mavic-mini}
     \caption{Mavic Mini}
     \label{fig:mavic_mini}
@@ -62,7 +68,7 @@ DJI Mobile SDKはAndroid端末，IOS端末のアプリによりフライトコ�
 LiDARはレーザ機器やセンサなどの開発を行う北陽電機株式会社のUTM-30LX-EW，同社のUST-30LXの2台を使用する．
 性能はどちらも検出範囲は270[deg]，角度分解能は0.25[deg]であり，LANケーブルから点群情報を送信する．
 
-\begin{figure}[p]
+\begin{figure}[b]
     \centering
     \includegraphics[width=0.5\linewidth, clip]{./figure/chapter4/lidar1.jpg}
     \url{Source：https://www.hokuyo-aut.co.jp/search/single.php?serial=146}
@@ -70,7 +76,7 @@ LiDARはレーザ機器やセンサなどの開発を行う北陽電機株式会
     \label{fig:lidar1}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}[t]
     \centering
     \includegraphics[width=0.5\linewidth, clip]{./figure/chapter4/lidar2.png}
     \url{Source：https://www.hokuyo-aut.co.jp/search/single.php?serial=195}
@@ -83,7 +89,7 @@ LiDARはレーザ機器やセンサなどの開発を行う北陽電機株式会
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\linewidth, clip]{./figure/chapter4/GPS.png}
+    \includegraphics[width=0.5\linewidth, clip]{./figure/chapter4/GPS.png}
     \url{Source：https://www.hokuyo-aut.co.jp/search/single.php?serial=146}
     \caption{Multi-band GNSS Antenna ANN-MB-01}
     \label{fig:GPS}
@@ -104,7 +110,7 @@ UAV撮影計画のROSプログラム内で使用することができる．
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1.2\linewidth, clip]{./figure/chapter4/wireless_model.png}
+    \includegraphics[width=1.0\linewidth, clip]{./figure/chapter4/wireless_model.png}
     \caption{Wireless Communication Model for LiDAR and GPS antenna}
     \label{fig:wireless_model}
 \end{figure}
@@ -115,9 +121,9 @@ UAV撮影計画のROSプログラム内で使用することができる．
 赤で示されている通信が無線通信であり，水色で示されている通信が有線通信である．
 
 \newpage
-\begin{figure}[p]
+\begin{figure}[h]
     \centering
-    \includegraphics[width=1.0\linewidth, clip]{./figure/chapter4/communication_model.png}
+    \includegraphics[width=0.8\linewidth, clip]{./figure/chapter4/communication_model.png}
     \caption{Communication System}
     \label{fig:system}
 \end{figure}

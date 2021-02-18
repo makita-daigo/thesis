@@ -1,13 +1,13 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  19 FEB 2021 01:52
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  19 FEB 2021 02:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**chapter01.tex
-(./chapter01.tex
+**resume.tex
+(./resume.tex
 pLaTeX2e <2020-02-02>+3 (based on LaTeX2e <2020-02-02> patch level 5)
 L3 programming layer <2020-03-06>
-(c:/texlive/2020/texmf-dist/tex/latex/bxjscls/bxjsreport.cls
-Document Class: bxjsreport 2020/03/25 v2.0 BXJS document classes
+(c:/texlive/2020/texmf-dist/tex/latex/bxjscls/bxjsarticle.cls
+Document Class: bxjsarticle 2020/03/25 v2.0 BXJS document classes
 (c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count166
@@ -67,15 +67,14 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks17
 )
 \c@part=\count172
-\c@chapter=\count173
-\c@section=\count174
-\c@subsection=\count175
-\c@subsubsection=\count176
-\c@paragraph=\count177
-\c@subparagraph=\count178
+\c@section=\count173
+\c@subsection=\count174
+\c@subsubsection=\count175
+\c@paragraph=\count176
+\c@subparagraph=\count177
 \@abstractbox=\box61
-\c@figure=\count179
-\c@table=\count180
+\c@figure=\count178
+\c@table=\count179
 \abovecaptionskip=\skip51
 \belowcaptionskip=\skip52
 \jsc@tocl@width=\dimen166
@@ -84,7 +83,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (c:/texlive/2020/texmf-dist/tex/latex/bxwareki/bxwareki.sty
 Package: bxwareki 2019/06/01 v0.6
-\c@warekiyear=\count181
+\c@warekiyear=\count180
 
 (c:/texlive/2020/texmf-dist/tex/latex/bxwareki/bxwareki-cd.def
 File: bxwareki-cd.def 2019/06/01 v0.6
@@ -97,9 +96,9 @@ File: bxjsja-minimal.def 2020/03/25 v2.0 BXJS document classes
 LaTeX Info: Redefining \textmc on input line 228.
 LaTeX Info: Redefining \textgt on input line 229.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.4264pt on input line 233.
+(Font)              scaled to size 10.90744pt on input line 233.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.4264pt on input line 233.
+(Font)              scaled to size 10.90744pt on input line 233.
 )
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
@@ -137,10 +136,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
 (c:/texlive/2020/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
 Package: ajmacros 2019/04/01 21:00 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
 >
-\@tempcntc=\count182
-\@tempcntd=\count183
-\@tempcnte=\count184
-\@tempcntf=\count185
+\@tempcntc=\count181
+\@tempcntd=\count182
+\@tempcnte=\count183
+\@tempcntf=\count184
 ))
 (c:/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
@@ -164,7 +163,7 @@ File: bxtoolbox.def 2017/05/29 v1.1
 
 (c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count186
+\etb@tempcnta=\count185
 ))
 (c:/texlive/2020/texmf-dist/tex/latex/bxbase/bxtoolbox-ext.def
 File: bxtoolbox-ext.def 2017/05/29 v1.1
@@ -175,7 +174,7 @@ File: bxtoolbox-ja.def 2017/05/29 v1.1
 
 (c:/texlive/2020/texmf-dist/tex/platex/pxbase/pxbsjc.def)
 (c:/texlive/2020/texmf-dist/tex/platex/pxbase/pxbsjc1.def)))
-\bxUcv=\count187
+\bxUcv=\count186
 )))
 (c:/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
@@ -770,9 +769,14 @@ y)
 Package grffile Info: This package is an empty stub for compatibility on input 
 line 40.
 )
-(c:/texlive/2020/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (454.10269pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (701.39043pt) is ignored.
+
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip53
@@ -793,13 +797,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count188
+\inf@bad=\count187
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count189
-\leftroot@=\count190
+\uproot@=\count188
+\leftroot@=\count189
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count191
-\DOTSCASE@=\count192
+\classnum@=\count190
+\DOTSCASE@=\count191
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -808,15 +812,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen174
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count193
-\c@MaxMatrixCols=\count194
+\macc@depth=\count192
+\c@MaxMatrixCols=\count193
 \dotsspace@=\muskip16
-\c@parentequation=\count195
-\dspbrk@lvl=\count196
+\c@parentequation=\count194
+\dspbrk@lvl=\count195
 \tag@help=\toks21
-\row@=\count197
-\column@=\count198
-\maxfields@=\count199
+\row@=\count196
+\column@=\count197
+\maxfields@=\count198
 \andhelp@=\toks22
 \eqnshift@=\dimen175
 \alignsep@=\dimen176
@@ -852,7 +856,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count266
+\g_MT_multlinerow_int=\count199
 \l_MT_multwidth_dim=\dimen181
 \origjot=\skip56
 \l_MT_shortvdotswithinadjustabove_dim=\dimen182
@@ -907,7 +911,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks25
 \XKV@tempa@toks=\toks26
 )
-\XKV@depth=\count267
+\XKV@depth=\count266
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
@@ -919,13 +923,13 @@ LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.88995pt on input line 112.
+(Font)              scaled to size 11.34995pt on input line 112.
 )
 (c:/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 75.
 )
-\ntxt@cntz=\count268
+\ntxt@cntz=\count267
 LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 263.
 )
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/newtxmath.sty
@@ -935,11 +939,11 @@ Package: newtxmath 2020/03/02 v1.625
 ) (c:/texlive/2020/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-\tx@cntz=\count269
+\tx@cntz=\count268
 
 (c:/texlive/2020/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count270
-\tx@IsAlNum=\count271
+\tx@Isdigit=\count269
+\tx@IsAlNum=\count270
 \tx@tA=\toks27
 \tx@tB=\toks28
 \tx@su=\read2
@@ -1035,12 +1039,12 @@ LaTeX Font Info:    Redeclaring math delimiter \vert on input line 805.
 LaTeX Font Info:    Redeclaring math accent \dot on input line 876.
 LaTeX Font Info:    Redeclaring math accent \ddot on input line 877.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 1940.
-\ntx@numstart=\count272
-\ntx@UCstart=\count273
-\ntx@lcstart=\count274
-\ntx@tmpc=\count275
-\ntx@imath=\count276
-\ntx@jmath=\count277
+\ntx@numstart=\count271
+\ntx@UCstart=\count272
+\ntx@lcstart=\count273
+\ntx@tmpc=\count274
+\ntx@imath=\count275
+\ntx@jmath=\count276
 LaTeX Info: Redefining \Bbbk on input line 2449.
 LaTeX Info: Redefining \not on input line 2598.
 )
@@ -1069,18 +1073,57 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count278
-\c@continuedfloat=\count279
-) (c:/texlive/2020/texmf-dist/tex/latex/footmisc/footmisc.sty
+\c@caption@flags=\count277
+\c@continuedfloat=\count278
+) (c:/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box65
+\beforetitleunit=\skip57
+\aftertitleunit=\skip58
+\ttl@plus=\dimen197
+\ttl@minus=\dimen198
+\ttl@toksa=\toks30
+\titlewidth=\dimen199
+\titlewidthlast=\dimen256
+\titlewidthfirst=\dimen257
+)
+(c:/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box66
+\UL@hyphenbox=\box67
+\UL@skip=\skip59
+\UL@hook=\toks31
+\UL@height=\dimen258
+\UL@pe=\count279
+\UL@pixel=\dimen259
+\ULC@box=\box68
+Package: ulem 2019/11/18
+\ULdepth=\dimen260
+)
+\c@ttlp@side=\count280
+\ttlp@side=\count281
+
+(c:/texlive/2020/texmf-dist/tex/latex/secdot/secdot.sty
+Package: secdot 2000/06/20 v1.0 section numbers with dots
+)
+(c:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip60
+\enit@outerparindent=\dimen261
+\enit@toks=\toks32
+\enit@inbox=\box69
+\enit@count@id=\count282
+\enitdp@description=\count283
+)
+(c:/texlive/2020/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks30
-\footnotemargin=\dimen197
+\FN@temptoken=\toks33
+\footnotemargin=\dimen262
 
 
 LaTeX Warning: Command \@makecol  has changed.
                Check if current package is valid.
 
-\c@pp@next@reset=\count280
+\c@pp@next@reset=\count284
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1089,395 +1132,45 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
-) (c:/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-(c:/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-03-06 L3 programming layer (loader) 
-
-(c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
-File: l3backend-dvipdfmx.def 2020-03-12 L3 backend support: dvipdfmx
-\g__graphics_track_int=\count281
-\l__pdf_internal_box=\box65
-\g__pdf_backend_object_int=\count282
-\g__pdf_backend_annotation_int=\count283
-))
-Package: xparse 2020-03-06 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count284
-\g__xparse_grabber_int=\count285
-\l__xparse_m_args_int=\count286
-\l__xparse_v_nesting_int=\count287
-)
-(c:/texlive/2020/texmf-dist/tex/latex/tools/xr.sty
-Package: xr 2019/07/22 v5.05 eXternal References (DPC)
-)
-(c:/texlive/2020/texmf-dist/tex/platex/base/plext.sty
-Package: plext 2019/09/29 v1.2l pLaTeX package file (community edition)
-\@floatbox=\box66
-\floatwidth=\dimen198
-\floatheight=\dimen199
-\floatruletick=\dimen256
-\captionfloatsep=\dimen257
-\captionwidth=\dimen258
-\@captionbox=\box67
-LaTeX Info: Redefining \parbox on input line 333.
-\save@ybaselineshift=\dimen259
-\save@tbaselineshift=\dimen260
-\@picwd=\dimen261
-\rensujiskip=\skip57
-)
-(c:/texlive/2020/texmf-dist/tex/latex/platex-tools/plextarray.sty
-Package: plextarray 2018/10/27 v1.1d Tabular extension package for plext and ar
-ray
-
-(c:/texlive/2020/texmf-dist/tex/latex/platex-tools/plarray.sty
-Package: plarray 2018/10/27 v0.1h Tabular extension package for pLaTeX/upLaTeX
-
-(c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+)) (c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen262
-\ar@mcellbox=\box68
-\extrarowheight=\dimen263
-\NC@list=\toks31
-\extratabsurround=\skip58
-\backup@length=\skip59
-\ar@cellbox=\box69
-)))
-(c:/texlive/2020/texmf-dist/tex/latex/platex-tools/plextdelarray.sty
-Package: plextdelarray 2018/09/18 v1.0a array delimiter package for plext and d
-elarray
-
-(c:/texlive/2020/texmf-dist/tex/latex/tools/delarray.sty
-Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
-))
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen264
-\pgfutil@tempdimb=\dimen265
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
-) (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box70
-
-(c:/texlive/2020/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
-))
-Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks35
-))
-\pgf@x=\dimen266
-\pgf@y=\dimen267
-\pgf@xa=\dimen268
-\pgf@ya=\dimen269
-\pgf@xb=\dimen270
-\pgf@yb=\dimen271
-\pgf@xc=\dimen272
-\pgf@yc=\dimen273
-\pgf@xd=\dimen274
-\pgf@yd=\dimen275
-\w@pgf@writea=\write3
-\r@pgf@reada=\read3
-\c@pgf@counta=\count288
-\c@pgf@countb=\count289
-\c@pgf@countc=\count290
-\c@pgf@countd=\count291
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count292
- (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+\col@sep=\dimen263
+\ar@mcellbox=\box70
+\extrarowheight=\dimen264
+\NC@list=\toks34
+\extratabsurround=\skip61
+\backup@length=\skip62
+\ar@cellbox=\box71
 )
-Driver file for pgf: pgfsys-dvipdfmx.def
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
-File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
-)
-\pgfsys@objnum=\count293
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count294
-\pgfsyssoftpath@bigbuffer@items=\count295
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)) (c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: dvipdfmx.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen276
-\pgfmath@count=\count296
-\pgfmath@box=\box71
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
-x)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
-.code.tex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
-ex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
-de.tex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
-x)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
-etics.code.tex)))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count297
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen277
-\pgf@picmaxx=\dimen278
-\pgf@picminy=\dimen279
-\pgf@picmaxy=\dimen280
-\pgf@pathminx=\dimen281
-\pgf@pathmaxx=\dimen282
-\pgf@pathminy=\dimen283
-\pgf@pathmaxy=\dimen284
-\pgf@xx=\dimen285
-\pgf@xy=\dimen286
-\pgf@yx=\dimen287
-\pgf@yy=\dimen288
-\pgf@zx=\dimen289
-\pgf@zy=\dimen290
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
-e.tex
-File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen291
-\pgf@path@lasty=\dimen292
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
-x
-File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen293
-\pgf@shorten@start@additional=\dimen294
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box72
-\pgf@hbox=\box73
-\pgf@layerbox@main=\box74
-\pgf@picture@serial@count=\count298
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
-.tex
-File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen295
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
-ode.tex
-File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen296
-\pgf@pt@y=\dimen297
-\pgf@pt@temp=\dimen298
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
-de.tex
-File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen299
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen300
-\pgf@sys@shading@range@num=\count299
-\pgf@shadingcount=\count300
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box75
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
-.tex
-File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-))) (c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
-x
-File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box76
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
-y
-Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen301
-\pgf@nodesepend=\dimen302
-)
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
-y
-Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
-)) (c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen303
-\pgffor@skip=\dimen304
-\pgffor@stack=\toks42
-\pgffor@toks=\toks43
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
-de.tex
-File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count301
-\pgfplotmarksize=\dimen305
-)
-\tikz@lastx=\dimen306
-\tikz@lasty=\dimen307
-\tikz@lastxsaved=\dimen308
-\tikz@lastysaved=\dimen309
-\tikz@lastmovetox=\dimen310
-\tikz@lastmovetoy=\dimen311
-\tikzleveldistance=\dimen312
-\tikzsiblingdistance=\dimen313
-\tikz@figbox=\box77
-\tikz@figbox@bg=\box78
-\tikz@tempbox=\box79
-\tikz@tempbox@bg=\box80
-\tikztreelevel=\count302
-\tikznumberofchildren=\count303
-\tikznumberofcurrentchild=\count304
-\tikz@fig@count=\count305
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count306
-\pgfmatrixcurrentcolumn=\count307
-\pgf@matrix@numberofcolumns=\count308
-)
-\tikz@expandcount=\count309
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-))) (./preamble_user.tex
 (c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen314
-\lightrulewidth=\dimen315
-\cmidrulewidth=\dimen316
-\belowrulesep=\dimen317
-\belowbottomsep=\dimen318
-\aboverulesep=\dimen319
-\abovetopsep=\dimen320
-\cmidrulesep=\dimen321
-\cmidrulekern=\dimen322
-\defaultaddspace=\dimen323
-\@cmidla=\count310
-\@cmidlb=\count311
-\@aboverulesep=\dimen324
-\@belowrulesep=\dimen325
-\@thisruleclass=\count312
-\@lastruleclass=\count313
-\@thisrulewidth=\dimen326
-)
-(c:/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip60
-\LTright=\skip61
-\LTpre=\skip62
-\LTpost=\skip63
-\LTchunksize=\count314
-\LTcapwidth=\dimen327
-\LT@head=\box81
-\LT@firsthead=\box82
-\LT@foot=\box83
-\LT@lastfoot=\box84
-\LT@cols=\count315
-\LT@rows=\count316
-\c@LT@tables=\count317
-\c@LT@chunks=\count318
-\LT@p@ftn=\toks44
+\heavyrulewidth=\dimen265
+\lightrulewidth=\dimen266
+\cmidrulewidth=\dimen267
+\belowrulesep=\dimen268
+\belowbottomsep=\dimen269
+\aboverulesep=\dimen270
+\abovetopsep=\dimen271
+\cmidrulesep=\dimen272
+\cmidrulekern=\dimen273
+\defaultaddspace=\dimen274
+\@cmidla=\count285
+\@cmidlb=\count286
+\@aboverulesep=\dimen275
+\@belowrulesep=\dimen276
+\@thisruleclass=\count287
+\@lastruleclass=\count288
+\@thisrulewidth=\dimen277
 )
 (c:/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count319
-\c@subtable=\count320
+\c@subfigure=\count289
+\c@subtable=\count290
 )
 (c:/texlive/2020/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-)
-(c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (c:/texlive/2020/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
@@ -1488,227 +1181,84 @@ Package cleveref Info: always capitalise cross-reference names on input line 78
 Package cleveref Info: no abbreviation of names on input line 7852.
 )
 \symcmlargesymbols=\mathgroup15
-LaTeX Font Info:    Redeclaring math symbol \sumop on input line 85.
-LaTeX Font Info:    Redeclaring math symbol \prodop on input line 87.
-
-(c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
-
-(c:/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
-)
-\l__siunitx_tmp_box=\box85
-\l__siunitx_tmp_dim=\dimen328
-\l__siunitx_tmp_int=\count321
-\l__siunitx_number_mantissa_length_int=\count322
-\l__siunitx_number_uncert_length_int=\count323
-\l__siunitx_round_int=\count324
-\l__siunitx_process_decimal_int=\count325
-\l__siunitx_process_uncertainty_int=\count326
-\l__siunitx_process_fixed_int=\count327
-\l__siunitx_process_integer_min_int=\count328
-\l__siunitx_process_precision_int=\count329
-\l__siunitx_group_min_int=\count330
-\l__siunitx_angle_marker_box=\box86
-\l__siunitx_angle_unit_box=\box87
-\l__siunitx_angle_marker_dim=\dimen329
-\l__siunitx_angle_unit_dim=\dimen330
-\l__siunitx_unit_int=\count331
-\l__siunitx_unit_denominator_int=\count332
-\l__siunitx_unit_numerator_int=\count333
-\l__siunitx_unit_prefix_int=\count334
-\l__siunitx_unit_prefix_base_int=\count335
-\l__siunitx_unit_prefix_gram_int=\count336
-\l__siunitx_number_product_int=\count337
-\c__siunitx_one_fill_skip=\skip64
-\l__siunitx_table_unit_align_skip=\skip65
-\l__siunitx_table_exponent_dim=\dimen331
-\l__siunitx_table_integer_dim=\dimen332
-\l__siunitx_table_mantissa_dim=\dimen333
-\l__siunitx_table_marker_dim=\dimen334
-\l__siunitx_table_result_dim=\dimen335
-\l__siunitx_table_uncert_dim=\dimen336
-\l__siunitx_table_fill_pre_dim=\dimen337
-\l__siunitx_table_fill_post_dim=\dimen338
-\l__siunitx_table_fill_mid_dim=\dimen339
-\l__siunitx_table_pre_box=\box88
-\l__siunitx_table_post_box=\box89
-\l__siunitx_table_mantissa_box=\box90
-\l__siunitx_table_result_box=\box91
-\l__siunitx_table_number_align_skip=\skip66
-\l__siunitx_table_text_align_skip=\skip67
-
-(c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
-Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
-))
-(c:/texlive/2020/texmf-dist/tex/platex/pxbase/pxbabel.sty
-Package: pxbabel 2017/07/03 v1.1b PX Babel interface for CJK
-
-
-Package pxbabel Warning: No multi-CJK support found, font switch disabled
-(pxbabel)                (I need upTeX-extension or otf package with `multi').
-
-(c:/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/03/22 3.42 The Babel package
-
-(c:/texlive/2020/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2020/03/22 3.42 Babel switching mechanism
-)
-(c:/texlive/2020/texmf-dist/tex/generic/babel-greek/greek.ldf
-Language: greek 2020/03/17 v1.9j Greek support for the babel system
-
-(c:/texlive/2020/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/03/22 3.42 Babel common definitions
-\babel@savecnt=\count338
-\U@D=\dimen340
-
-(c:/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read4
-\bbl@dirlevel=\count339
-)
-\bbl@monogreek=\count340
-\bbl@polygreek=\count341
-\bbl@ancientgreek=\count342
-LaTeX Info: Redefining \& on input line 116.
-)
-(c:/texlive/2020/texmf-dist/tex/generic/babel-russian/russianb.ldf
-Language: russian 2017/08/12 1.3j Russian support for the Babel system
-Package babel Info: Making " an active character on input line 120.
-Package babel Info: Default for \cyrdash is provided on input line 157.
-)
-(c:/texlive/2020/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: \l@canadian = using hyphenrules for english
-(babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language21) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language21) on input line 108.
-)))))
-Package xr Info: IMPORTING LABELS FROM thesis.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM abstract.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter01.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter02.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter03.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter04.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter05.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM chapter06.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM acknowledgment.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM achievment.aux on input line 9.
-Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
-
-
-LaTeX Warning: Label `nishikawa_2018' multiply defined.
-
-
-LaTeX Warning: Label `nishikawa_2018_2' multiply defined.
-
-
-LaTeX Warning: Label `Teuliere_2011' multiply defined.
-
-
-LaTeX Warning: Label `bethke_2007' multiply defined.
-
-
-LaTeX Warning: Label `nasser_2013' multiply defined.
-
-
-LaTeX Warning: Label `price_2018' multiply defined.
-
-
-LaTeX Warning: Label `wang_2009' multiply defined.
-
-
-LaTeX Warning: Label `bajracharya_2009' multiply defined.
-
-
-LaTeX Warning: Label `furukawa_2006' multiply defined.
-
-
-LaTeX Warning: Label `furukawa_2012' multiply defined.
-
-
-LaTeX Warning: Label `pack_2009' multiply defined.
-
-
-LaTeX Warning: Label `sasaki_2019' multiply defined.
-
+LaTeX Font Info:    Redeclaring math symbol \sumop on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \prodop on input line 79.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 12.
+(Font)              scaled to size 10.49544pt on input line 91.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 12.
-(./chapter01.aux
+(Font)              scaled to size 10.49544pt on input line 91.
 
-LaTeX Warning: Label `fig:proposed_system' multiply defined.
-
-
-LaTeX Warning: Label `fig:proposed_system@cref' multiply defined.
-
+(c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
+File: l3backend-dvipdfmx.def 2020-03-12 L3 backend support: dvipdfmx
+\g__graphics_track_int=\count291
+\l__pdf_internal_box=\box72
+\g__pdf_backend_object_int=\count292
+\g__pdf_backend_annotation_int=\count293
 )
-\openout1 = `chapter01.aux'.
+(./resume.aux)
+\openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 12.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 91.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 12.
+ 91.
  (c:/texlive/2020/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 91.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-12.
+91.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 12.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
-2.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 91.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 9
+1.
 
 (c:/texlive/2020/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 12.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
-2.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 91.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 9
+1.
 
 (c:/texlive/2020/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 91.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 12.
+ 91.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 91.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 12.
+e 91.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    ... okay on input line 91.
 
 (I search kanjifont definition file: . . )
 *geometry* detected driver: dvipdfm
@@ -1719,216 +1269,242 @@ LaTeX Font Info:    ... okay on input line 12.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * hratio: 1:1
 * vratio: 1:1
-* modes: includehead includefoot 
-* h-part:(L,W,R)=(71.70259pt, 454.10269pt, 71.70259pt)
-* v-part:(T,H,B)=(71.8282pt, 701.39043pt, 71.82822pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(51.21495pt, 495.07797pt, 51.21495pt)
+* v-part:(T,H,B)=(82.51299pt, 688.5567pt, 73.97716pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=450.78604pt
-* \textheight=639.6795pt
-* \oddsidemargin=1.09093pt
-* \evensidemargin=1.09093pt
-* \topmargin=-9.9342pt
-* \headheight=23.7799pt
-* \headsep=16.56796pt
-* \topskip=11.88995pt
-* \footskip=28.45792pt
-* \marginparwidth=10.99478pt
-* \marginparsep=21.98956pt
-* \columnsep=21.98956pt
-* \skip\footins=19.02393pt plus 5.94498pt minus 2.37799pt
+* \textwidth=482.79013pt
+* \textheight=683.2667pt
+* \oddsidemargin=-14.91112pt
+* \evensidemargin=-14.91112pt
+* \topmargin=1.53806pt
+* \headheight=11.34995pt
+* \headsep=0.0pt
+* \topskip=11.34995pt
+* \footskip=0.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=18.49428pt
+* \columnsep=18.49428pt
+* \skip\footins=18.15991pt plus 5.67497pt minus 2.26999pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count343
-\c@mv@boldtabular=\count344
+\c@mv@tabular=\count294
+\c@mv@boldtabular=\count295
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: longtable package is loaded.
-(c:/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
-)
 Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 14.79541pt on input line 94.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 14.79541pt on input line 94.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 16.0pt on input line 94.
 
-ABD: EveryShipout initializing macros
-(c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
-glish.dict
-Dictionary: translator-basic-dictionary, Language: English 
-)
-(c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
-File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
-)
-LaTeX Font Info:    Calculating math sizes for size <11.88995> on input line 12
-.
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 94.
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <16> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 94.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 14.79541pt on input line 94.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <16> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 94.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 14.79541pt on input line 94.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 16.0pt on input line 94.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 94.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 94.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 94.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 94.
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 94.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 94.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 94.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 94.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 94.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 94.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 94.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 99.
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <11.34995> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 10.49544pt on input line 99.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <11.34995> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 10.49544pt on input line 99.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 11.34995pt on input line 99.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 106.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 120.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 128.
+
+File: ./figure/merge_circle.png Graphic file (type bmp)
+<./figure/merge_circle.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 135.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 135.
+
+LaTeX Font Info:    Calculating math sizes for size <11.34995> on input line 13
+9.
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 12.
-
+e 139.
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.88995pt on input line 12.
+(Font)              scaled to size 11.34995pt on input line 139.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.67961pt on input line 12.
+(Font)              scaled to size 8.2854pt on input line 139.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.5395pt on input line 12.
+(Font)              scaled to size 6.2425pt on input line 139.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 8.02614pt on input line 12.
+(Font)              scaled to size 7.6616pt on input line 139.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 6.04716pt on input line 12.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <11.88995> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 12.
+(Font)              scaled to size 5.7725pt on input line 139.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <8.2854> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 12.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <8.67961> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 12.
+(Font)              scaled to size 7.6616pt on input line 139.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <6.2425> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 8.02614pt on input line 12.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <6.5395> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 6.04716pt on input line 12.
+(Font)              scaled to size 5.7725pt on input line 139.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-12.
+139.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-12.
+139.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-12.
+139.
 
 (c:/texlive/2020/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 12
-.
-
-(c:/texlive/2020/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
-File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
-)
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 10.70088pt on input line 12.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.81158pt on input line 12.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.88551pt on input line 12.
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
-12.
-
-(c:/texlive/2020/texmf-dist/tex/latex/newtx/t1ntxtt.fd
-File: t1ntxtt.fd 2012/04/20 v3.1
-)
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 11.88995pt on input line 12.
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 8.67961pt on input line 12.
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 6.5395pt on input line 12.
-
-第1章
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 22.80319pt on input line 15.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 22.80319pt on input line 15.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 24.65976pt on input line 15.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 15.
+(Font)              using `JY1/hmc/bx/n' instead on input line 143.
 
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <24.65976> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 22.80319pt on input line 15.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <24.65976> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 22.80319pt on input line 15.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 24.65976pt on input line 15.
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <29.5822> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 27.35504pt on input line 15.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <29.5822> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 27.35504pt on input line 15.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 29.5822pt on input line 15.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 17.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 17.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.12152pt on input line 17.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 17.
-
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <17.12152> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 17.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <17.12152> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 15.83249pt on input line 17.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.12152pt on input line 17.
 [1
 
 
-
 ]
+Overfull \hbox (20.68103pt too wide) detected at line 161
+[][]
+ []
+
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 57.
+(Font)              using `JY1/hmc/bx/n' instead on input line 164.
 
-File: ./figure/chapter1/propose.png Graphic file (type bmp)
-<./figure/chapter1/propose.png>
+File: ./figure/communication_model.png Graphic file (type bmp)
+<./figure/communication_model.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 66.
+(Font)              using `JY1/hmc/bx/n' instead on input line 172.
 
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <11.88995> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 66.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 172.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 177.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 178.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 180.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 183.
+
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 187.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 187.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.0pt on input line 187.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 187.
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <9> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 187.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 66.
+(Font)              scaled to size 8.32242pt on input line 187.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <9> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 187.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 187.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.88995pt on input line 66.
+(Font)              scaled to size 9.0pt on input line 187.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 187.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 187.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 187.
+[2
 
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 66.
-
-[2]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 71.
-
-[3] (./chapter01.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] (./resume.aux) ) 
 Here is how much of TeX's memory you used:
- 28567 strings out of 481140
- 535565 string characters out of 5920653
- 723256 words of memory out of 5000000
- 44055 multiletter control sequences out of 15000+600000
- 585353 words of font info for 121 fonts, out of 8000000 for 9000
+ 14673 strings out of 481140
+ 225718 string characters out of 5920653
+ 468850 words of memory out of 5000000
+ 30470 multiletter control sequences out of 15000+600000
+ 581524 words of font info for 122 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,6n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,8n,98p,983b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter01.dvi (3 pages, 9248 bytes).
+Output written on resume.dvi (2 pages, 12328 bytes).
