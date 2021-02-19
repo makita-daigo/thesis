@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  18 FEB 2021 01:17
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  20 FEB 2021 03:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1592,12 +1592,18 @@ Package xr Info: IMPORTING LABELS FROM chapter02.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM chapter03.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM chapter04.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM chapter05.aux on input line 9.
+
+
+LaTeX Warning: Label `fig:pos_person' multiply defined.
+
+
+LaTeX Warning: Label `fig:pos_person@cref' multiply defined.
+
 Package xr Info: IMPORTING LABELS FROM chapter06.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM acknowledgment.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM achievment.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
-
 
 LaTeX Warning: Label `nishikawa_2018' multiply defined.
 
@@ -1650,6 +1656,42 @@ LaTeX Warning: Label `fig:ground' multiply defined.
 
 
 LaTeX Warning: Label `fig:ground@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:picture' multiply defined.
+
+
+LaTeX Warning: Label `fig:picture@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:envi' multiply defined.
+
+
+LaTeX Warning: Label `fig:envi@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:pos_person' multiply defined.
+
+
+LaTeX Warning: Label `fig:pos_person@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:pos_person' multiply defined.
+
+
+LaTeX Warning: Label `fig:pos_person@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:line' multiply defined.
+
+
+LaTeX Warning: Label `fig:line@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:row' multiply defined.
+
+
+LaTeX Warning: Label `fig:row@cref' multiply defined.
 
 )
 \openout1 = `chapter05.aux'.
@@ -1901,77 +1943,155 @@ File: ./figure/chapter5/ground.png Graphic file (type bmp)
 <./figure/chapter5/ground.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 37.
+(Font)              using `JY1/hmc/bx/n' instead on input line 38.
 
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <11.88995> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 37.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 10.99478pt on input line 37.
+(Font)              scaled to size 10.99478pt on input line 38.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.88995pt on input line 37.
+(Font)              scaled to size 11.88995pt on input line 38.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 37.
+(Font)              using `JY1/hmc/bx/n' instead on input line 38.
 
-File: ./figure/chapter5/setting.png Graphic file (type bmp)
-<./figure/chapter5/setting.png>
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 44.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 44.
-
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 48.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 48.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.26794pt on input line 48.
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 48.
-
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <14.26794> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 48.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <14.26794> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 13.19374pt on input line 48.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.26794pt on input line 48.
 [1
 
 
 
 ]
+File: ./figure/chapter5/picture.png Graphic file (type bmp)
+<./figure/chapter5/picture.png>
+
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 53.
+(Font)              using `JY1/hmc/bx/n' instead on input line 45.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 57.
+(Font)              using `JY1/hmc/bx/n' instead on input line 45.
+
+[2]
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 50.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 50.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.26794pt on input line 50.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 50.
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <14.26794> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 50.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <14.26794> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 13.19374pt on input line 50.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.26794pt on input line 50.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 56.
+
+
+LaTeX Warning: Reference `fig:env' on page 1 undefined on input line 56.
+
+File: ./figure/chapter5/setting.png Graphic file (type bmp)
+<./figure/chapter5/setting.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 61.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 61.
 
-[2] [3] [4] (./chapter05.aux)
+File: ./figure/chapter5/experience_setting.png Graphic file (type bmp)
+<./figure/chapter5/experience_setting.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 73.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 73.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./figure/chapter5/goal_graph.png Graphic file (type bmp)
+<./figure/chapter5/goal_graph.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 80.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 80.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 97.
+
+[4]
+File: ./figure/chapter5/line.png Graphic file (type bmp)
+<./figure/chapter5/line.png>
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 105.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 105.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./figure/chapter5/row.png Graphic file (type bmp)
+<./figure/chapter5/row.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 116.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 116.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 134.
+
+[6] [7] (./chapter05.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28580 strings out of 481140
- 535853 string characters out of 5920653
- 720256 words of memory out of 5000000
- 44067 multiletter control sequences out of 15000+600000
+ 28610 strings out of 481140
+ 536595 string characters out of 5920653
+ 722247 words of memory out of 5000000
+ 44094 multiletter control sequences out of 15000+600000
  591369 words of font info for 127 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,6n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,9n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter05.dvi (4 pages, 5564 bytes).
+Output written on chapter05.dvi (7 pages, 13812 bytes).
