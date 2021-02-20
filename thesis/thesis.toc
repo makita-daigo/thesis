@@ -11,34 +11,34 @@
 \contentsline {subsection}{\numberline {2.2.3}撮影領域の導出}{6}%
 \contentsline {subsection}{\numberline {2.2.4}カメラの高さや向きを考慮した撮影領域の算出}{7}%
 \contentsline {subsection}{\numberline {2.2.5}1人の撮影人物に対して設定する撮影ベクトルの本数}{8}%
-\contentsline {section}{\numberline {2.3}UAVの目標位置の導出}{9}%
-\contentsline {subsection}{\numberline {2.3.1}グリッドマップと目標位置}{9}%
-\contentsline {section}{\numberline {2.4}先行研究の課題点と本章のまとめ}{11}%
-\contentsline {chapter}{\numberline {第3章}複数LiDARの位置校正方法とオクルージョン範囲を考慮した撮影計画}{12}%
-\contentsline {section}{\numberline {3.1}はじめに}{12}%
-\contentsline {section}{\numberline {3.2}複数LiDARの位置決定方法}{12}%
-\contentsline {subsection}{\numberline {3.2.1}RTK-GPS測位}{13}%
-\contentsline {subsection}{\numberline {3.2.2}RTK-GPS測位と単独測位の比較}{14}%
-\contentsline {section}{\numberline {3.3}GPS座標からmap座標への変換}{14}%
-\contentsline {section}{\numberline {3.4}オクルージョンが発生した場合のUAVの撮影位置の決定}{15}%
-\contentsline {subsection}{\numberline {3.4.1}1台のLiDARに対するオクルージョンの範囲}{15}%
-\contentsline {section}{\numberline {3.5}複数LiDARでの人物認識}{18}%
-\contentsline {subsection}{\numberline {3.5.1}重複人物のマージ方法}{20}%
-\contentsline {section}{\numberline {3.6}本章のまとめ}{21}%
-\contentsline {chapter}{\numberline {第4章}実環境におけるシステム構築}{22}%
-\contentsline {section}{\numberline {4.1}はじめに}{22}%
-\contentsline {section}{\numberline {4.2}Robot OperationSystemの概要}{22}%
-\contentsline {section}{\numberline {4.3}ROSによるUAV制御}{23}%
-\contentsline {section}{\numberline {4.4}地上設置LiDARとGPSセンサ}{24}%
+\contentsline {section}{\numberline {2.3}Obstacle Detector}{9}%
+\contentsline {section}{\numberline {2.4}UAVの目標位置の導出}{9}%
+\contentsline {subsection}{\numberline {2.4.1}グリッドマップと目標位置}{9}%
+\contentsline {section}{\numberline {2.5}先行研究の課題点と本章のまとめ}{12}%
+\contentsline {chapter}{\numberline {第3章}複数LiDARの位置校正方法とオクルージョン範囲を考慮した撮影計画}{13}%
+\contentsline {section}{\numberline {3.1}はじめに}{13}%
+\contentsline {section}{\numberline {3.2}複数LiDARの位置決定方法}{13}%
+\contentsline {subsection}{\numberline {3.2.1}RTK-GPS測位}{14}%
+\contentsline {subsection}{\numberline {3.2.2}RTK-GPS測位と単独測位の比較}{15}%
+\contentsline {section}{\numberline {3.3}GPS座標からmap座標への変換}{15}%
+\contentsline {section}{\numberline {3.4}オクルージョンが発生した場合のUAVの撮影位置の決定}{16}%
+\contentsline {subsection}{\numberline {3.4.1}1台のLiDARに対するオクルージョンの範囲}{16}%
+\contentsline {section}{\numberline {3.5}複数LiDARでの人物認識}{19}%
+\contentsline {subsection}{\numberline {3.5.1}重複人物のマージ方法}{21}%
+\contentsline {section}{\numberline {3.6}本章のまとめ}{22}%
+\contentsline {chapter}{\numberline {第4章}実環境におけるシステム構築}{23}%
+\contentsline {section}{\numberline {4.1}はじめに}{23}%
+\contentsline {section}{\numberline {4.2}Robot OperationSystemの概要}{23}%
+\contentsline {section}{\numberline {4.3}ROSによるUAV制御}{25}%
+\contentsline {section}{\numberline {4.4}地上設置LiDARとGPSセンサ}{26}%
 \contentsline {section}{\numberline {4.5}本章のまとめ}{28}%
 \contentsline {chapter}{\numberline {第5章}実環境における評価実験}{30}%
 \contentsline {section}{\numberline {5.1}はじめに}{30}%
 \contentsline {section}{\numberline {5.2}実験設定}{30}%
-\contentsline {subsection}{\numberline {5.2.1}ダミーを配置した場合の撮影計画}{31}%
-\contentsline {subsection}{\numberline {5.2.2}LiDARを2台用いたマージの実機実験}{31}%
-\contentsline {section}{\numberline {5.3}スロープ型の地形でのシミュレーション}{32}%
-\contentsline {section}{\numberline {5.4}本章のまとめ}{32}%
-\contentsline {chapter}{\numberline {第6章}結論}{34}%
-\contentsline {section}{\numberline {6.1}まとめ}{34}%
-\contentsline {section}{\numberline {6.2}課題と展望}{34}%
-\contentsline {chapter}{参考文献}{37}%
+\contentsline {subsection}{\numberline {5.2.1}ダミーを配置した場合の撮影計画}{32}%
+\contentsline {subsection}{\numberline {5.2.2}LiDARを2台用いた人物認識}{34}%
+\contentsline {section}{\numberline {5.3}本章のまとめ}{37}%
+\contentsline {chapter}{\numberline {第6章}結論}{38}%
+\contentsline {section}{\numberline {6.1}まとめ}{38}%
+\contentsline {section}{\numberline {6.2}課題と展望}{38}%
+\contentsline {chapter}{参考文献}{42}%

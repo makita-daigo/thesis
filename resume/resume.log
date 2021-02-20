@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  19 FEB 2021 02:10
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  21 FEB 2021 02:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1195,7 +1195,14 @@ File: l3backend-dvipdfmx.def 2020-03-12 L3 backend support: dvipdfmx
 \g__pdf_backend_object_int=\count292
 \g__pdf_backend_annotation_int=\count293
 )
-(./resume.aux)
+(./resume.aux
+
+LaTeX Warning: Label `fig:system' multiply defined.
+
+
+LaTeX Warning: Label `fig:system@cref' multiply defined.
+
+)
 \openout1 = `resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 91.
@@ -1431,14 +1438,18 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 143.
 
-[1
 
-
-]
 Overfull \hbox (20.68103pt too wide) detected at line 161
 [][]
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 164.
@@ -1461,50 +1472,72 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 178.
 
+File: ./figure/goal_graph.png Graphic file (type bmp)
+<./figure/goal_graph.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 180.
+(Font)              using `JY1/hmc/bx/n' instead on input line 184.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 183.
+(Font)              using `JY1/hmc/bx/n' instead on input line 184.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 191.
+
+File: ./figure/row.png Graphic file (type bmp)
+<./figure/row.png>
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 198.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 198.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 205.
 
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 187.
+(Font)              scaled to size 8.32242pt on input line 211.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 187.
+(Font)              scaled to size 8.32242pt on input line 211.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 187.
+(Font)              scaled to size 9.0pt on input line 211.
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 187.
+(Font)              using `JY1/hmc/bx/n' instead on input line 211.
 
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 187.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 211.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 187.
+(Font)              scaled to size 8.32242pt on input line 211.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 187.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 211.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 187.
+(Font)              scaled to size 8.32242pt on input line 211.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.0pt on input line 187.
+(Font)              scaled to size 9.0pt on input line 211.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 187.
+(Font)              scaled to size 7.3977pt on input line 211.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 187.
+(Font)              scaled to size 7.3977pt on input line 211.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 187.
-[2
+(Font)              scaled to size 8.0pt on input line 211.
+[2] (./resume.aux)
 
-] (./resume.aux) ) 
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14673 strings out of 481140
- 225718 string characters out of 5920653
- 468850 words of memory out of 5000000
- 30470 multiletter control sequences out of 15000+600000
+ 14683 strings out of 481140
+ 225905 string characters out of 5920653
+ 468851 words of memory out of 5000000
+ 30478 multiletter control sequences out of 15000+600000
  581524 words of font info for 122 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  58i,8n,98p,983b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on resume.dvi (2 pages, 12328 bytes).
+Output written on resume.dvi (2 pages, 16044 bytes).

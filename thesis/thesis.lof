@@ -4,24 +4,30 @@
 \addvspace {10\jsc@mpt }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Model of Shooting Vector\relax }}{5}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Shooting Area of One Target Person\relax }}{8}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Grid Map and Shooting Vector (a)\relax }}{10}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Grid Map and Shooting Vector (b)\relax }}{10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Grid Map and Shooting Vector (a)\relax }}{11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Grid Map and Shooting Vector (b)\relax }}{11}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Image of RTK-GPS Positioning System\relax }}{13}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Single GPS Positioning (right) and RTK-GPS Positioning (left)\relax }}{14}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Occlusion Area\relax }}{16}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Dummy Position\relax }}{17}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Example of Person Recognition\relax }}{18}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Person recognized by LiDAR1 or LiDAR2\relax }}{19}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Distance of Two Circle\relax }}{20}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Image of RTK-GPS Positioning System\relax }}{14}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Single GPS Positioning (right) and RTK-GPS Positioning (left)\relax }}{15}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Occlusion Area\relax }}{17}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Dummy Position\relax }}{18}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Example of Person Recognition\relax }}{19}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Person recognized by LiDAR1 or LiDAR2\relax }}{20}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Distance of Two Circle\relax }}{21}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Mavic Mini\relax }}{24}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces UTM-30LX-EW\relax }}{25}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces UST-30LX\relax }}{25}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Multi-band GNSS Antenna ANN-MB-01\relax }}{26}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Wireless Communication Model for LiDAR and GPS antenna\relax }}{27}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Communication System\relax }}{29}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces ROS Communication Model\relax }}{24}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Mavic Mini\relax }}{25}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces UTM-30LX-EW\relax }}{26}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces UST-30LX\relax }}{27}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Multi-band GNSS Antenna ANN-MB-01\relax }}{28}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Wireless Communication Model for LiDAR and GPS antenna\relax }}{29}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Communication System\relax }}{29}%
 \addvspace {10\jsc@mpt }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Handball Court and Baseball Ground in Osaka City Univercity\relax }}{31}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Experiment Environment\relax }}{32}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Experimental Scenery\relax }}{31}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Experiment Environment\relax }}{32}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Position of Target Person\relax }}{33}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Trajectory of UAV Goal Position\relax }}{34}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Detected Persons in Line by Two LiDARs\relax }}{35}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Detected Persons in a Row by Two LiDARs\relax }}{36}%
 \addvspace {10\jsc@mpt }

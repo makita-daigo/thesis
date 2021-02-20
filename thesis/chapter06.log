@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  18 FEB 2021 03:09
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  20 FEB 2021 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1592,12 +1592,18 @@ Package xr Info: IMPORTING LABELS FROM chapter02.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM chapter03.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM chapter04.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM chapter05.aux on input line 9.
+
+
+LaTeX Warning: Label `fig:pos_person' multiply defined.
+
+
+LaTeX Warning: Label `fig:pos_person@cref' multiply defined.
+
 Package xr Info: IMPORTING LABELS FROM chapter06.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM acknowledgment.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM achievment.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
-
 
 LaTeX Warning: Label `nishikawa_2018' multiply defined.
 
@@ -1888,14 +1894,14 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 
-] [2] (./chapter06.aux) ) 
+] [2] [3] (./chapter06.aux) ) 
 Here is how much of TeX's memory you used:
- 28546 strings out of 481140
- 535179 string characters out of 5920653
- 721256 words of memory out of 5000000
- 44039 multiletter control sequences out of 15000+600000
+ 28558 strings out of 481140
+ 535351 string characters out of 5920653
+ 723248 words of memory out of 5000000
+ 44051 multiletter control sequences out of 15000+600000
  582449 words of font info for 119 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,6n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter06.dvi (2 pages, 4664 bytes).
+Output written on chapter06.dvi (3 pages, 8252 bytes).

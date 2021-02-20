@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  29 JAN 2021 15:51
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  20 FEB 2021 21:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1585,13 +1585,61 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language21) on input line 108.
 )))))
+Package xr Info: IMPORTING LABELS FROM thesis.aux on input line 9.
+Package xr Info: IMPORTING LABELS FROM abstract.aux on input line 9.
+Package xr Info: IMPORTING LABELS FROM chapter01.aux on input line 9.
+Package xr Info: IMPORTING LABELS FROM chapter02.aux on input line 9.
+Package xr Info: IMPORTING LABELS FROM chapter03.aux on input line 9.
+Package xr Info: IMPORTING LABELS FROM chapter04.aux on input line 9.
+Package xr Info: IMPORTING LABELS FROM chapter05.aux on input line 9.
 
-Package xr Warning: 
-No file thesis.aux
-LABELS NOT IMPORTED.
- on input line 9.
 
+LaTeX Warning: Label `fig:pos_person' multiply defined.
+
+
+LaTeX Warning: Label `fig:pos_person@cref' multiply defined.
+
+Package xr Info: IMPORTING LABELS FROM chapter06.aux on input line 9.
+Package xr Info: IMPORTING LABELS FROM acknowledgment.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
+Package xr Info: IMPORTING LABELS FROM achievment.aux on input line 9.
+Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
+
+LaTeX Warning: Label `nishikawa_2018' multiply defined.
+
+
+LaTeX Warning: Label `nishikawa_2018_2' multiply defined.
+
+
+LaTeX Warning: Label `Teuliere_2011' multiply defined.
+
+
+LaTeX Warning: Label `bethke_2007' multiply defined.
+
+
+LaTeX Warning: Label `nasser_2013' multiply defined.
+
+
+LaTeX Warning: Label `price_2018' multiply defined.
+
+
+LaTeX Warning: Label `wang_2009' multiply defined.
+
+
+LaTeX Warning: Label `bajracharya_2009' multiply defined.
+
+
+LaTeX Warning: Label `furukawa_2006' multiply defined.
+
+
+LaTeX Warning: Label `furukawa_2012' multiply defined.
+
+
+LaTeX Warning: Label `pack_2009' multiply defined.
+
+
+LaTeX Warning: Label `sasaki_2019' multiply defined.
+
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 10.99478pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
@@ -1629,6 +1677,9 @@ LaTeX Warning: Label `furukawa_2012' multiply defined.
 
 
 LaTeX Warning: Label `pack_2009' multiply defined.
+
+
+LaTeX Warning: Label `sasaki_2019' multiply defined.
 
 )
 \openout1 = `bibliography.aux'.
@@ -1851,12 +1902,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28450 strings out of 481140
- 533571 string characters out of 5920653
- 722260 words of memory out of 5000000
- 43951 multiletter control sequences out of 15000+600000
+ 28546 strings out of 481140
+ 535124 string characters out of 5920653
+ 721669 words of memory out of 5000000
+ 44039 multiletter control sequences out of 15000+600000
  573428 words of font info for 110 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,6n,98p,989b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bibliography.dvi (2 pages, 4868 bytes).
+Output written on bibliography.dvi (2 pages, 5096 bytes).

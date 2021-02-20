@@ -76,7 +76,7 @@ UAVの目標移動位置の比較を行う．
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth, clip]{./figure/chapter5/goal_graph.png}
+    \includegraphics[width=0.7\linewidth, clip]{./figure/chapter5/goal_graph.png}
     \caption{Trajectory of UAV Goal Position}
     \label{fig:pos_person}
 \end{figure}
@@ -97,11 +97,11 @@ UAVの目標移動位置の比較を行う．
 \subsection{LiDARを2台用いた人物認識}
 次にLiDARを2台設置しての人物認識を行う．
 LiDAR1の位置は実験設定で述べた位置に配置し，LiDAR2は南側を向け任意の位置に配置する．
-10[m]$times$10[m]の範囲に3人の人物を配置し2台のLiDARでそれぞれ人物認識を行いを3章で述べた方法でそれらの認識データを正常にに統合できているかの考察を行う．また，同一人物とみなす距離$d_{max}$について考察する．
+10[m]$\times$10[m]の範囲に3人の人物を配置し2台のLiDARでそれぞれ人物認識を行いを3章で述べた方法でそれらの認識データを正常にに統合できているかの考察を行う．また，同一人物とみなす距離$d_{max}$について考察する．
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth, clip]{./figure/chapter5/line.png}
+    \includegraphics[width=0.7\linewidth, clip]{./figure/chapter5/line.png}
     \caption{Detected Persons in Line by Two LiDARs}
     \label{fig:line}
 \end{figure}
@@ -112,7 +112,7 @@ LiDAR1の位置は実験設定で述べた位置に配置し，LiDAR2は南側�
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth, clip]{./figure/chapter5/row.png}
+    \includegraphics[width=0.7\linewidth, clip]{./figure/chapter5/row.png}
     \caption{Detected Persons in a Row by Two LiDARs}
     \label{fig:row}
 \end{figure}
@@ -123,20 +123,38 @@ LiDAR1の位置は実験設定で述べた位置に配置し，LiDAR2は南側�
 
 \begin{table}[h]
   \centering
+  \caption{Coordinate and Distance}
   \begin{tabular}{|c|c|c|c|c|} \hline
 	\multicolumn{2}{|c|}{} & \multicolumn{1}{|c|}{person1} & \multicolumn{1}{|c|}{person2} & \multicolumn{1}{|c|}{person3}\\ \hline \hline
 	& $x$ & 2.4269 & -2.8308 &  -0.2124 \\ \cline{2-5}
 	LiDAR1 & $y$ &  0.1220 & 0.1694 &  0.1825 \\ \hline
 	& $x$ & 1.6752 & -3.7104 & -1.0971 \\ \cline{2-5}
-	LiDAR2 & $y$ &  0.5030 & 0.4965 &  0.4432 \\ \hline
+	LiDAR2 & $y$ &  0.5030 & 0.4965 &  0.4432 \\ \hline \hline
+	\multicolumn{2}{|c|}{distance} & \multicolumn{1}{|c|}{0.8247} & \multicolumn{1}{|c|}{0.9385} & \multicolumn{1}{|c|}{0.9223}\\ \hline
  \end{tabular}
+ \label{tab:distance}
 \end{table}
+
+\cref{tab:distance}に\cref{fig:row}に示した6つの円の座標と1人の人物を表している２つの円の距離を示す．
+この人物の配置では$d_{max}$を算出した3つの距離のうち最大である0.9385[m]に設定すれば正常に人物情報が統合できたことになる．
+
+ここで人間の横幅を考える．人間の横幅を50cmとすると，人物が横に2人並んだ時の人物の中心間距離も50cmである．
+そのことを踏まえると並んだ2人の人物の情報を1人の人物としてしまわないための適切な$d_{max}$は0.5[m]であり，今回の実験で得られた結果よりも小さい値である．
+
+$d_{max}$の値が大きめの値となったのはいくつかの原因が考えられる．
+１つ目は各LiDARが1人の人物を認識する際に人間の同じ面を捉えられないことにある．例としてLiDAR1が人物の前面を捉えているとすると，LiDAR2は人物の背面を捉えることになる．
+このことから生成される円の中心がずれると推測される．
+
+2つ目の原因としてはLiDARの設定角度の誤差である．設定ではLiDAR1を北向き，LiDAR2を南向きとしているが，
+実機実験を行う際に正確にその方位を測定する方法がなく，コンパスを用いて手動で設定している．
+このことにより2つのLiDARで角度のずれが生じ認識された人物の座標の位置に誤差が生まれる．
+
 \section{本章のまとめ}
 本章では2つの実機実験の結果を示し，その結果について考察を行った．
 
 ダミーを配置することにより，配置しない撮影計画と比較してUAVの目標位置が変化することを示した．
 
-次に2台のLiDARでの人物認識について，各LiDARから得られたデータをマージし，そのマージが適切であるかの判断を行った．
+次に2台のLiDARでの人物認識について，各LiDARから得られた情報の統合を行い，その統合が適切であるかの判断を行った．
 
 次章では，この実験全体に対してのまとめと課題，今後の展望について論述する．
 

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  14 FEB 2021 21:16
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.21)  20 FEB 2021 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1592,12 +1592,18 @@ Package xr Info: IMPORTING LABELS FROM chapter02.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM chapter03.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM chapter04.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM chapter05.aux on input line 9.
+
+
+LaTeX Warning: Label `fig:pos_person' multiply defined.
+
+
+LaTeX Warning: Label `fig:pos_person@cref' multiply defined.
+
 Package xr Info: IMPORTING LABELS FROM chapter06.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM acknowledgment.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM achievment.aux on input line 9.
 Package xr Info: IMPORTING LABELS FROM bibliography.aux on input line 9.
-
 
 LaTeX Warning: Label `nishikawa_2018' multiply defined.
 
@@ -1633,6 +1639,9 @@ LaTeX Warning: Label `pack_2009' multiply defined.
 
 
 LaTeX Warning: Label `sasaki_2019' multiply defined.
+
+
+LaTeX Warning: Label `obstacle_detector_1' multiply defined.
 
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 10.99478pt on input line 12.
@@ -1698,6 +1707,42 @@ LaTeX Warning: Label `eq:shooting_area' multiply defined.
 
 
 LaTeX Warning: Label `eq:shooting_area@cref' multiply defined.
+
+
+LaTeX Warning: Label `eq:shooting_area_2d' multiply defined.
+
+
+LaTeX Warning: Label `eq:shooting_area_2d@cref' multiply defined.
+
+
+LaTeX Warning: Label `eq:shooting_area_gimbal' multiply defined.
+
+
+LaTeX Warning: Label `eq:shooting_area_gimbal@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:shoot_area' multiply defined.
+
+
+LaTeX Warning: Label `fig:shoot_area@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:nsv1' multiply defined.
+
+
+LaTeX Warning: Label `fig:nsv1@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:nsv2' multiply defined.
+
+
+LaTeX Warning: Label `fig:nsv2@cref' multiply defined.
+
+
+LaTeX Warning: Label `eq:camera_max_distance' multiply defined.
+
+
+LaTeX Warning: Label `eq:camera_max_distance@cref' multiply defined.
 
 )
 \openout1 = `chapter02.aux'.
@@ -2008,22 +2053,6 @@ LaTeX Warning: Reference `eq:beta_3' on page 1 undefined on input line 88.
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 135.
 
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 137.
-
-
-LaTeX Warning: Reference `eq:shooting_area_2d' on page 1 undefined on input lin
-e 137.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 139.
-
-
-LaTeX Warning: Reference `eq:shooting_area_gimbal' on page 1 undefined on input
- line 139.
-
 [4]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -2043,46 +2072,43 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 168.
 
+[5]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 169.
+(Font)              using `JY1/hmc/bx/n' instead on input line 187.
 
-[5]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 188.
+
+[6]
 File: ./figure/chapter2/NSV_1.png Graphic file (type bmp)
 <./figure/chapter2/NSV_1.png>
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 179.
+(Font)              using `JY1/hmc/bx/n' instead on input line 198.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 179.
+(Font)              using `JY1/hmc/bx/n' instead on input line 198.
 
 File: ./figure/chapter2/NSV_2.png Graphic file (type bmp)
 <./figure/chapter2/NSV_2.png>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 186.
+(Font)              using `JY1/hmc/bx/n' instead on input line 205.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 186.
+(Font)              using `JY1/hmc/bx/n' instead on input line 205.
 
-[6] [7]
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 193.
-
-
-LaTeX Warning: Reference `eq:camera_max_distance' on page 1 undefined on input 
-line 193.
-
+[7] [8]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 203.
+(Font)              using `JY1/hmc/bx/n' instead on input line 222.
 
-[8] (./chapter02.aux)
+[9] (./chapter02.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2091,12 +2117,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28593 strings out of 481140
- 536311 string characters out of 5920653
- 724257 words of memory out of 5000000
- 44078 multiletter control sequences out of 15000+600000
+ 28602 strings out of 481140
+ 536288 string characters out of 5920653
+ 724248 words of memory out of 5000000
+ 44087 multiletter control sequences out of 15000+600000
  591369 words of font info for 127 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,9n,98p,986b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter02.dvi (8 pages, 18720 bytes).
+Output written on chapter02.dvi (9 pages, 21456 bytes).
